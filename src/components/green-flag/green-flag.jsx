@@ -31,6 +31,6 @@ GreenFlagComponent.propTypes = {
 };
 GreenFlagComponent.defaultProps = {
     active: false,
-    title: 'Go'
+    title: '运行'
 };
 module.exports = GreenFlagComponent;

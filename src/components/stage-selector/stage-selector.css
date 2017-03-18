@@ -5,7 +5,7 @@ $header-height: 2.5rem; /* @todo: half the SpriteInfo area header? */
 .stage-selector {
     position: relative; /* for the child element border */
     height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: white;
     color: #575e75;
     border-top-left-radius: $space;
@@ -23,7 +23,7 @@ $header-height: 2.5rem; /* @todo: half the SpriteInfo area header? */
     justify-content: center;
     height: $header-height;
     padding: 0.5rem 0.5rem 0.5rem 0.25rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: white;
     color: #575e75;
     border-top-left-radius: $space;
@@ -32,7 +32,7 @@ $header-height: 2.5rem; /* @todo: half the SpriteInfo area header? */
 }
 
 .header-title {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.625rem;
     font-weight: bold;
     color: #575e75;
@@ -52,7 +52,7 @@ $header-height: 2.5rem; /* @todo: half the SpriteInfo area header? */
 .count {
     margin: 0 0 0.3rem 0;
     padding: 0.15rem 0.5rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.625rem;
     font-weight: bold;
     color: #575e75;
@@ -62,7 +62,7 @@ $header-height: 2.5rem; /* @todo: half the SpriteInfo area header? */
 
 .label {
     margin: 0.4rem 0 0.25rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.5rem;
     font-weight: bold;
     color: #575e75;

@@ -9,3 +9,7 @@ body,
 
 /* @todo: move globally? Safe / side FX, for blocks particularly? */
 * { box-sizing: border-box; }
+
+body {
+	font-family: 'Microsoft YaHei';
+}

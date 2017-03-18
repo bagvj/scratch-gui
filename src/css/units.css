@@ -2,6 +2,6 @@ $space: 0.5rem;
 
 $sprites-per-row: 5;
 
-$menu-bar-height: 3rem;
+$menu-bar-height: 3.125rem;
 $sprite-info-height: 5.25rem; /* TODO: SpriteInfo isn't explicitly set to this height yet */
 $stage-menu-height: 3rem;

@@ -33,7 +33,7 @@ StopAllComponent.propTypes = {
 
 StopAllComponent.defaultProps = {
     active: false,
-    title: 'Stop'
+    title: '停止'
 };
 
 module.exports = StopAllComponent;

@@ -11,7 +11,7 @@ const hideIcon = require('./icon--hide.svg');
 const draggableIcon = require('./icon--draggable-on.svg');
 const notDraggableIcon = require('./icon--draggable-off.svg');
 
-const ROTATION_STYLES = ['left-right', 'don\'t rotate', 'all around'];
+const ROTATION_STYLES = ['左-右翻转', '不翻转', '任意'];
 
 class SpriteInfo extends React.Component {
     shouldComponentUpdate (nextProps) {
@@ -32,7 +32,7 @@ class SpriteInfo extends React.Component {
             >
                 <div className={classNames(styles.row, styles.rowPrimary)}>
                     <div className={styles.group}>
-                        <span className={styles.inputLabel}>Sprite</span>
+                        <span className={styles.inputLabel}>角色</span>
                         <input
                             className={classNames(styles.inputForm, styles.inputFormSpriteName)}
                             disabled={this.props.disabled}
@@ -92,7 +92,7 @@ class SpriteInfo extends React.Component {
                 <div className={classNames(styles.row, styles.rowSecondary)}>
                     <div className={styles.group}>
                         <span className={styles.inputLabelSmall}>
-                            Show
+                            显示
                         </span>
                         <div className={classNames(styles.radioButton, {[styles.isDisabled]: this.props.disabled})}>
                             <div
@@ -132,7 +132,7 @@ class SpriteInfo extends React.Component {
 
                     <div className={styles.group}>
                         <span className={styles.inputLabelSmall}>
-                            Draggable
+                            鼠标指针
                         </span>
                         <div className={classNames(styles.radioButton, {[styles.isDisabled]: this.props.disabled})}>
                             <div
@@ -172,7 +172,7 @@ class SpriteInfo extends React.Component {
 
                     <div className={styles.group}>
                         <span className={styles.inputLabelSmall}>
-                            Rotation
+                            旋转
                         </span>
                         <select
                             className={classNames(styles.selectForm, styles.inputFormRotationSelect)}

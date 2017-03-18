@@ -8,7 +8,7 @@ $form-radius: calc($space / 2);
 .sprite-info {
     height: $sprite-info-height;
     padding: $space;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: white;
     color: #575e75;
     border-top-left-radius: $space;
@@ -97,7 +97,7 @@ $form-radius: calc($space / 2);
 .input-form {
     outline: none;
     padding: $space 0.75rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.625rem;
     font-weight: bold;
     border-width: 1px;

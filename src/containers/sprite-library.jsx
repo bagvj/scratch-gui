@@ -20,7 +20,7 @@ class SpriteLibrary extends React.Component {
         return (
             <LibaryComponent
                 data={spriteLibraryContent}
-                title="Sprite Library"
+                title="精灵库"
                 visible={this.props.visible}
                 onItemSelected={this.handleItemSelect}
                 onRequestClose={this.props.onRequestClose}

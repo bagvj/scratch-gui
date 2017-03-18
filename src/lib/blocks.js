@@ -43,7 +43,7 @@ module.exports = function (vm) {
             if (!vm.runtime.targets.hasOwnProperty(targetId)) continue;
             if (vm.runtime.targets[targetId].isOriginal) {
                 if (!vm.runtime.targets[targetId].isStage) {
-                    if (vm.runtime.targets[targetId] === vm.editingTarget) {
+                    if (vm.runtime.targets[targetId].sprite.id === vm.editingTarget.sprite.id) {
                         continue;
                     }
                     sprites.push([vm.runtime.targets[targetId].sprite.name, vm.runtime.targets[targetId].sprite.name]);
@@ -80,15 +80,15 @@ module.exports = function (vm) {
 
     ScratchBlocks.Blocks.motion_pointtowards_menu.init = function () {
         const json = jsonForMenuBlock('TOWARDS', spriteMenu, motionColors, [
-            ['mouse-pointer', '_mouse_']
+            ['鼠标指针', '_mouse_']
         ]);
         this.jsonInit(json);
     };
 
     ScratchBlocks.Blocks.motion_goto_menu.init = function () {
         const json = jsonForMenuBlock('TO', spriteMenu, motionColors, [
-            ['mouse-pointer', '_mouse_'],
-            ['random position', '_random_']
+            ['鼠标指针', '_mouse_'],
+            ['随机位置', '_random_']
         ]);
         this.jsonInit(json);
     };
@@ -109,22 +109,22 @@ module.exports = function (vm) {
 
     ScratchBlocks.Blocks.sensing_distancetomenu.init = function () {
         const json = jsonForMenuBlock('DISTANCETOMENU', spriteMenu, sensingColors, [
-            ['mouse-pointer', '_mouse_']
+            ['鼠标指针', '_mouse_']
         ]);
         this.jsonInit(json);
     };
 
     ScratchBlocks.Blocks.sensing_touchingobjectmenu.init = function () {
         const json = jsonForMenuBlock('TOUCHINGOBJECTMENU', spriteMenu, sensingColors, [
-            ['mouse-pointer', '_mouse_'],
-            ['edge', '_edge_']
+            ['鼠标指针', '_mouse_'],
+            ['边缘', '_edge_']
         ]);
         this.jsonInit(json);
     };
 
     ScratchBlocks.Blocks.control_create_clone_of_menu.init = function () {
         const json = jsonForMenuBlock('CLONE_OPTION', spriteMenu, controlColors, [
-            ['myself', '_myself_']
+            ['自己', '_myself_']
         ]);
         this.jsonInit(json);
     };

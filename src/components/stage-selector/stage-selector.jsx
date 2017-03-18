@@ -20,7 +20,7 @@ const StageSelector = props => {
             {...componentProps}
         >
             <div className={styles.header}>
-                <div className={styles.headerTitle}>Stage</div>
+                <div className={styles.headerTitle}>舞台</div>
             </div>
             <div className={styles.body}>
                 <div
@@ -37,7 +37,7 @@ const StageSelector = props => {
                             width={56}
                         />
                     ) : null}
-                    <div className={styles.label}>Backdrops</div>
+                    <div className={styles.label}>背景</div>
                     <div className={styles.count}>{backdropCount}</div>
                 </div>
                 

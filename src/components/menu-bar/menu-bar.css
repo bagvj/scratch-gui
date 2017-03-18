@@ -6,60 +6,229 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     
-    /* 
-        For most things, we shouldn't explicitly set height, and let the 
-        content push the element to whatever fits. Using a fixed height 
-        instead, will help us subtract the value we assign from the body, 
-        adding up to a perfect 100%. This means we don't need to set 
-        overflow: hidden, which makes it hard to debug. border-box 
-        simplifies by all of this by removing padding from the equation. 
-    */
     box-sizing: border-box;
     height: $menu-bar-height; 
-
-    /* 
-        @todo: This adds ~20px in Chrome, when scrolling to the right, 
-        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.
-        width: 100%; 
-    */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #4c97ff;
+    background-color: #ededed;
     color: white;
+    position: relative;
+    user-select: none;
+    z-index: 100;
 }
 
-/* 
-    Using a wrapper so when logo is hovered, it transforms via its center point 
-    @todo: not sure if this is needed 
-*/
+.menu-bar:after {
+    position: absolute;
+    height: calc(100% - 0.125rem);
+    width: calc(100% - 0.125rem);
+    top: 0;
+    left: 0;
+    content: '';
+    border: 0.0625rem solid #d3d3d3;
+    pointer-events: none;
+}
+
 .logo-wrapper {
 }
 
-.scratch-logo {
-    height:  $menu-bar-height; 
-    padding: 0.8rem 0;
-}
-
-.scratch-logo:hover {
-    transform: scale(1.1, 1.1);
-    background-size: 100%;
-    transition: all .075s ease-in;
-}
-
-.title {
-    display: inline-block;
-    margin: 0 2rem;
+.logo {
+    height:  3rem;
+    width: 3.75rem;
 }
 
 .menu-item {
     display: block;
-    padding: 0 1.5rem;
     line-height: $menu-bar-height; 
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
 
-.menu-item:hover {
-    opacity: 0.8;
-    background: rgba(255, 255, 255, 0.2)
+.app-menu {
+    margin-left: 1.25rem;
+}
+
+.app-menu ul {
+    float: left;
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    background-color: #ededed;
+}
+
+.app-menu li {
+    float: left;
+    font-size: 0.875rem;
+    color: #666;
+    letter-spacing: 0;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.app-menu-active li:hover > ul {
+    display: block;
+}
+
+.app-menu li > ul {
+    display: none;
+    position: absolute;
+    box-shadow: 2px 6px 10px 0 rgba(105, 109, 115, 0.4);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: -15px;
+}
+
+.app-menu li > ul li {
+    line-height: 1.875rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 11.25rem;
+}
+
+.app-menu li > ul li:hover {
+    color: white;
+    background: #6a6d73;
+}
+
+.app-menu li > ul li.seperator {
+    height: 0.0625rem;
+    background-color: #d3d3de;
+    pointer-events: none;
+    line-height: 0.0625rem;
+}
+
+.app-menu li > ul li .text {
+    line-height: 1.875rem;
+    display: inline-block;
+    float: left;
+}
+
+.app-menu li > ul li .shortcut {
+    line-height: 1.875rem;
+    display: inline-block;
+    float: right;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.app-menu li > ul li:hover .shortcut {
+    color: white;
+}
+
+.app-menu li > ul li .placeholder {
+    position: relative;
+}
+
+.app-menu li > ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+.app-menu > ul > li {
+    margin-right: 1.875rem;
+}
+
+.app-menu > ul > li:last-child {
+    margin-right: 0;
+}
+
+.app-menu > ul > li > .placeholder {
+    text-align: center;
+    padding-right: 0.6875rem;
+}
+
+.app-menu > ul > li > .placeholder:after {
+    content: '';
+    border: 0.1875rem solid transparent;
+    border-top-color: #666;
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.125rem;
+}
+
+.flex-placeholder {
+    display: flex;
+    flex: 1;
+}
+
+.window-btns {
+    display: flex;
+}
+
+.window-btn {
+    width: 1.25rem;
+    margin-left: 0.625rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.window-btn:before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.window-btn:after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.min-btn:before {
+    width: 1rem;
+    height: 0.125rem;
+    background-color: #ccc;
+}
+
+.min-btn:hover:before {
+   background-color: #999;
+}
+
+.max-btn:before {
+    height: 0.5rem;
+    width: 0.75rem;
+    border: 0.125rem solid #ccc;
+}
+
+.max-btn:hover:before {
+   border-color: #999;
+}
+
+.close-btn {
+    margin-right: 1rem;
+}
+
+.close-btn:before {
+    width: 0.875rem;
+    height: 0.125rem;
+    background-color: #ccc;
+    transform:rotate(45deg);
+}
+
+.close-btn:hover:before {
+   background-color: #999;
+}
+
+.close-btn:after {
+    width: 0.875rem;
+    height: 0.125rem;
+    background-color: #ccc;
+    transform:rotate(-45deg);
+}
+
+.close-btn:hover:after {
+   background-color: #999;
 }
