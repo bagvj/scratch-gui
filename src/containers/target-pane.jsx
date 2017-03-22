@@ -23,7 +23,8 @@ class TargetPane extends React.Component {
             'handleChangeSpriteVisibility',
             'handleChangeSpriteX',
             'handleChangeSpriteY',
-            'handleSelectSprite'
+            'handleSelectSprite',
+            'handleDeleteSprite'
         ]);
     }
     handleChangeSpriteDraggability (draggable) {
@@ -47,6 +48,9 @@ class TargetPane extends React.Component {
     handleSelectSprite (id) {
         this.props.vm.setEditingTarget(id);
     }
+    handleDeleteSprite (id) {
+        this.props.vm.deleteSprite(id)
+    }
     render () {
         return (
             <TargetPaneComponent
@@ -58,6 +62,7 @@ class TargetPane extends React.Component {
                 onChangeSpriteX={this.handleChangeSpriteX}
                 onChangeSpriteY={this.handleChangeSpriteY}
                 onSelectSprite={this.handleSelectSprite}
+                onDeleteSprite={this.handleDeleteSprite}
             />
         );
     }

@@ -11,7 +11,8 @@ const hideIcon = require('./icon--hide.svg');
 const draggableIcon = require('./icon--draggable-on.svg');
 const notDraggableIcon = require('./icon--draggable-off.svg');
 
-const ROTATION_STYLES = ['左-右翻转', '不翻转', '任意'];
+const ROTATION_STYLES = ['left-right', 'don\'t rotate', 'all around'];
+const ROTATION_STYLES_LABEL = ['左-右翻转', '不翻转', '任意'];
 
 class SpriteInfo extends React.Component {
     shouldComponentUpdate (nextProps) {
@@ -36,7 +37,7 @@ class SpriteInfo extends React.Component {
                         <input
                             className={classNames(styles.inputForm, styles.inputFormSpriteName)}
                             disabled={this.props.disabled}
-                            placeholder="Name"
+                            placeholder="名字"
                             tabIndex="1"
                             type="text"
                             value={this.props.disabled ? '' : this.props.name}
@@ -180,12 +181,12 @@ class SpriteInfo extends React.Component {
                             value={this.props.rotationStyle}
                             onChange={this.props.onChangeRotationStyle}
                         >
-                            {ROTATION_STYLES.map(style => (
+                            {ROTATION_STYLES.map((style, index) => (
                                 <option
                                     key={style}
                                     value={style}
                                 >
-                                    {style}
+                                    {ROTATION_STYLES_LABEL[index]}
                                 </option>
                             ))}
                         </select>
@@ -214,8 +215,8 @@ SpriteInfo.propTypes = {
     onKeyPress: React.PropTypes.func,
     rotationStyle: React.PropTypes.oneOf(ROTATION_STYLES),
     visible: React.PropTypes.bool,
-    x: React.PropTypes.string,
-    y: React.PropTypes.string
+    x: React.PropTypes.number,
+    y: React.PropTypes.number
 };
 
 module.exports = SpriteInfo;

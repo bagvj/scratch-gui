@@ -17,7 +17,7 @@ class SpriteSelectorItem extends React.Component {
     }
     handleDelete () {
         // eslint-disable-next-line no-alert
-        if (window.confirm('Are you sure you want to delete this sprite?')) {
+        if (window.confirm('确定要删除这个Sprite吗？')) {
             this.props.onDeleteButtonClick(this.props.id);
         }
     }
