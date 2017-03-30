@@ -30,7 +30,7 @@ const GUIComponent = props => {
             className={styles.pageWrapper}
             {...componentProps}
         >
-            <MenuBar />
+            {/*<MenuBar />*/}
             <Box className={styles.bodyWrapper}>
                 <Box className={styles.flexWrapper}>
                     <Box className={styles.blocksWrapper}>
