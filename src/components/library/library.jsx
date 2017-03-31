@@ -17,6 +17,10 @@ class LibraryComponent extends React.Component {
             // Double select: select as the library's value.
             this.props.onRequestClose();
             this.props.onItemSelected(this.props.data[id]);
+        } else {
+            if (this.props.onItemChosen) {
+                this.props.onItemChosen(this.props.data[id]);
+            }
         }
         this.setState({selectedItem: id});
     }
@@ -55,16 +59,18 @@ LibraryComponent.propTypes = {
     data: React.PropTypes.arrayOf(
         /* eslint-disable react/no-unused-prop-types, lines-around-comment */
         React.PropTypes.shape({
+            // @todo remove md5/rawURL prop from library, refactor to use storage
             md5: React.PropTypes.string,
-            name: React.PropTypes.string,
+            name: React.PropTypes.string.isRequired,
             rawURL: React.PropTypes.string
         })
         /* eslint-enable react/no-unused-prop-types, lines-around-comment */
     ),
+    onItemChosen: React.PropTypes.func,
     onItemSelected: React.PropTypes.func,
     onRequestClose: React.PropTypes.func,
     title: React.PropTypes.string.isRequired,
-    visible: React.PropTypes.bool
+    visible: React.PropTypes.bool.isRequired
 };
 
 module.exports = LibraryComponent;

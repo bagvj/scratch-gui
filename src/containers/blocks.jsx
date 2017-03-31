@@ -56,20 +56,20 @@ class Blocks extends React.Component {
             .getFlyout()
             .getWorkspace()
             .addChangeListener(this.props.vm.flyoutBlockListener);
-        this.props.vm.on('SCRIPT_GLOW_ON', this.onScriptGlowOn);
-        this.props.vm.on('SCRIPT_GLOW_OFF', this.onScriptGlowOff);
-        this.props.vm.on('BLOCK_GLOW_ON', this.onBlockGlowOn);
-        this.props.vm.on('BLOCK_GLOW_OFF', this.onBlockGlowOff);
-        this.props.vm.on('VISUAL_REPORT', this.onVisualReport);
-        this.props.vm.on('workspaceUpdate', this.onWorkspaceUpdate);
+        this.props.vm.addListener('SCRIPT_GLOW_ON', this.onScriptGlowOn);
+        this.props.vm.addListener('SCRIPT_GLOW_OFF', this.onScriptGlowOff);
+        this.props.vm.addListener('BLOCK_GLOW_ON', this.onBlockGlowOn);
+        this.props.vm.addListener('BLOCK_GLOW_OFF', this.onBlockGlowOff);
+        this.props.vm.addListener('VISUAL_REPORT', this.onVisualReport);
+        this.props.vm.addListener('workspaceUpdate', this.onWorkspaceUpdate);
     }
     detachVM () {
-        this.props.vm.off('SCRIPT_GLOW_ON', this.onScriptGlowOn);
-        this.props.vm.off('SCRIPT_GLOW_OFF', this.onScriptGlowOff);
-        this.props.vm.off('BLOCK_GLOW_ON', this.onBlockGlowOn);
-        this.props.vm.off('BLOCK_GLOW_OFF', this.onBlockGlowOff);
-        this.props.vm.off('VISUAL_REPORT', this.onVisualReport);
-        this.props.vm.off('workspaceUpdate', this.onWorkspaceUpdate);
+        this.props.vm.removeListener('SCRIPT_GLOW_ON', this.onScriptGlowOn);
+        this.props.vm.removeListener('SCRIPT_GLOW_OFF', this.onScriptGlowOff);
+        this.props.vm.removeListener('BLOCK_GLOW_ON', this.onBlockGlowOn);
+        this.props.vm.removeListener('BLOCK_GLOW_OFF', this.onBlockGlowOff);
+        this.props.vm.removeListener('VISUAL_REPORT', this.onVisualReport);
+        this.props.vm.removeListener('workspaceUpdate', this.onWorkspaceUpdate);
     }
     onWorkspaceMetricsChange () {
         const target = this.props.vm.editingTarget;
@@ -159,7 +159,7 @@ Blocks.propTypes = {
             dragShadowOpacity: React.PropTypes.number
         })
     }),
-    vm: React.PropTypes.instanceOf(VM)
+    vm: React.PropTypes.instanceOf(VM).isRequired
 };
 
 Blocks.defaultOptions = {
@@ -188,8 +188,7 @@ Blocks.defaultOptions = {
 };
 
 Blocks.defaultProps = {
-    options: Blocks.defaultOptions,
-    vm: new VM()
+    options: Blocks.defaultOptions
 };
 
 module.exports = Blocks;

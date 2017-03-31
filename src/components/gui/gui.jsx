@@ -1,12 +1,14 @@
 const React = require('react');
 const VM = require('scratch-vm');
-
 const Blocks = require('../../containers/blocks.jsx');
+const CostumeTab = require('../../containers/costume-tab.jsx');
 const GreenFlag = require('../../containers/green-flag.jsx');
 const TargetPane = require('../../containers/target-pane.jsx');
+const SoundTab = require('../../containers/sound-tab.jsx');
 const Stage = require('../../containers/stage.jsx');
 const StopAll = require('../../containers/stop-all.jsx');
 const MenuBar = require('../menu-bar/menu-bar.jsx');
+const {Tab, Tabs, TabList, TabPanel} = require('react-tabs');
 
 const Box = require('../box/box.jsx');
 const styles = require('./gui.css');
@@ -25,6 +27,14 @@ const GUIComponent = props => {
             </Box>
         );
     }
+
+    // @todo hack to resize blockly manually in case resize happened while hidden
+    const handleTabSelect = tabIndex => {
+        if (tabIndex === 0) {
+            setTimeout(() => window.dispatchEvent(new Event('resize')));
+        }
+    };
+
     return (
         <Box
             className={styles.pageWrapper}
@@ -33,15 +43,35 @@ const GUIComponent = props => {
             {/*<MenuBar />*/}
             <Box className={styles.bodyWrapper}>
                 <Box className={styles.flexWrapper}>
-                    <Box className={styles.blocksWrapper}>
-                        <Blocks
-                            grow={1}
-                            options={{
-                                // media: `${basePath}static/blocks-media/`
-                                media: `static/blocks-media/`
-                            }}
-                            vm={vm}
-                        />
+                    <Box className={styles.editorWrapper}>
+                        <Tabs
+                            className={styles.tabs}
+                            forceRenderTabPanel={true} // eslint-disable-line react/jsx-boolean-value
+                            onSelect={handleTabSelect}
+                        >
+                            <TabList className={styles.tabList}>
+                                <Tab className={styles.tab}>脚本</Tab>
+                                <Tab className={styles.tab}>造型</Tab>
+                                <Tab className={styles.tab}>声音</Tab>
+                            </TabList>
+                            <TabPanel className={styles.tabPanel}>
+                                <Box className={styles.blocksWrapper}>
+                                    <Blocks
+                                        grow={1}
+                                        options={{
+                                            media: `${basePath}static/blocks-media/`
+                                        }}
+                                        vm={vm}
+                                    />
+                                </Box>
+                            </TabPanel>
+                            <TabPanel className={styles.tabPanel}>
+                                <CostumeTab vm={vm} />
+                            </TabPanel>
+                            <TabPanel className={styles.tabPanel}>
+                                <SoundTab vm={vm} />
+                            </TabPanel>
+                        </Tabs>
                     </Box>
 
                     <Box className={styles.stageAndTargetWrapper} >
@@ -49,7 +79,7 @@ const GUIComponent = props => {
                             <GreenFlag vm={vm} />
                             <StopAll vm={vm} />
                         </Box>
-                        
+
                         <Box className={styles.stageWrapper} >
                             <Stage
                                 shrink={0}
@@ -71,10 +101,9 @@ const GUIComponent = props => {
 GUIComponent.propTypes = {
     basePath: React.PropTypes.string,
     children: React.PropTypes.node,
-    vm: React.PropTypes.instanceOf(VM)
+    vm: React.PropTypes.instanceOf(VM).isRequired
 };
 GUIComponent.defaultProps = {
-    basePath: '/',
-    vm: new VM()
+    basePath: '/'
 };
 module.exports = GUIComponent;

@@ -29,7 +29,7 @@ class CostumeLibrary extends React.Component {
         return (
             <LibaryComponent
                 data={costumeLibraryContent}
-                title="Costume Library"
+                title="造型库"
                 visible={this.props.visible}
                 onItemSelected={this.handleItemSelected}
                 onRequestClose={this.props.onRequestClose}

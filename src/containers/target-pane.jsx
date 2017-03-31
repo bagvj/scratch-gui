@@ -8,6 +8,7 @@ const {
     openSpriteLibrary,
     closeBackdropLibrary,
     closeCostumeLibrary,
+    closeSoundLibrary,
     closeSpriteLibrary
 } = require('../reducers/modals');
 
@@ -23,8 +24,8 @@ class TargetPane extends React.Component {
             'handleChangeSpriteVisibility',
             'handleChangeSpriteX',
             'handleChangeSpriteY',
-            'handleSelectSprite',
-            'handleDeleteSprite'
+            'handleDeleteSprite',
+            'handleSelectSprite'
         ]);
     }
     handleChangeSpriteDraggability (draggable) {
@@ -45,11 +46,11 @@ class TargetPane extends React.Component {
     handleChangeSpriteY (y) {
         this.props.vm.postSpriteInfo({y});
     }
+    handleDeleteSprite (id) {
+        this.props.vm.deleteSprite(id);
+    }
     handleSelectSprite (id) {
         this.props.vm.setEditingTarget(id);
-    }
-    handleDeleteSprite (id) {
-        this.props.vm.deleteSprite(id)
     }
     render () {
         return (
@@ -61,8 +62,8 @@ class TargetPane extends React.Component {
                 onChangeSpriteVisibility={this.handleChangeSpriteVisibility}
                 onChangeSpriteX={this.handleChangeSpriteX}
                 onChangeSpriteY={this.handleChangeSpriteY}
-                onSelectSprite={this.handleSelectSprite}
                 onDeleteSprite={this.handleDeleteSprite}
+                onSelectSprite={this.handleSelectSprite}
             />
         );
     }
@@ -87,6 +88,7 @@ const mapStateToProps = state => ({
         return sprites;
     }, {}),
     stage: state.targets.stage,
+    soundLibraryVisible: state.modals.soundLibrary,
     spriteLibraryVisible: state.modals.spriteLibrary,
     costumeLibraryVisible: state.modals.costumeLibrary,
     backdropLibraryVisible: state.modals.backdropLibrary
@@ -105,6 +107,9 @@ const mapDispatchToProps = dispatch => ({
     },
     onRequestCloseCostumeLibrary: () => {
         dispatch(closeCostumeLibrary());
+    },
+    onRequestCloseSoundLibrary: () => {
+        dispatch(closeSoundLibrary());
     },
     onRequestCloseSpriteLibrary: () => {
         dispatch(closeSpriteLibrary());
