@@ -59,7 +59,8 @@ const GUIComponent = props => {
                                     <Blocks
                                         grow={1}
                                         options={{
-                                            media: `${basePath}static/blocks-media/`
+                                            // media: `${basePath}static/blocks-media/`
+                                            media: `static/blocks-media/`
                                         }}
                                         vm={vm}
                                     />
