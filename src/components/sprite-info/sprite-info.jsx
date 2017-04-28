@@ -1,4 +1,5 @@
 const classNames = require('classnames');
+const PropTypes = require('prop-types');
 const React = require('react');
 
 const Box = require('../box/box.jsx');
@@ -8,8 +9,6 @@ const xIcon = require('./icon--x.svg');
 const yIcon = require('./icon--y.svg');
 const showIcon = require('./icon--show.svg');
 const hideIcon = require('./icon--hide.svg');
-const draggableIcon = require('./icon--draggable-on.svg');
-const notDraggableIcon = require('./icon--draggable-off.svg');
 
 const ROTATION_STYLES = ['left-right', 'don\'t rotate', 'all around'];
 const ROTATION_STYLES_LABEL = ['左-右翻转', '不翻转', '任意'];
@@ -17,8 +16,8 @@ const ROTATION_STYLES_LABEL = ['左-右翻转', '不翻转', '任意'];
 class SpriteInfo extends React.Component {
     shouldComponentUpdate (nextProps) {
         return (
+            this.props.direction !== nextProps.direction ||
             this.props.disabled !== nextProps.disabled ||
-            this.props.draggable !== nextProps.draggable ||
             this.props.name !== nextProps.name ||
             this.props.rotationStyle !== nextProps.rotationStyle ||
             this.props.visible !== nextProps.visible ||
@@ -134,51 +133,19 @@ class SpriteInfo extends React.Component {
                             </div>
                         </div>
                     </div>
-
                     <div className={styles.group}>
-                        <span className={styles.inputLabelSecondary}>
-                            拖拽
-                        </span>
-                        <div>
-                            <div
-                                className={classNames(
-                                    styles.radio,
-                                    styles.radioLeft,
-                                    styles.iconWrapper,
-                                    {
-                                        [styles.isActive]: this.props.draggable && !this.props.disabled,
-                                        [styles.isDisabled]: this.props.disabled
-                                    }
-                                )}
-                                tabIndex="5"
-                                onClick={this.props.onClickDraggable}
-                            >
-                                <img
-                                    className={styles.icon}
-                                    src={draggableIcon}
-                                />
-                            </div>
-                            <div
-                                className={classNames(
-                                    styles.radio,
-                                    styles.radioRight,
-                                    styles.iconWrapper,
-                                    {
-                                        [styles.isActive]: !this.props.draggable && !this.props.disabled,
-                                        [styles.isDisabled]: this.props.disabled
-                                    }
-                                )}
-                                tabIndex="6"
-                                onClick={this.props.onClickNotDraggable}
-                            >
-                                <img
-                                    className={styles.icon}
-                                    src={notDraggableIcon}
-                                />
-                            </div>
-                        </div>
+                        <span className={styles.inputLabelSecondary}>方向</span>
+                        <input
+                            className={classNames(styles.inputForm, styles.direction)}
+                            disabled={this.props.disabled}
+                            tabIndex="5"
+                            type="text"
+                            value={this.props.disabled ? '' : this.props.direction}
+                            onBlur={this.props.onBlurDirection}
+                            onChange={this.props.onChangeDirection}
+                            onKeyPress={this.props.onKeyPress}
+                        />
                     </div>
-
                     <div className={styles.group}>
                         <span className={styles.inputLabelSecondary}>
                             旋转
@@ -206,30 +173,33 @@ class SpriteInfo extends React.Component {
 }
 
 SpriteInfo.propTypes = {
-    disabled: React.PropTypes.bool,
-    draggable: React.PropTypes.bool,
-    name: React.PropTypes.string,
-    onBlurName: React.PropTypes.func,
-    onBlurX: React.PropTypes.func,
-    onBlurY: React.PropTypes.func,
-    onChangeName: React.PropTypes.func,
-    onChangeRotationStyle: React.PropTypes.func,
-    onChangeX: React.PropTypes.func,
-    onChangeY: React.PropTypes.func,
-    onClickDraggable: React.PropTypes.func,
-    onClickNotDraggable: React.PropTypes.func,
-    onClickNotVisible: React.PropTypes.func,
-    onClickVisible: React.PropTypes.func,
-    onKeyPress: React.PropTypes.func,
-    rotationStyle: React.PropTypes.oneOf(ROTATION_STYLES),
-    visible: React.PropTypes.bool,
-    x: React.PropTypes.oneOfType([
-        React.PropTypes.string,
-        React.PropTypes.number
+    direction: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
     ]),
-    y: React.PropTypes.oneOfType([
-        React.PropTypes.string,
-        React.PropTypes.number
+    disabled: PropTypes.bool,
+    name: PropTypes.string,
+    onBlurDirection: PropTypes.func,
+    onBlurName: PropTypes.func,
+    onBlurX: PropTypes.func,
+    onBlurY: PropTypes.func,
+    onChangeDirection: PropTypes.func,
+    onChangeName: PropTypes.func,
+    onChangeRotationStyle: PropTypes.func,
+    onChangeX: PropTypes.func,
+    onChangeY: PropTypes.func,
+    onClickNotVisible: PropTypes.func,
+    onClickVisible: PropTypes.func,
+    onKeyPress: PropTypes.func,
+    rotationStyle: PropTypes.oneOf(ROTATION_STYLES),
+    visible: PropTypes.bool,
+    x: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    y: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
     ])
 };
 

@@ -12,9 +12,10 @@ var postcssImport = require('postcss-import');
 
 module.exports = {
     devServer: {
+        disableHostCheck: true,
         contentBase: path.resolve(__dirname, 'build'),
         host: '0.0.0.0',
-        port: process.env.PORT || 8601
+        port: process.env.PORT || 8500
     },
     devtool: 'cheap-module-source-map',
     entry: {

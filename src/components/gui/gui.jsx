@@ -1,3 +1,4 @@
+const PropTypes = require('prop-types');
 const React = require('react');
 const VM = require('scratch-vm');
 const Blocks = require('../../containers/blocks.jsx');
@@ -100,9 +101,9 @@ const GUIComponent = props => {
     );
 };
 GUIComponent.propTypes = {
-    basePath: React.PropTypes.string,
-    children: React.PropTypes.node,
-    vm: React.PropTypes.instanceOf(VM).isRequired
+    basePath: PropTypes.string,
+    children: PropTypes.node,
+    vm: PropTypes.instanceOf(VM).isRequired
 };
 GUIComponent.defaultProps = {
     basePath: '/'

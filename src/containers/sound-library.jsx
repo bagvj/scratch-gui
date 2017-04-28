@@ -1,8 +1,8 @@
 const bindAll = require('lodash.bindall');
+const PropTypes = require('prop-types');
 const React = require('react');
 const VM = require('scratch-vm');
 const AudioEngine = require('scratch-audio');
-const AssetType = require('scratch-storage').AssetType;
 const LibaryComponent = require('../components/library/library.jsx');
 
 const soundIcon = require('../components/asset-panel/icon--sound.svg');
@@ -26,7 +26,7 @@ class SoundLibrary extends React.Component {
         const idParts = md5ext.split('.');
         const md5 = idParts[0];
         const vm = this.props.vm;
-        vm.runtime.storage.load(AssetType.Sound, md5).then(soundAsset => {
+        vm.runtime.storage.load(vm.runtime.storage.AssetType.Sound, md5).then(soundAsset => {
             const sound = {
                 md5: md5ext,
                 name: soundItem.name,
@@ -77,9 +77,9 @@ class SoundLibrary extends React.Component {
 }
 
 SoundLibrary.propTypes = {
-    onRequestClose: React.PropTypes.func,
-    visible: React.PropTypes.bool,
-    vm: React.PropTypes.instanceOf(VM).isRequired
+    onRequestClose: PropTypes.func,
+    visible: PropTypes.bool,
+    vm: PropTypes.instanceOf(VM).isRequired
 };
 
 module.exports = SoundLibrary;

@@ -1,9 +1,10 @@
 const bindAll = require('lodash.bindall');
 const defaultsDeep = require('lodash.defaultsdeep');
+const PropTypes = require('prop-types');
 const React = require('react');
 const VMScratchBlocks = require('../lib/blocks');
 const VM = require('scratch-vm');
-
+const Prompt = require('./prompt.jsx');
 const BlocksComponent = require('../components/blocks/blocks.jsx');
 
 const addFunctionListener = (object, property, callback) => {
@@ -22,6 +23,9 @@ class Blocks extends React.Component {
         bindAll(this, [
             'attachVM',
             'detachVM',
+            'handlePromptStart',
+            'handlePromptCallback',
+            'handlePromptClose',
             'onScriptGlowOn',
             'onScriptGlowOff',
             'onBlockGlowOn',
@@ -31,7 +35,11 @@ class Blocks extends React.Component {
             'onWorkspaceMetricsChange',
             'setBlocks'
         ]);
-        this.state = {workspaceMetrics: {}};
+        this.ScratchBlocks.prompt = this.handlePromptStart;
+        this.state = {
+            workspaceMetrics: {},
+            prompt: null
+        };
     }
     componentDidMount () {
         const workspaceConfig = defaultsDeep({}, Blocks.defaultOptions, this.props.options);
@@ -43,8 +51,8 @@ class Blocks extends React.Component {
 
         this.attachVM();
     }
-    shouldComponentUpdate () {
-        return false;
+    shouldComponentUpdate (nextProps, nextState) {
+        return this.state.prompt !== nextState.prompt;
     }
     componentWillUnmount () {
         this.detachVM();
@@ -71,6 +79,7 @@ class Blocks extends React.Component {
         this.props.vm.removeListener('VISUAL_REPORT', this.onVisualReport);
         this.props.vm.removeListener('workspaceUpdate', this.onWorkspaceUpdate);
     }
+
     onWorkspaceMetricsChange () {
         const target = this.props.vm.editingTarget;
         if (target && target.id) {
@@ -123,6 +132,16 @@ class Blocks extends React.Component {
     setBlocks (blocks) {
         this.blocks = blocks;
     }
+    handlePromptStart (message, defaultValue, callback) {
+        this.setState({prompt: {callback, message, defaultValue}});
+    }
+    handlePromptCallback (data) {
+        this.state.prompt.callback(data);
+        this.handlePromptClose();
+    }
+    handlePromptClose () {
+        this.setState({prompt: null});
+    }
     render () {
         const {
             options, // eslint-disable-line no-unused-vars
@@ -130,36 +149,47 @@ class Blocks extends React.Component {
             ...props
         } = this.props;
         return (
-            <BlocksComponent
-                componentRef={this.setBlocks}
-                {...props}
-            />
+            <div>
+                <BlocksComponent
+                    componentRef={this.setBlocks}
+                    {...props}
+                />
+                {this.state.prompt ? (
+                    <Prompt
+                        label={this.state.prompt.message}
+                        placeholder={this.state.prompt.defaultValue}
+                        title="新建变量" // @todo the only prompt is for new variables
+                        onCancel={this.handlePromptClose}
+                        onOk={this.handlePromptCallback}
+                    />
+                ) : null}
+            </div>
         );
     }
 }
 
 Blocks.propTypes = {
-    options: React.PropTypes.shape({
-        media: React.PropTypes.string,
-        zoom: React.PropTypes.shape({
-            controls: React.PropTypes.boolean,
-            wheel: React.PropTypes.boolean,
-            startScale: React.PropTypes.number
+    options: PropTypes.shape({
+        media: PropTypes.string,
+        zoom: PropTypes.shape({
+            controls: PropTypes.boolean,
+            wheel: PropTypes.boolean,
+            startScale: PropTypes.number
         }),
-        colours: React.PropTypes.shape({
-            workspace: React.PropTypes.string,
-            flyout: React.PropTypes.string,
-            toolbox: React.PropTypes.string,
-            toolboxSelected: React.PropTypes.string,
-            scrollbar: React.PropTypes.string,
-            scrollbarHover: React.PropTypes.string,
-            insertionMarker: React.PropTypes.string,
-            insertionMarkerOpacity: React.PropTypes.number,
-            fieldShadow: React.PropTypes.string,
-            dragShadowOpacity: React.PropTypes.number
+        colours: PropTypes.shape({
+            workspace: PropTypes.string,
+            flyout: PropTypes.string,
+            toolbox: PropTypes.string,
+            toolboxSelected: PropTypes.string,
+            scrollbar: PropTypes.string,
+            scrollbarHover: PropTypes.string,
+            insertionMarker: PropTypes.string,
+            insertionMarkerOpacity: PropTypes.number,
+            fieldShadow: PropTypes.string,
+            dragShadowOpacity: PropTypes.number
         })
     }),
-    vm: React.PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired
 };
 
 Blocks.defaultOptions = {
