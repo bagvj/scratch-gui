@@ -2,11 +2,13 @@
 
 .page-wrapper {
     height: 100%;
+    flex-direction: column;
+    display: flex;
 }
 
 .body-wrapper {
     // height: calc(100% - $menu-bar-height);
-    height: 100%;
+    flex: 1;
     background-color: #e8edf1;
 }
 

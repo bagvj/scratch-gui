@@ -8,7 +8,7 @@ const TargetPane = require('../../containers/target-pane.jsx');
 const SoundTab = require('../../containers/sound-tab.jsx');
 const Stage = require('../../containers/stage.jsx');
 const StopAll = require('../../containers/stop-all.jsx');
-const MenuBar = require('../menu-bar/menu-bar.jsx');
+const Header = require('../menu-bar/Header.jsx');
 const {Tab, Tabs, TabList, TabPanel} = require('react-tabs');
 
 const Box = require('../box/box.jsx');
@@ -41,7 +41,7 @@ const GUIComponent = props => {
             className={styles.pageWrapper}
             {...componentProps}
         >
-            {/*<MenuBar />*/}
+            <Header />
             <Box className={styles.bodyWrapper}>
                 <Box className={styles.flexWrapper}>
                     <Box className={styles.editorWrapper}>
