@@ -10,6 +10,8 @@ const Stage = require('../../containers/stage.jsx');
 const StopAll = require('../../containers/stop-all.jsx');
 const Header = require('../menu-bar/Header.jsx');
 const {Tab, Tabs, TabList, TabPanel} = require('react-tabs');
+const LoadButton = require('../../containers/load-button.jsx');
+const SaveButton = require('../../containers/save-button.jsx');
 
 const Box = require('../box/box.jsx');
 const styles = require('./gui.css');
@@ -80,6 +82,9 @@ const GUIComponent = props => {
                         <Box className={styles.stageMenuWrapper} >
                             <GreenFlag vm={vm} />
                             <StopAll vm={vm} />
+                            <span className={styles.placeholder}></span>
+                            <LoadButton className={styles.button} />
+                            <SaveButton className={styles.button} />
                         </Box>
 
                         <Box className={styles.stageWrapper} >
