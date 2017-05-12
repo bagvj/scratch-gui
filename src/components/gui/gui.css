@@ -145,3 +145,20 @@
     height: $stage-menu-height;
     padding: $space;
 }
+
+.placeholder {
+    flex: 1;
+}
+
+.button {
+    width: 3.75rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #9AA1B5;
+    font-size: 13px;
+    text-align: center;
+}
+
+.button:hover {
+    color: #40B9F5;
+}
