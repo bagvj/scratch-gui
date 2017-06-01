@@ -15,7 +15,6 @@ const StopAll = require('../../containers/stop-all.jsx');
 
 const Box = require('../box/box.jsx');
 const Header = require('../menu-bar/header.jsx');
-const {Tab, Tabs, TabList, TabPanel} = require('react-tabs');
 const LoadButton = require('../../containers/load-button.jsx');
 const SaveButton = require('../../containers/save-button.jsx');
 
