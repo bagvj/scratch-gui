@@ -63,8 +63,10 @@ class Blocks extends React.Component {
         }
 
         // @todo hack to resize blockly manually in case resize happened while hidden
+        // @todo hack to reload the workspace due to gui bug #413
         if (this.props.isVisible) { // Scripts tab
             this.workspace.setVisible(true);
+            this.props.vm.refreshWorkspace();
             window.dispatchEvent(new Event('resize'));
             this.workspace.toolbox_.refreshSelection();
         } else {
@@ -225,7 +227,8 @@ Blocks.propTypes = {
             insertionMarkerOpacity: PropTypes.number,
             fieldShadow: PropTypes.string,
             dragShadowOpacity: PropTypes.number
-        })
+        }),
+        comments: PropTypes.bool
     }),
     vm: PropTypes.instanceOf(VM).isRequired
 };
@@ -252,7 +255,8 @@ Blocks.defaultOptions = {
         insertionMarkerOpacity: 0.2,
         fieldShadow: 'rgba(255, 255, 255, 0.3)',
         dragShadowOpacity: 0.6
-    }
+    },
+    comments: false
 };
 
 Blocks.defaultProps = {

@@ -125,6 +125,6 @@ GUIComponent.propTypes = {
     vm: PropTypes.instanceOf(VM).isRequired
 };
 GUIComponent.defaultProps = {
-    basePath: '/'
+    basePath: './'
 };
 module.exports = GUIComponent;
