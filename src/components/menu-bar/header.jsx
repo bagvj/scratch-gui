@@ -33,7 +33,8 @@ class Header extends React.Component {
                     <li><a href="http://www.kenrobot.com" target="_blank">首页</a></li>
                     <li><a href="http://edu.kenrobot.com" target="_blank">教育版</a></li>
                     <li><a href="http://ide.kenrobot.com" target="_blank">开发版</a></li>
-                    <li><a href="http://scratch.kenrobot.com" target="_blank">Scratch3(Beta版)</a></li>
+                    <li><a href="http://scratch2.kenrobot.com" target="_blank">Scratch2</a></li>
+                    <li><a href="http://scratch3.kenrobot.com" target="_blank">Scratch3(Beta版)</a></li>
                     <li><a href="http://www.kenrobot.com/index.php?app=square&mod=Index&act=help" target="_blank">帮助</a></li>
                 </ul>
             </div>
