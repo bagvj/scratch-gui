@@ -17,8 +17,9 @@ module.exports = {
         host: '0.0.0.0',
         port: process.env.PORT || 8500
     },
-    devtool: 'cheap-module-source-map',
+    // devtool: 'cheap-module-source-map',
     entry: {
+        index: './src/index.js',
         lib: ['react', 'react-dom'],
         gui: './src/index.jsx'
     },
@@ -92,7 +93,7 @@ module.exports = {
         }])
     ].concat(process.env.NODE_ENV === 'production' ? [
         new webpack.optimize.UglifyJsPlugin({
-            include: /\.min\.js$/,
+            // include: /\.min\.js$/,
             minimize: true
         })
     ] : [])

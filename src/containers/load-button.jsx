@@ -32,8 +32,7 @@ class LoadButton extends React.Component {
         } = this.props;
 
         var kenrobot = top.kenrobot;
-        var type = !!(kenrobot && kenrobot.postMessage && kenrobot.view);
-        return type ? (<span></span>) : (
+        return kenrobot.isPC ? (<span></span>) : (
             <LoadButtonComponent
                 inputRef={this.setFileInput}
                 onChange={this.handleChange}

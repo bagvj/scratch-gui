@@ -39,8 +39,7 @@ class SaveButton extends React.Component {
         } = this.props;
 
         var kenrobot = top.kenrobot;
-        var type = !!(kenrobot && kenrobot.postMessage && kenrobot.view);
-        return type ? (<span></span>) : (
+        return kenrobot.isPC ? (<span></span>) : (
             <ButtonComponent
                 onClick={this.handleClick}
                 {...props}

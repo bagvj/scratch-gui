@@ -1,46 +1,53 @@
 const React = require('react');
-const styles = require('./header.css');
-const logo = require('./logo.svg');
 const {connect} = require('react-redux');
+const ProjectLoader = require('../../lib/project-loader');
 
-class Header extends React.Component {
-    constructor (props) {
-        super(props);
-
-        this.state = {
-            type: "pc"
-        };
-    }
-
-    componentWillMount() {
-        var kenrobot = top.kenrobot;
-        if(!kenrobot || !kenrobot.postMessage || !kenrobot.view) {
-            this.setState({
-                type: "web"
-            });
+var whenReady = (function() {
+    var funcs = [];
+    var ready = false;
+    
+    function handler(e) {
+        if(ready) return;
+        
+        if(e.type === 'onreadystatechange' && document.readyState !== 'complete') {
             return;
         }
+        
+        for(var i=0; i<funcs.length; i++) {
+            funcs[i].call(document);
+        }
+        ready = true;
+        funcs = null;
+    }
+    if(document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', handler, false);
+        document.addEventListener('readystatechange', handler, false);
+        window.addEventListener('load', handler, false);
+    }else if(document.attachEvent) {
+        document.attachEvent('onreadystatechange', handler);
+        window.attachEvent('onload', handler);
+    }
 
-        kenrobot.view.getProject = this.props.getProject;
-        kenrobot.view.loadProject = this.props.loadProject;
+    return function whenReady(fn) {
+        if(ready) { fn.call(document); }
+        else { funcs.push(fn); }
+    }
+})();
+
+class Header extends React.Component {
+    componentWillMount() {
+        whenReady(_ => {
+            setTimeout(_ => {
+                kenrobot.view.getProject = this.props.getProject;
+                kenrobot.view.loadProject = this.props.loadProject;
+                var defaultProject = JSON.stringify(ProjectLoader.DEFAULT_PROJECT_DATA);
+                kenrobot.view.newProject = _ => this.props.loadProject(defaultProject);
+            }, 1000);
+        });
     }
 
     render() {
-        return this.state.type != "pc" ? (
-            <div className={styles.header}>
-                <a className={styles.logo} href="http://www.kenrobot.com" target="_blank"><img src={logo} /></a>
-                <ul className={styles.nav}>
-                    <li><a href="http://www.kenrobot.com" target="_blank">首页</a></li>
-                    <li><a href="http://edu.kenrobot.com" target="_blank">教育版</a></li>
-                    <li><a href="http://ide.kenrobot.com" target="_blank">开发版</a></li>
-                    <li><a href="http://scratch2.kenrobot.com" target="_blank">Scratch2</a></li>
-                    <li><a href="http://scratch3.kenrobot.com" target="_blank">Scratch3(Beta版)</a></li>
-                    <li><a href="http://www.kenrobot.com/index.php?app=square&mod=Index&act=help" target="_blank">帮助</a></li>
-                </ul>
-            </div>
-        ) : (
-            <div></div>
-        );
+        return (<div></div>);
     }
 };
 
