@@ -86,7 +86,7 @@
 		var doSave = _ => {
 			if(projectExtra.path) {
 				saveProject(kenrobot.view.getProject(), saveAs);
-			} else {
+			} else if(saveAs || !projectExtra.name) {
 				kenrobot.trigger("prompt", "show", {
 					title: "项目保存",
 					placeholder: "项目名字",
@@ -103,6 +103,8 @@
 						saveProject(kenrobot.view.getProject(), saveAs);
 					}
 				});
+			} else {
+				saveProject(kenrobot.view.getProject(), saveAs);
 			}
 		}
 
