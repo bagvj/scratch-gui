@@ -37,9 +37,7 @@ class SaveButton extends React.Component {
             saveProjectSb3, // eslint-disable-line no-unused-vars
             ...props
         } = this.props;
-
-        var kenrobot = top.kenrobot;
-        return kenrobot.isPC ? (<span></span>) : (
+        return (
             <ButtonComponent
                 onClick={this.handleClick}
                 {...props}

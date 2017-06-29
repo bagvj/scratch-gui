@@ -30,9 +30,7 @@ class LoadButton extends React.Component {
             loadProject, // eslint-disable-line no-unused-vars
             ...props
         } = this.props;
-
-        var kenrobot = top.kenrobot;
-        return kenrobot.isPC ? (<span></span>) : (
+        return (
             <LoadButtonComponent
                 inputRef={this.setFileInput}
                 onChange={this.handleChange}

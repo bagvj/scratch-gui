@@ -1,0 +1,25 @@
+.header {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.header span {
+	display: inline-block;
+	margin-right: 10px;
+	color: #9AA1B5;
+	font-size: 14px;
+	cursor: pointer;
+	width: 60px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+
+.header span:hover {
+	color: #197cd9;
+}
+
+.header span:last-of-type {
+    margin-right: 0;
+}

@@ -15,8 +15,6 @@ const StopAll = require('../../containers/stop-all.jsx');
 
 const Box = require('../box/box.jsx');
 const Header = require('../menu-bar/header.jsx');
-const LoadButton = require('../../containers/load-button.jsx');
-const SaveButton = require('../../containers/save-button.jsx');
 
 const styles = require('./gui.css');
 
@@ -95,8 +93,6 @@ const GUIComponent = props => {
                             <GreenFlag vm={vm} />
                             <StopAll vm={vm} />
                             <span className={styles.placeholder}></span>
-                            <LoadButton className={styles.button} />
-                            <SaveButton className={styles.button} />
                         </Box>
 
                         <Box className={styles.stageWrapper} >
