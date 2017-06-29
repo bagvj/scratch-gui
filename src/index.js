@@ -39,8 +39,9 @@
 			return;
 		}
 
+		kenrobot.viewType = "scratch3";
 		registerShortcut();
-		kenrobot.on("app", "command", onCommand);
+		kenrobot.on("app", "command", onCommand).on("project", "open-by", onProjectOpenBy);
 	}
 
 	function onCommand(command, ...args) {
