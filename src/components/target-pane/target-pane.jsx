@@ -78,6 +78,7 @@ const TargetPane = ({
 
                 <button
                     className={classNames(styles.addButtonWrapper, styles.addButtonWrapperSprite)}
+                    title="Ìí¼Ó½ÇÉ«"
                     onClick={onNewSpriteClick}
                 >
                     <img
@@ -88,6 +89,7 @@ const TargetPane = ({
 
                 <button
                     className={classNames(styles.addButtonWrapper, styles.addButtonWrapperStage)}
+                    title="Ìí¼Ó±³¾°"
                     onClick={onNewBackdropClick}
                 >
                     <img
