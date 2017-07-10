@@ -1,7 +1,7 @@
-const React = require('react');
-const {connect} = require('react-redux');
-const ProjectLoader = require('../../lib/project-loader');
-const style = require('./header.css');
+import React from 'react';
+import {connect} from 'react-redux';
+import ProjectLoader from '../../lib/project-loader';
+import style from './header.css';
 
 var whenReady = (function() {
     var funcs = [];
@@ -39,10 +39,12 @@ class Header extends React.Component {
     componentWillMount() {
         whenReady(_ => {
             var kenrobot = top.kenrobot;
-            kenrobot.view.getProject = this.props.getProject;
-            kenrobot.view.loadProject = this.props.loadProject;
-            var defaultProject = JSON.stringify(ProjectLoader.DEFAULT_PROJECT_DATA);
-            kenrobot.view.newProject = _ => this.props.loadProject(defaultProject);
+            if(kenrobot && kenrobot.view) {
+                kenrobot.view.getProject = this.props.getProject;
+                kenrobot.view.loadProject = this.props.loadProject;
+                var defaultProject = JSON.stringify(ProjectLoader.DEFAULT_PROJECT_DATA);
+                kenrobot.view.newProject = _ => this.props.loadProject(defaultProject);
+            }
         });
     }
 
@@ -58,7 +60,7 @@ class Header extends React.Component {
 
     render() {
         var kenrobot = top.kenrobot;
-        return kenrobot.isPC ? (<span></span>) : (
+        return kenrobot && kenrobot.isPC ? (<span></span>) : (
             <div className={style.header}><span onClick={_ => this.onOpenClick()}>打开</span><span onClick={_ => this.onSaveClick()}>保存</span></div>
         );
     }
