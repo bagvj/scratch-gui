@@ -1,0 +1,12 @@
+[
+  {
+    "id": "action.recordSound",
+    "description": "Button to record a sound in the editor tab",
+    "defaultMessage": "记录声音"
+  },
+  {
+    "id": "action.addSound",
+    "description": "Button to add a sound in the editor tab",
+    "defaultMessage": "添加声音"
+  }
+]

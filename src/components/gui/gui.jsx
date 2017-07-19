@@ -70,7 +70,7 @@ const GUIComponent = props => {
                                 <Box className={styles.blocksWrapper}>
                                     <Blocks
                                         grow={1}
-                                        isVisible={tabIndex === 0} // Scripts tab
+                                        isVisible={tabIndex === 0} // Blocks tab
                                         options={{
                                             // media: `${basePath}static/blocks-media/`
                                             media: `static/blocks-media/`
