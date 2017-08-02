@@ -7,6 +7,6 @@
   {
     "id": "action.addCostume",
     "description": "Button to add a costume in the editor tab",
-    "defaultMessage": "添加造型e"
+    "defaultMessage": "添加造型"
   }
 ]

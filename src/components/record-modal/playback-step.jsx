@@ -62,7 +62,7 @@ const PlaybackStep = props => (
                 disabled={props.encoding}
                 onClick={props.onSubmit}
             >
-                {props.encoding ? 'º”‘ÿ÷–...' : '±£¥Ê'}
+                {props.encoding ? 'ËΩΩÂÖ•‰∏≠' : '‰øùÂ≠ò'}
             </button>
         </Box>
     </Box>
@@ -83,4 +83,4 @@ PlaybackStep.propTypes = {
     trimStart: PropTypes.number.isRequired
 };
 
-module.exports = PlaybackStep;
+export default PlaybackStep;

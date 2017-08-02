@@ -20,7 +20,7 @@ class SpriteSelectorItem extends React.Component {
     }
     handleDelete () {
         // eslint-disable-next-line no-alert
-        if (window.confirm('确定要删除这个Sprite吗？')) {
+        if (window.confirm('确定要删除这个角色吗？')) {
             this.props.onDeleteButtonClick(this.props.id);
         }
     }
@@ -58,6 +58,6 @@ const mapStateToProps = (state, {assetId, costumeURL}) => ({
     costumeURL: costumeURL || (assetId && state.vm.runtime.storage.get(assetId).encodeDataURI())
 });
 
-module.exports = connect(
+export default connect(
     mapStateToProps
 )(SpriteSelectorItem);

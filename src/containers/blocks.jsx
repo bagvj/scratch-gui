@@ -237,7 +237,7 @@ Blocks.defaultOptions = {
     zoom: {
         controls: true,
         wheel: true,
-        startScale: 0.75
+        startScale: 0.675
     },
     grid: {
         spacing: 40,
@@ -263,4 +263,4 @@ Blocks.defaultProps = {
     options: Blocks.defaultOptions
 };
 
-module.exports = Blocks;
+export default Blocks;

@@ -37,4 +37,4 @@ StopAllComponent.defaultProps = {
     title: '停止'
 };
 
-module.exports = StopAllComponent;
+export default StopAllComponent;

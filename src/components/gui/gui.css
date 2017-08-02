@@ -121,7 +121,8 @@
         If and when the width doesn't need to be fixed, we can move the spacing out
         of this calc, and into padding instead
     */
-    flex-basis: calc(480px + ($space * 2));
+    /* flex-basis: calc(480px + ($space * 2)); */
+    flex-basis: calc(480px + 50px);
 }
 
 .stage-wrapper {

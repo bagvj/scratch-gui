@@ -16,7 +16,7 @@ Translation files are in Chrome i18n json format:
 '''
 They are named by locale, for example: 'fr.json' or 'zh-cn.json'
 
-Current languages supported are listed in ../languages.json
+Current languages supported are listed in ../src/languages.json
 
 Converts the collection of translation files to a single set of messages.
 Example output:
@@ -42,12 +42,11 @@ Missing locales are ignored, react-intl will use the default messages for them.
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
-const languages = require('../languages.json');
 
+const locales = ['en', 'es', 'fr'];
 const LANG_DIR = './translations/';
 const MSGS_DIR = './locale/';
 
-const locales = Object.keys(languages);
 let messages = locales.reduce((collection, lang) => {
     let langMessages = {};
     try {

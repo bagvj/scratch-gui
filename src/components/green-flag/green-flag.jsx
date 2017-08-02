@@ -34,4 +34,4 @@ GreenFlagComponent.defaultProps = {
     active: false,
     title: '运行'
 };
-module.exports = GreenFlagComponent;
+export default GreenFlagComponent;

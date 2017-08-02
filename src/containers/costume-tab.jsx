@@ -9,10 +9,10 @@ import addCostumeIcon from '../components/asset-panel/icon--add-costume-lib.svg'
 
 import {connect} from 'react-redux';
 
-const {
+import {
     openCostumeLibrary,
     openBackdropLibrary
-} = require('../reducers/modals');
+} from '../reducers/modals';
 
 class CostumeTab extends React.Component {
     constructor (props) {
@@ -70,7 +70,7 @@ class CostumeTab extends React.Component {
         );
         const addCostumeMsg = (
             <FormattedMessage
-                defaultMessage="添加造型e"
+                defaultMessage="添加造型"
                 description="Button to add a costume in the editor tab"
                 id="action.addCostume"
             />
@@ -134,7 +134,7 @@ const mapDispatchToProps = dispatch => ({
     }
 });
 
-module.exports = connect(
+export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(CostumeTab);

@@ -33,4 +33,4 @@ LoadButtonComponent.propTypes = {
 LoadButtonComponent.defaultProps = {
     title: '打开'
 };
-module.exports = LoadButtonComponent;
+export default LoadButtonComponent;

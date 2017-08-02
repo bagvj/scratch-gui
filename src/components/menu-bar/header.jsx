@@ -71,4 +71,4 @@ const mapStateToProps = state => ({
     loadProject: state.vm.fromJSON.bind(state.vm),
 });
 
-module.exports = connect(mapStateToProps, () => ({}))(Header);
+export default connect(mapStateToProps, () => ({}))(Header);
