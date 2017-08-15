@@ -32,72 +32,72 @@ const messages = defineMessages({
     sound: {
         id: 'soundEditor.sound',
         description: 'Lable for the name of the sound',
-        defaultMessage: 'ÉùÒô'
+        defaultMessage: 'å£°éŸ³'
     },
     play: {
         id: 'soundEditor.play',
         description: 'Title of the button to start playing the sound',
-        defaultMessage: '²¥·Å'
+        defaultMessage: 'æ’­æ”¾'
     },
     stop: {
         id: 'soundEditor.stop',
         description: 'Title of the button to stop the sound',
-        defaultMessage: 'Í£Ö¹'
+        defaultMessage: 'åœæ­¢'
     },
     trim: {
-        id: 'soundEditor.ĞŞ¼ô',
+        id: 'soundEditor.trim',
         description: 'Title of the button to start trimminging the sound',
-        defaultMessage: 'Trim'
+        defaultMessage: 'ä¿®å‰ª'
     },
     save: {
         id: 'soundEditor.save',
         description: 'Title of the button to save trimmed sound',
-        defaultMessage: '±£´æ'
+        defaultMessage: 'ä¿å­˜'
     },
     undo: {
         id: 'soundEditor.undo',
         description: 'Title of the button to undo',
-        defaultMessage: '³·Ïû'
+        defaultMessage: 'æ’¤æ¶ˆ'
     },
     redo: {
         id: 'soundEditor.redo',
         description: 'Title of the button to redo',
-        defaultMessage: 'ÖØ×ö'
+        defaultMessage: 'é‡åš'
     },
     faster: {
         id: 'soundEditor.faster',
         description: 'Title of the button to apply the faster effect',
-        defaultMessage: '¿ì½ø'
+        defaultMessage: 'åŠ å¿«'
     },
     slower: {
         id: 'soundEditor.slower',
         description: 'Title of the button to apply the slower effect',
-        defaultMessage: '¼õÂı'
+        defaultMessage: 'å‡æ…¢'
     },
     echo: {
         id: 'soundEditor.echo',
         description: 'Title of the button to apply the echo effect',
-        defaultMessage: '»ØÉù'
+        defaultMessage: 'å›å£°'
     },
     robot: {
         id: 'soundEditor.robot',
         description: 'Title of the button to apply the robot effect',
-        defaultMessage: '»úÆ÷'
+        defaultMessage: 'æœºå™¨'
     },
     louder: {
         id: 'soundEditor.louder',
         description: 'Title of the button to apply the louder effect',
-        defaultMessage: 'ÏìÁÁ'
+        defaultMessage: 'å“äº®'
     },
     softer: {
         id: 'soundEditor.softer',
         description: 'Title of the button to apply thr.softer effect',
-        defaultMessage: 'Æ½»¬'
+        defaultMessage: 'æŸ”å’Œ'
     },
     reverse: {
         id: 'soundEditor.reverse',
         description: 'Title of the button to apply the reverse effect',
-        defaultMessage: '·´×ª'
+        defaultMessage: 'åè½¬'
     }
 });
 

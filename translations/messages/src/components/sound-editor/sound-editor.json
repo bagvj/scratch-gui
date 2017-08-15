@@ -2,71 +2,71 @@
   {
     "id": "soundEditor.sound",
     "description": "Lable for the name of the sound",
-    "defaultMessage": "����"
+    "defaultMessage": "声音"
   },
   {
     "id": "soundEditor.play",
     "description": "Title of the button to start playing the sound",
-    "defaultMessage": "����"
+    "defaultMessage": "播放"
   },
   {
     "id": "soundEditor.stop",
     "description": "Title of the button to stop the sound",
-    "defaultMessage": "ֹͣ"
+    "defaultMessage": "停止"
   },
   {
-    "id": "soundEditor.�޼�",
+    "id": "soundEditor.trim",
     "description": "Title of the button to start trimminging the sound",
-    "defaultMessage": "Trim"
+    "defaultMessage": "修剪"
   },
   {
     "id": "soundEditor.save",
     "description": "Title of the button to save trimmed sound",
-    "defaultMessage": "����"
+    "defaultMessage": "保存"
   },
   {
     "id": "soundEditor.undo",
     "description": "Title of the button to undo",
-    "defaultMessage": "����"
+    "defaultMessage": "撤消"
   },
   {
     "id": "soundEditor.redo",
     "description": "Title of the button to redo",
-    "defaultMessage": "����"
+    "defaultMessage": "重做"
   },
   {
     "id": "soundEditor.faster",
     "description": "Title of the button to apply the faster effect",
-    "defaultMessage": "����"
+    "defaultMessage": "加快"
   },
   {
     "id": "soundEditor.slower",
     "description": "Title of the button to apply the slower effect",
-    "defaultMessage": "����"
+    "defaultMessage": "减慢"
   },
   {
     "id": "soundEditor.echo",
     "description": "Title of the button to apply the echo effect",
-    "defaultMessage": "����"
+    "defaultMessage": "回声"
   },
   {
     "id": "soundEditor.robot",
     "description": "Title of the button to apply the robot effect",
-    "defaultMessage": "����"
+    "defaultMessage": "机器"
   },
   {
     "id": "soundEditor.louder",
     "description": "Title of the button to apply the louder effect",
-    "defaultMessage": "����"
+    "defaultMessage": "响亮"
   },
   {
     "id": "soundEditor.softer",
     "description": "Title of the button to apply thr.softer effect",
-    "defaultMessage": "ƽ��"
+    "defaultMessage": "柔和"
   },
   {
     "id": "soundEditor.reverse",
     "description": "Title of the button to apply the reverse effect",
-    "defaultMessage": "��ת"
+    "defaultMessage": "反转"
   }
 ]

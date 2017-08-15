@@ -73,8 +73,7 @@ const GUIComponent = props => {
                                         grow={1}
                                         isVisible={tabIndex === 0} // Blocks tab
                                         options={{
-                                            // media: `${basePath}static/blocks-media/`
-                                            media: `static/blocks-media/`
+                                            media: `${basePath}static/blocks-media/`
                                         }}
                                         vm={vm}
                                     />
