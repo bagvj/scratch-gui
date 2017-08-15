@@ -1,0 +1,72 @@
+[
+  {
+    "id": "soundEditor.sound",
+    "description": "Lable for the name of the sound",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.play",
+    "description": "Title of the button to start playing the sound",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.stop",
+    "description": "Title of the button to stop the sound",
+    "defaultMessage": "ֹͣ"
+  },
+  {
+    "id": "soundEditor.�޼�",
+    "description": "Title of the button to start trimminging the sound",
+    "defaultMessage": "Trim"
+  },
+  {
+    "id": "soundEditor.save",
+    "description": "Title of the button to save trimmed sound",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.undo",
+    "description": "Title of the button to undo",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.redo",
+    "description": "Title of the button to redo",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.faster",
+    "description": "Title of the button to apply the faster effect",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.slower",
+    "description": "Title of the button to apply the slower effect",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.echo",
+    "description": "Title of the button to apply the echo effect",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.robot",
+    "description": "Title of the button to apply the robot effect",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.louder",
+    "description": "Title of the button to apply the louder effect",
+    "defaultMessage": "����"
+  },
+  {
+    "id": "soundEditor.softer",
+    "description": "Title of the button to apply thr.softer effect",
+    "defaultMessage": "ƽ��"
+  },
+  {
+    "id": "soundEditor.reverse",
+    "description": "Title of the button to apply the reverse effect",
+    "defaultMessage": "��ת"
+  }
+]

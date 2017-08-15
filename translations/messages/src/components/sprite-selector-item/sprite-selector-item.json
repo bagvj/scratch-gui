@@ -1,0 +1,7 @@
+[
+  {
+    "id": "contextMenu.delete",
+    "description": "Menu item to delete in the right click menu",
+    "defaultMessage": "delete"
+  }
+]
