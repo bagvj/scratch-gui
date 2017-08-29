@@ -22,8 +22,8 @@ module.exports = {
         index: './src/index.js',
         lib: ['react', 'react-dom'],
         gui: './src/index.jsx',
-        blocksonly: './src/examples/blocks-only.jsx',
-        player: './src/examples/player.jsx'
+        // blocksonly: './src/examples/blocks-only.jsx',
+        // player: './src/examples/player.jsx'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
