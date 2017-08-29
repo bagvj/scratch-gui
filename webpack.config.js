@@ -82,22 +82,22 @@ module.exports = {
             filename: 'lib.min.js'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['lib', 'gui'],
+            chunks: ['lib', 'gui', 'index'],
             template: 'src/index.ejs',
-            title: 'Scratch 3.0 GUI'
+            title: '啃萝卜平台 - Make it easy!'
         }),
-        new HtmlWebpackPlugin({
-            chunks: ['lib', 'blocksonly'],
-            template: 'src/index.ejs',
-            filename: 'blocks-only.html',
-            title: 'Scratch 3.0 GUI: Blocks Only Example'
-        }),
-        new HtmlWebpackPlugin({
-            chunks: ['lib', 'player'],
-            template: 'src/index.ejs',
-            filename: 'player.html',
-            title: 'Scratch 3.0 GUI: Player Example'
-        }),
+        // new HtmlWebpackPlugin({
+        //     chunks: ['lib', 'blocksonly'],
+        //     template: 'src/index.ejs',
+        //     filename: 'blocks-only.html',
+        //     title: 'Scratch 3.0 GUI: Blocks Only Example'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     chunks: ['lib', 'player'],
+        //     template: 'src/index.ejs',
+        //     filename: 'player.html',
+        //     title: 'Scratch 3.0 GUI: Player Example'
+        // }),
         new CopyWebpackPlugin([{
             from: 'node_modules/scratch-blocks/media',
             to: 'static/blocks-media'
