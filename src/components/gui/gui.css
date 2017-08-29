@@ -115,6 +115,9 @@
     */
     display: flex;
     flex-direction: column;
+
+    /* Fix the max width to max stage size (defined in layout_constants.js) + gutter size */
+    max-width: calc(480px + calc($space * 2));
 }
 
 .stage-wrapper {
@@ -126,10 +129,7 @@
 }
 
 .target-wrapper {
-    /*  Take all the available vertical space available.
-        Works in tandem with height: 100%; which is set on the child: .targetPane
-        @todo: Not working in Safari, not great in FFx
-    */
+    display: flex;
     flex-grow: 1;
     flex-basis: 0;
 
@@ -150,21 +150,4 @@
     align-items: center;
     height: $stage-menu-height;
     padding: $space;
-}
-
-.placeholder {
-    flex: 1;
-}
-
-.button {
-    width: 3.75rem;
-    height: 2rem;
-    line-height: 2rem;
-    color: #9AA1B5;
-    font-size: 13px;
-    text-align: center;
-}
-
-.button:hover {
-    color: #40B9F5;
 }

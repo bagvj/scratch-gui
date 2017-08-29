@@ -3,5 +3,10 @@
     "id": "targetPane.addBackdrop",
     "description": "Button to add a backdrop in the target pane",
     "defaultMessage": "添加背景"
+  },
+  {
+    "id": "stageSelector.backdrops",
+    "description": "Label for the backdrops in the stage selector",
+    "defaultMessage": "背景"
   }
 ]

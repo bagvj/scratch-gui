@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import ProjectLoader from '../../lib/project-loader';
+import {ProjectLoader} from '../../lib/project-loader-hoc.jsx';
 import style from './header.css';
 
 var whenReady = (function() {

@@ -29,19 +29,24 @@ export default function (vm) {
     };
 
     const soundsMenu = function () {
-        const sounds = vm.editingTarget.sprite.sounds;
-        if (sounds.length === 0) {
-            return [['', '']];
+        if (vm.editingTarget && vm.editingTarget.sprite.sounds.length > 0) {
+            return vm.editingTarget.sprite.sounds.map(sound => [sound.name, sound.name]);
         }
-        return sounds.map(sound => [sound.name, sound.name]);
+        return [['', '']];
     };
 
     const costumesMenu = function () {
-        return vm.editingTarget.sprite.costumes.map(costume => [costume.name, costume.name]);
+        if (vm.editingTarget && vm.editingTarget.sprite.costumes.length > 0) {
+            return vm.editingTarget.sprite.costumes.map(costume => [costume.name, costume.name]);
+        }
+        return [['', '']];
     };
 
     const backdropsMenu = function () {
-        return vm.runtime.targets[0].sprite.costumes.map(costume => [costume.name, costume.name]);
+        if (vm.runtime.targets[0] && vm.runtime.targets[0].sprite.costumes.length > 0) {
+            return vm.runtime.targets[0].sprite.costumes.map(costume => [costume.name, costume.name]);
+        }
+        return [['', '']];
     };
 
     const spriteMenu = function () {
@@ -100,16 +105,24 @@ export default function (vm) {
         this.jsonInit(json);
     };
 
+    ScratchBlocks.Blocks.motion_glideto_menu.init = function () {
+        const json = jsonForMenuBlock('TO', spriteMenu, motionColors, [
+            ['鼠标指针', '_mouse_'],
+            ['随机位置', '_random_']
+        ]);
+        this.jsonInit(json);
+    };
+
     ScratchBlocks.Blocks.sensing_of_object_menu.init = function () {
         const json = jsonForMenuBlock('OBJECT', spriteMenu, sensingColors, [
-            ['Stage', '_stage_']
+            ['舞台', '_stage_']
         ]);
         this.jsonInit(json);
     };
 
     ScratchBlocks.Blocks.sensing_videoonmenutwo.init = function () {
         const json = jsonForMenuBlock('VIDEOONMENU2', spriteMenu, sensingColors, [
-            ['stage', 'STAGE']
+            ['舞台', 'STAGE']
         ]);
         this.jsonInit(json);
     };
