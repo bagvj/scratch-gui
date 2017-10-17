@@ -1,12 +1,12 @@
 [
   {
-    "id": "action.addBackdrop",
+    "id": "gui.costumeTab.addBackdrop",
     "description": "Button to add a backdrop in the editor tab",
-    "defaultMessage": "添加背景"
+    "defaultMessage": "Add Backdrop"
   },
   {
-    "id": "action.addCostume",
+    "id": "gui.costumeTab.addCostume",
     "description": "Button to add a costume in the editor tab",
-    "defaultMessage": "添加造型"
+    "defaultMessage": "Add Costume"
   }
 ]

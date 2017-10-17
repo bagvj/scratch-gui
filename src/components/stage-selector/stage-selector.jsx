@@ -11,9 +11,9 @@ import backdropIcon from './icon--backdrop.svg';
 
 const addBackdropMessage = (
     <FormattedMessage
-        defaultMessage="添加背景"
+        defaultMessage="Add Backdrop"
         description="Button to add a backdrop in the target pane"
-        id="targetPane.addBackdrop"
+        id="gui.stageSelector.targetPaneAddBackdrop"
     />
 );
 
@@ -35,7 +35,13 @@ const StageSelector = props => {
             {...componentProps}
         >
             <div className={styles.header}>
-                <div className={styles.headerTitle}>舞台</div>
+                <div className={styles.headerTitle}>
+                    <FormattedMessage
+                        defaultMessage="Stage"
+                        description="Label for the stage in the stage selector"
+                        id="gui.stageSelector.stage"
+                    />
+                </div>
             </div>
             {url ? (
                 <CostumeCanvas
@@ -47,9 +53,9 @@ const StageSelector = props => {
             ) : null}
             <div className={styles.label}>
                 <FormattedMessage
-                    defaultMessage="背景"
+                    defaultMessage="Backdrops"
                     description="Label for the backdrops in the stage selector"
-                    id="stageSelector.backdrops"
+                    id="gui.stageSelector.backdrops"
                 />
             </div>
             <div className={styles.count}>{backdropCount}</div>

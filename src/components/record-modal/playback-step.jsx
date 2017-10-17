@@ -9,6 +9,30 @@ import styles from './record-modal.css';
 import backIcon from './icon--back.svg';
 import stopIcon from './icon--stop-playback.svg';
 import playIcon from './icon--play.svg';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
+
+const messages = defineMessages({
+    loading: {
+        id: "gui.playbackStep.loading",
+        description: "Button to loading in the playback-step",
+        defaultMessage: "Loading"
+    },
+    save: {
+        id: "gui.playbackStep.save",
+        description: "Button to save in the playback-step",
+        defaultMessage: "Save"
+    },
+    play: {
+        id: "gui.playbackStep.play",
+        description: "Button to play in the playback-step",
+        defaultMessage: "Play"
+    },
+    stop: {
+        id: "gui.playbackStep.stop",
+        description: "Button to stop in the playback-step",
+        defaultMessage: "Stop"
+    },
+})
 
 const PlaybackStep = props => (
     <Box>
@@ -45,7 +69,7 @@ const PlaybackStep = props => (
                 <img src={props.playing ? stopIcon : playIcon} />
                 <div className={styles.helpText}>
                     <span className={styles.playingText}>
-                        {props.playing ? 'Stop' : 'Play'}
+                        {props.playing ? this.props.intl.formatMessage(messages.stop) : this.props.intl.formatMessage(messages.play)}
                     </span>
                 </div>
             </button>
@@ -62,7 +86,7 @@ const PlaybackStep = props => (
                 disabled={props.encoding}
                 onClick={props.onSubmit}
             >
-                {props.encoding ? '载入中' : '保存'}
+                {props.encoding ? this.props.intl.formatMessage(messages.loading) : this.props.intl.formatMessage(messages.save)}
             </button>
         </Box>
     </Box>
@@ -80,7 +104,9 @@ PlaybackStep.propTypes = {
     playhead: PropTypes.number,
     playing: PropTypes.bool.isRequired,
     trimEnd: PropTypes.number.isRequired,
-    trimStart: PropTypes.number.isRequired
+    trimStart: PropTypes.number.isRequired,
+    intl: intlShape,
 };
 
-export default PlaybackStep;
+// export default PlaybackStep;
+export default injectIntl(PlaybackStep);

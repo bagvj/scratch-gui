@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.greenFlag.go",
+    "description": "Button to run blocks in the green-flag",
+    "defaultMessage": "Go"
+  }
+]

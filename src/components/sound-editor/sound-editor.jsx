@@ -30,74 +30,74 @@ const BufferedInput = BufferedInputHOC(Input);
 
 const messages = defineMessages({
     sound: {
-        id: 'soundEditor.sound',
-        description: 'Lable for the name of the sound',
-        defaultMessage: '声音'
+        id: 'gui.soundEditor.sound',
+        description: 'Label for the name of the sound',
+        defaultMessage: 'Sound'
     },
     play: {
-        id: 'soundEditor.play',
+        id: 'gui.soundEditor.play',
         description: 'Title of the button to start playing the sound',
-        defaultMessage: '播放'
+        defaultMessage: 'Play'
     },
     stop: {
-        id: 'soundEditor.stop',
+        id: 'gui.soundEditor.stop',
         description: 'Title of the button to stop the sound',
-        defaultMessage: '停止'
+        defaultMessage: 'Stop'
     },
     trim: {
-        id: 'soundEditor.trim',
+        id: 'gui.soundEditor.trim',
         description: 'Title of the button to start trimminging the sound',
-        defaultMessage: '修剪'
+        defaultMessage: 'Trim'
     },
     save: {
-        id: 'soundEditor.save',
+        id: 'gui.soundEditor.save',
         description: 'Title of the button to save trimmed sound',
-        defaultMessage: '保存'
+        defaultMessage: 'Save'
     },
     undo: {
-        id: 'soundEditor.undo',
+        id: 'gui.soundEditor.undo',
         description: 'Title of the button to undo',
-        defaultMessage: '撤消'
+        defaultMessage: 'Undo'
     },
     redo: {
-        id: 'soundEditor.redo',
+        id: 'gui.soundEditor.redo',
         description: 'Title of the button to redo',
-        defaultMessage: '重做'
+        defaultMessage: 'Redo'
     },
     faster: {
-        id: 'soundEditor.faster',
+        id: 'gui.soundEditor.faster',
         description: 'Title of the button to apply the faster effect',
-        defaultMessage: '加快'
+        defaultMessage: 'Faster'
     },
     slower: {
-        id: 'soundEditor.slower',
+        id: 'gui.soundEditor.slower',
         description: 'Title of the button to apply the slower effect',
-        defaultMessage: '减慢'
+        defaultMessage: 'Slower'
     },
     echo: {
-        id: 'soundEditor.echo',
+        id: 'gui.soundEditor.echo',
         description: 'Title of the button to apply the echo effect',
-        defaultMessage: '回声'
+        defaultMessage: 'Echo'
     },
     robot: {
-        id: 'soundEditor.robot',
+        id: 'gui.soundEditor.robot',
         description: 'Title of the button to apply the robot effect',
-        defaultMessage: '机器'
+        defaultMessage: 'Robot'
     },
     louder: {
-        id: 'soundEditor.louder',
+        id: 'gui.soundEditor.louder',
         description: 'Title of the button to apply the louder effect',
-        defaultMessage: '响亮'
+        defaultMessage: 'Louder'
     },
     softer: {
-        id: 'soundEditor.softer',
+        id: 'gui.soundEditor.softer',
         description: 'Title of the button to apply thr.softer effect',
-        defaultMessage: '柔和'
+        defaultMessage: 'Softer'
     },
     reverse: {
-        id: 'soundEditor.reverse',
+        id: 'gui.soundEditor.reverse',
         description: 'Title of the button to apply the reverse effect',
-        defaultMessage: '反转'
+        defaultMessage: 'Reverse'
     }
 });
 

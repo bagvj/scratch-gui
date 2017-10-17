@@ -1,12 +1,12 @@
 [
   {
-    "id": "action.recordSound",
+    "id": "gui.soundTab.recordSound",
     "description": "Button to record a sound in the editor tab",
-    "defaultMessage": "记录声音"
+    "defaultMessage": "Record Sound"
   },
   {
-    "id": "action.addSound",
+    "id": "gui.soundTab.addSound",
     "description": "Button to add a sound in the editor tab",
-    "defaultMessage": "添加声音"
+    "defaultMessage": "Add Sound"
   }
 ]

@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.loadButton.load",
+    "description": "Button for the load project in the load-button",
+    "defaultMessage": "Load"
+  }
+]

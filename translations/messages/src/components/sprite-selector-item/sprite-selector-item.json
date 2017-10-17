@@ -1,6 +1,11 @@
 [
   {
-    "id": "contextMenu.delete",
+    "id": "gui.spriteSelectorItem.contextMenuDuplicate",
+    "description": "Menu item to duplicate in the right click menu",
+    "defaultMessage": "duplicate"
+  },
+  {
+    "id": "gui.spriteSelectorItem.contextMenuDelete",
     "description": "Menu item to delete in the right click menu",
     "defaultMessage": "delete"
   }

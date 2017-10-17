@@ -24,9 +24,9 @@ import addExtensionIcon from './icon--extensions.svg';
 
 const addExtensionMessage = (
     <FormattedMessage
-        defaultMessage="扩展"
+        defaultMessage="Extensions"
         description="Button to add an extension in the target pane"
-        id="targetPane.addExtension"
+        id="gui.gui.addExtension"
     />
 );
 
@@ -75,9 +75,27 @@ const GUIComponent = props => {
                             onSelect={onTabSelect}
                         >
                             <TabList className={tabClassNames.tabList}>
-                                <Tab className={tabClassNames.tab}>脚本</Tab>
-                                <Tab className={tabClassNames.tab}>造型</Tab>
-                                <Tab className={tabClassNames.tab}>声音</Tab>
+                                <Tab className={tabClassNames.tab}>
+                                    <FormattedMessage
+                                        defaultMessage="Blocks"
+                                        description="Tab label in the gui tabs"
+                                        id="gui.gui.blocks"
+                                    />
+                                </Tab>
+                                <Tab className={tabClassNames.tab}>
+                                    <FormattedMessage
+                                        defaultMessage="Costumes"
+                                        description="Tab label in the gui tabs"
+                                        id="gui.gui.costumes"
+                                    />
+                                </Tab>
+                                <Tab className={tabClassNames.tab}>
+                                    <FormattedMessage
+                                        defaultMessage="Sounds"
+                                        description="Tab label in the gui tabs"
+                                        id="gui.gui.sounds"
+                                    />
+                                </Tab>
                             </TabList>
                             <TabPanel className={tabClassNames.tabPanel}>
                                 <Box className={styles.blocksWrapper}>

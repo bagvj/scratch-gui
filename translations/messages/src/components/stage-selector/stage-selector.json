@@ -1,12 +1,17 @@
 [
   {
-    "id": "targetPane.addBackdrop",
+    "id": "gui.stageSelector.targetPaneAddBackdrop",
     "description": "Button to add a backdrop in the target pane",
-    "defaultMessage": "添加背景"
+    "defaultMessage": "Add Backdrop"
   },
   {
-    "id": "stageSelector.backdrops",
+    "id": "gui.stageSelector.stage",
+    "description": "Label for the stage in the stage selector",
+    "defaultMessage": "Stage"
+  },
+  {
+    "id": "gui.stageSelector.backdrops",
     "description": "Label for the backdrops in the stage selector",
-    "defaultMessage": "背景"
+    "defaultMessage": "Backdrops"
   }
 ]

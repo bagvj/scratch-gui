@@ -13,6 +13,16 @@ import {connect} from 'react-redux';
 import {updateToolbox} from '../reducers/toolbox';
 import {activateColorPicker} from '../reducers/color-picker';
 
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
+
+const messages = defineMessages({
+    createVariable: {
+        id: "gui.blocks.createVariable",
+        description: "Title for create variable in the blocks",
+        defaultMessage: "Create Variable"
+    }
+})
+
 const addFunctionListener = (object, property, callback) => {
     const oldFn = object[property];
     object[property] = function () {
@@ -55,6 +65,9 @@ class Blocks extends React.Component {
 
         const workspaceConfig = defaultsDeep({}, Blocks.defaultOptions, this.props.options);
         this.workspace = this.ScratchBlocks.inject(this.blocks, workspaceConfig);
+
+        // Load the toolbox from the GUI (otherwise we get the scratch-blocks default toolbox)
+        this.workspace.updateToolbox(this.props.toolboxXML);
 
         // @todo change this when blockly supports UI events
         addFunctionListener(this.workspace, 'translate', this.onWorkspaceMetricsChange);
@@ -243,7 +256,8 @@ class Blocks extends React.Component {
                     <Prompt
                         label={this.state.prompt.message}
                         placeholder={this.state.prompt.defaultValue}
-                        title="新建变量" // @todo the only prompt is for new variables
+                        // title="Create variable" // @todo the only prompt is for new variables
+                        title={this.props.intl.formatMessage(messages.createVariable)}
                         onCancel={this.handlePromptClose}
                         onOk={this.handlePromptCallback}
                     />
@@ -279,7 +293,8 @@ Blocks.propTypes = {
         comments: PropTypes.bool
     }),
     toolboxXML: PropTypes.string,
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+    intl: intlShape,
 };
 
 Blocks.defaultOptions = {
@@ -327,4 +342,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Blocks);
+)(injectIntl(Blocks));

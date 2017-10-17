@@ -4,6 +4,7 @@ const fs = require('fs');
 const glob = require('glob');
 const path = require('path');
 const mkdirp = require('mkdirp');
+const stringify = require('json-stable-stringify');
 
 var args = process.argv.slice(2);
 
@@ -42,4 +43,4 @@ let defaultMessages = glob.sync(MESSAGES_PATTERN)
     }, {});
 
 mkdirp.sync(LANG_DIR);
-fs.writeFileSync(path.join(LANG_DIR, 'en.json'), JSON.stringify(defaultMessages, null, 2));
+fs.writeFileSync(path.join(LANG_DIR, 'en.json'), stringify(defaultMessages, {space: '    '}));

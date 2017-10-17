@@ -1,7 +1,22 @@
 [
   {
-    "id": "targetPane.addExtension",
+    "id": "gui.gui.addExtension",
     "description": "Button to add an extension in the target pane",
-    "defaultMessage": "扩展"
+    "defaultMessage": "Extensions"
+  },
+  {
+    "id": "gui.gui.blocks",
+    "description": "Tab label in the gui tabs",
+    "defaultMessage": "Blocks"
+  },
+  {
+    "id": "gui.gui.costumes",
+    "description": "Tab label in the gui tabs",
+    "defaultMessage": "Costumes"
+  },
+  {
+    "id": "gui.gui.sounds",
+    "description": "Tab label in the gui tabs",
+    "defaultMessage": "Sounds"
   }
 ]

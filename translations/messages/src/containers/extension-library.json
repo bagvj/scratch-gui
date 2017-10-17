@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.extensionLibrary.extensionLibrary",
+    "description": "Title for extension library in the extension-library",
+    "defaultMessage": "Extension Library"
+  }
+]

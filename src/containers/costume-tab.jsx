@@ -6,6 +6,7 @@ import VM from 'scratch-vm';
 
 import AssetPanel from '../components/asset-panel/asset-panel.jsx';
 import addCostumeIcon from '../components/asset-panel/icon--add-costume-lib.svg';
+import PaintEditor from 'scratch-paint';
 
 import {connect} from 'react-redux';
 
@@ -19,7 +20,8 @@ class CostumeTab extends React.Component {
         super(props);
         bindAll(this, [
             'handleSelectCostume',
-            'handleDeleteCostume'
+            'handleDeleteCostume',
+            'handleUpdateSvg'
         ]);
         this.state = {selectedCostumeIndex: 0};
     }
@@ -46,6 +48,10 @@ class CostumeTab extends React.Component {
         this.props.vm.deleteCostume(costumeIndex);
     }
 
+    handleUpdateSvg (svg, rotationCenterX, rotationCenterY) {
+        this.props.vm.updateSvg(this.state.selectedCostumeIndex, svg, rotationCenterX, rotationCenterY);
+    }
+
     render () {
         const {
             editingTarget,
@@ -63,16 +69,16 @@ class CostumeTab extends React.Component {
 
         const addBackdropMsg = (
             <FormattedMessage
-                defaultMessage="添加背景"
+                defaultMessage="Add Backdrop"
                 description="Button to add a backdrop in the editor tab"
-                id="action.addBackdrop"
+                id="gui.costumeTab.addBackdrop"
             />
         );
         const addCostumeMsg = (
             <FormattedMessage
-                defaultMessage="添加造型"
+                defaultMessage="Add Costume"
                 description="Button to add a costume in the editor tab"
-                id="action.addCostume"
+                id="gui.costumeTab.addCostume"
             />
         );
 
@@ -90,7 +96,17 @@ class CostumeTab extends React.Component {
                 selectedItemIndex={this.state.selectedCostumeIndex}
                 onDeleteClick={this.handleDeleteCostume}
                 onItemClick={this.handleSelectCostume}
-            />
+            >
+                {target.costumes ?
+                    <PaintEditor
+                        rotationCenterX={target.costumes[this.state.selectedCostumeIndex].rotationCenterX}
+                        rotationCenterY={target.costumes[this.state.selectedCostumeIndex].rotationCenterY}
+                        svg={this.props.vm.getCostumeSvg(this.state.selectedCostumeIndex)}
+                        onUpdateSvg={this.handleUpdateSvg}
+                    /> :
+                    null
+                }
+            </AssetPanel>
         );
     }
 }

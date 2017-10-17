@@ -176,14 +176,14 @@ SoundEditor.propTypes = {
 
 const mapStateToProps = (state, {soundIndex}) => {
     const sound = state.vm.editingTarget.sprite.sounds[soundIndex];
-    const audioBuffer = state.vm.runtime.audioEngine.getSoundBuffer(sound.md5);
+    const audioBuffer = state.vm.getSoundBuffer(soundIndex);
     return {
         soundId: sound.soundId,
         sampleRate: audioBuffer.sampleRate,
         samples: audioBuffer.getChannelData(0),
         name: sound.name,
         onRenameSound: state.vm.renameSound.bind(state.vm),
-        onUpdateSoundBuffer: state.vm.runtime.audioEngine.updateSoundBuffer.bind(state.vm.runtime.audioEngine)
+        onUpdateSoundBuffer: state.vm.updateSoundBuffer.bind(state.vm)
     };
 };
 

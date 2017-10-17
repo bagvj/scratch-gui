@@ -1,0 +1,22 @@
+[
+  {
+    "id": "gui.playbackStep.loading",
+    "description": "Button to loading in the playback-step",
+    "defaultMessage": "Loading"
+  },
+  {
+    "id": "gui.playbackStep.save",
+    "description": "Button to save in the playback-step",
+    "defaultMessage": "Save"
+  },
+  {
+    "id": "gui.playbackStep.play",
+    "description": "Button to play in the playback-step",
+    "defaultMessage": "Play"
+  },
+  {
+    "id": "gui.playbackStep.stop",
+    "description": "Button to stop in the playback-step",
+    "defaultMessage": "Stop"
+  }
+]

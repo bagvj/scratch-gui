@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.stopAll.stop",
+    "description": "Button to stop all blocks in the stop-all",
+    "defaultMessage": "Stop"
+  }
+]

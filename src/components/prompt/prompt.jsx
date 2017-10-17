@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Modal from '../modal/modal.jsx';
 import Box from '../box/box.jsx';
+import {FormattedMessage} from 'react-intl';
 
 import styles from './prompt.css';
 
@@ -29,13 +30,21 @@ const PromptComponent = props => (
                     className={styles.cancelButton}
                     onClick={props.onCancel}
                 >
-                    取消
+                    <FormattedMessage
+                        defaultMessage="Cancel"
+                        description=""
+                        id="gui.prompt.cancel"
+                    />
                 </button>
                 <button
                     className={styles.okButton}
                     onClick={props.onOk}
                 >
-                    确定
+                    <FormattedMessage
+                        defaultMessage="OK"
+                        description=""
+                        id="gui.prompt.ok"
+                    />
                 </button>
             </Box>
         </Box>

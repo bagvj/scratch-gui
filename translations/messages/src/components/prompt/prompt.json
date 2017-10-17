@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gui.prompt.cancel",
+    "description": "",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "gui.prompt.ok",
+    "description": "",
+    "defaultMessage": "OK"
+  }
+]

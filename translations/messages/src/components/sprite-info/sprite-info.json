@@ -1,0 +1,42 @@
+[
+  {
+    "id": "gui.spriteInfo.name",
+    "description": "Placeholder for sprite name in the sprite-info",
+    "defaultMessage": "Name"
+  },
+  {
+    "id": "gui.spriteInfo.sprite",
+    "description": "Label for sprite in the sprite-info",
+    "defaultMessage": "Sprite"
+  },
+  {
+    "id": "gui.spriteInfo.show",
+    "description": "Label for show in the sprite-info",
+    "defaultMessage": "Show"
+  },
+  {
+    "id": "gui.spriteInfo.direction",
+    "description": "Label for direction in the sprite-info",
+    "defaultMessage": "Direction"
+  },
+  {
+    "id": "gui.spriteInfo.rotation",
+    "description": "Label for rotation in the sprite-info",
+    "defaultMessage": "Rotation"
+  },
+  {
+    "id": "gui.spriteInfo.leftRight",
+    "description": "Label for rotation left-right in the sprite-info",
+    "defaultMessage": "left-right"
+  },
+  {
+    "id": "gui.spriteInfo.doNotRotate",
+    "description": "Label for rotation don't-rotate in the sprite-info",
+    "defaultMessage": "don't rotate"
+  },
+  {
+    "id": "gui.spriteInfo.allAround",
+    "description": "Label for rotation all-around in the sprite-info",
+    "defaultMessage": "all around"
+  }
+]

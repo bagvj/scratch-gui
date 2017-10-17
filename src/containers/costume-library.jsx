@@ -5,7 +5,15 @@ import VM from 'scratch-vm';
 
 import costumeLibraryContent from '../lib/libraries/costumes.json';
 import LibraryComponent from '../components/library/library.jsx';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
+const messages = defineMessages({
+    costumeLibrary: {
+        id: "gui.costumeLibrary.costumeLibrary",
+        description: "Title for costume library in the costume-library",
+        defaultMessage: "Costume Library"
+    }
+})
 
 class CostumeLibrary extends React.PureComponent {
     constructor (props) {
@@ -28,7 +36,8 @@ class CostumeLibrary extends React.PureComponent {
         return (
             <LibraryComponent
                 data={costumeLibraryContent}
-                title="造型库"
+                // title="Costume Library"
+                title={this.props.intl.formatMessage(messages.costumeLibrary)}
                 onItemSelected={this.handleItemSelected}
                 onRequestClose={this.props.onRequestClose}
             />
@@ -38,7 +47,9 @@ class CostumeLibrary extends React.PureComponent {
 
 CostumeLibrary.propTypes = {
     onRequestClose: PropTypes.func,
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+    intl: intlShape,
 };
 
-export default CostumeLibrary;
+// export default CostumeLibrary;
+export default injectIntl(CostumeLibrary);

@@ -16,9 +16,53 @@ import yIcon from './icon--y.svg';
 import showIcon from './icon--show.svg';
 import hideIcon from './icon--hide.svg';
 
+import {FormattedMessage, defineMessages, intlShape, injectIntl} from 'react-intl';
+
+const messages = defineMessages({
+    name: {
+        id: "gui.spriteInfo.name",
+        description: "Placeholder for sprite name in the sprite-info",
+        defaultMessage: "Name"
+    },
+    sprite: {
+        id: "gui.spriteInfo.sprite",
+        description: "Label for sprite in the sprite-info",
+        defaultMessage: "Sprite"
+    },
+    show: {
+        id: "gui.spriteInfo.show",
+        description: "Label for show in the sprite-info",
+        defaultMessage: "Show"
+    },
+    direction: {
+        id: "gui.spriteInfo.direction",
+        description: "Label for direction in the sprite-info",
+        defaultMessage: "Direction"
+    },
+    rotation: {
+        id: "gui.spriteInfo.rotation",
+        description: "Label for rotation in the sprite-info",
+        defaultMessage: "Rotation"
+    },
+    leftRight: {
+        id: "gui.spriteInfo.leftRight",
+        description: "Label for rotation left-right in the sprite-info",
+        defaultMessage: "left-right"
+    },
+    doNotRotate: {
+        id: "gui.spriteInfo.doNotRotate",
+        description: "Label for rotation don't-rotate in the sprite-info",
+        defaultMessage: "don't rotate"
+    },
+    allAround: {
+        id: "gui.spriteInfo.allAround",
+        description: "Label for rotation all-around in the sprite-info",
+        defaultMessage: "all around"
+    },
+})
+
 const BufferedInput = BufferedInputHOC(Input);
 const ROTATION_STYLES = ['left-right', 'don\'t rotate', 'all around'];
-const ROTATION_STYLES_LABEL = ['左-右翻转', '不翻转', '任意'];
 
 class SpriteInfo extends React.Component {
     shouldComponentUpdate (nextProps) {
@@ -38,11 +82,11 @@ class SpriteInfo extends React.Component {
                 className={styles.spriteInfo}
             >
                 <div className={classNames(styles.row, styles.rowPrimary)}>
-                    <div className={styles.group}>
-                        <Label text="角色">
+                    <div className={classNames(styles.group, styles.spriteName)}>
+                        <Label text={this.props.intl.formatMessage(messages.sprite)}>
                             <BufferedInput
                                 disabled={this.props.disabled}
-                                placeholder="Name"
+                                placeholder={this.props.intl.formatMessage(messages.name)}
                                 tabIndex="1"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.name}
@@ -101,7 +145,7 @@ class SpriteInfo extends React.Component {
                         <MediaQuery minWidth={layout.fullSizeMinWidth}>
                             <Label
                                 secondary
-                                text="显示"
+                                text={this.props.intl.formatMessage(messages.show)}
                             />
                         </MediaQuery>
                         <div>
@@ -146,12 +190,12 @@ class SpriteInfo extends React.Component {
                     <div className={styles.group}>
                         <Label
                             secondary
-                            text="方向"
+                            text={this.props.intl.formatMessage(messages.direction)}
                         >
                             <BufferedInput
                                 small
                                 disabled={this.props.disabled}
-                                label="方向"
+                                label={this.props.intl.formatMessage(messages.direction)}
                                 tabIndex="5"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.direction}
@@ -162,7 +206,7 @@ class SpriteInfo extends React.Component {
                     <div className={styles.group}>
                         <Label
                             secondary
-                            text="旋转"
+                            text={this.props.intl.formatMessage(messages.rotation)}
                         >
                             <select
                                 className={classNames(styles.selectForm, styles.rotationSelect)}
@@ -170,14 +214,9 @@ class SpriteInfo extends React.Component {
                                 value={this.props.rotationStyle}
                                 onChange={this.props.onChangeRotationStyle}
                             >
-                                {ROTATION_STYLES.map((style, index) => (
-                                    <option
-                                        key={style}
-                                        value={style}
-                                    >
-                                        {ROTATION_STYLES_LABEL[index]}
-                                    </option>
-                                ))}
+                                <option key="left-right" value="left-right">{this.props.intl.formatMessage(messages.leftRight)}</option>
+                                <option key="don\'t rotate" value="don't rotate">{this.props.intl.formatMessage(messages.doNotRotate)}</option>
+                                <option key="all around" value="all around">{this.props.intl.formatMessage(messages.allAround)}</option>
                             </select>
                         </Label>
                     </div>
@@ -210,7 +249,9 @@ SpriteInfo.propTypes = {
     y: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number
-    ])
+    ]),
+    intl: intlShape,
 };
 
-export default SpriteInfo;
+// export default SpriteInfo;
+export default injectIntl(SpriteInfo);

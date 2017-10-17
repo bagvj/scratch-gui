@@ -9,7 +9,7 @@
 
 .stage-selector-wrapper {
     display: flex;
-    flex-basis: 60px;
+    flex-basis: 72px;
     flex-shrink: 0;
-    margin-left: calc($space / 2);
+    // margin-left: calc($space / 2);
 }

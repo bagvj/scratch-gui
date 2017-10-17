@@ -8,6 +8,15 @@ import LibraryComponent from '../components/library/library.jsx';
 import soundIcon from '../components/asset-panel/icon--sound.svg';
 
 import soundLibraryContent from '../lib/libraries/sounds.json';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
+
+const messages = defineMessages({
+    soundLibrary: {
+        id: "gui.soundLibrary.soundLibrary",
+        description: "Title for sound library in the sound-library",
+        defaultMessage: "Sound Library"
+    }
+})
 
 class SoundLibrary extends React.PureComponent {
     constructor (props) {
@@ -74,7 +83,8 @@ class SoundLibrary extends React.PureComponent {
         return (
             <LibraryComponent
                 data={soundLibraryThumbnailData}
-                title="声音库"
+                // title="Sound Library"
+                title={this.props.intl.formatMessage(messages.soundLibrary)}
                 onItemMouseEnter={this.handleItemMouseEnter}
                 onItemMouseLeave={this.handleItemMouseLeave}
                 onItemSelected={this.handleItemSelected}
@@ -86,7 +96,9 @@ class SoundLibrary extends React.PureComponent {
 
 SoundLibrary.propTypes = {
     onRequestClose: PropTypes.func,
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+    intl: intlShape,
 };
 
-export default SoundLibrary;
+// export default SoundLibrary;
+export default injectIntl(SoundLibrary);

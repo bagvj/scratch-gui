@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.blocks.createVariable",
+    "description": "Title for create variable in the blocks",
+    "defaultMessage": "Create Variable"
+  }
+]

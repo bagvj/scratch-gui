@@ -5,7 +5,15 @@ import VM from 'scratch-vm';
 
 import backdropLibraryContent from '../lib/libraries/backdrops.json';
 import LibraryComponent from '../components/library/library.jsx';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
+const messages = defineMessages({
+    backdropLibrary: {
+        id: "gui.backdropLibrary.backdropLibrary",
+        description: "Title for backdrops library in the backdrop-library",
+        defaultMessage: "Backdrop Library"
+    }
+})
 
 class BackdropLibrary extends React.Component {
     constructor (props) {
@@ -28,7 +36,8 @@ class BackdropLibrary extends React.Component {
         return (
             <LibraryComponent
                 data={backdropLibraryContent}
-                title="背景库"
+                // title="Backdrop Library"
+                title={this.props.intl.formatMessage(messages.backdropLibrary)}
                 onItemSelected={this.handleItemSelect}
                 onRequestClose={this.props.onRequestClose}
             />
@@ -38,7 +47,9 @@ class BackdropLibrary extends React.Component {
 
 BackdropLibrary.propTypes = {
     onRequestClose: PropTypes.func,
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+    intl: intlShape,
 };
 
-export default BackdropLibrary;
+// export default BackdropLibrary;
+export default injectIntl(BackdropLibrary);

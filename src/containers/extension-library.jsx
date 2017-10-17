@@ -7,6 +7,15 @@ import extensionLibraryContent from '../lib/libraries/extensions.json';
 
 import LibraryComponent from '../components/library/library.jsx';
 import extensionIcon from '../components/sprite-selector/icon--sprite.svg';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
+
+const messages = defineMessages({
+    extensionLibrary: {
+        id: "gui.extensionLibrary.extensionLibrary",
+        description: "Title for extension library in the extension-library",
+        defaultMessage: "Extension Library"
+    }
+})
 
 class ExtensionLibrary extends React.PureComponent {
     constructor (props) {
@@ -30,7 +39,8 @@ class ExtensionLibrary extends React.PureComponent {
         return (
             <LibraryComponent
                 data={extensionLibraryThumbnailData}
-                title="扩展库"
+                // title="Extension Library"
+                title={this.props.intl.formatMessage(messages.extensionLibrary)}
                 visible={this.props.visible}
                 onItemSelected={this.handleItemSelect}
                 onRequestClose={this.props.onRequestClose}
@@ -42,7 +52,9 @@ class ExtensionLibrary extends React.PureComponent {
 ExtensionLibrary.propTypes = {
     onRequestClose: PropTypes.func,
     visible: PropTypes.bool,
-    vm: PropTypes.instanceOf(VM).isRequired // eslint-disable-line react/no-unused-prop-types
+    vm: PropTypes.instanceOf(VM).isRequired, // eslint-disable-line react/no-unused-prop-types
+    intl: intlShape,
 };
 
-export default ExtensionLibrary;
+// export default ExtensionLibrary;
+export default injectIntl(ExtensionLibrary);

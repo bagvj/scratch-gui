@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gui.header.open",
+    "description": "Label for the open button in the header",
+    "defaultMessage": "Open"
+  },
+  {
+    "id": "gui.header.save",
+    "description": "Label for the save button in the header",
+    "defaultMessage": "Save"
+  }
+]

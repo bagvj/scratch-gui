@@ -22,7 +22,7 @@
         but fixes [FFx + Safari] [resize window down + scroll to the right] bug.
         width: 100%; 
     */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #4c97ff;
     color: white;
 }

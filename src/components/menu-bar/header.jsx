@@ -1,19 +1,24 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {FormattedMessage} from 'react-intl';
+
 import {ProjectLoader} from '../../lib/project-loader-hoc.jsx';
-import style from './header.css';
+import {updateIntl} from '../../reducers/intl.js';
+import languages from 'scratch-l10n';
+
+import styles from './header.css';
 
 var whenReady = (function() {
     var funcs = [];
     var ready = false;
-    
+
     function handler(e) {
         if(ready) return;
-        
+
         if(e.type === 'onreadystatechange' && document.readyState !== 'complete') {
             return;
         }
-        
+
         for(var i=0; i<funcs.length; i++) {
             funcs[i].call(document);
         }
@@ -60,8 +65,38 @@ class Header extends React.Component {
 
     render() {
         var kenrobot = top.kenrobot;
+        const {onChange, currentLocale} = this.props;
         return kenrobot && kenrobot.isPC ? (<span></span>) : (
-            <div className={style.header}><span onClick={_ => this.onOpenClick()}>打开</span><span onClick={_ => this.onSaveClick()}>保存</span></div>
+            <div className={styles.header}>
+                <span onClick={_ => this.onOpenClick()}>
+                    <FormattedMessage
+                        defaultMessage="Open"
+                        description="Label for the open button in the header"
+                        id="gui.header.open"
+                    />
+                </span>
+                <span onClick={_ => this.onSaveClick()}>
+                    <FormattedMessage
+                        defaultMessage="Save"
+                        description="Label for the save button in the header"
+                        id="gui.header.save"
+                    />
+                </span>
+                <select
+                    className={styles.languageSelect}
+                    value={currentLocale}
+                    onChange={onChange}
+                >
+                    {Object.keys(languages).map(locale => (
+                        <option
+                            key={locale}
+                            value={locale}
+                        >
+                            {languages[locale].name}
+                        </option>
+                    ))}
+                </select>
+            </div>
         );
     }
 };
@@ -69,6 +104,17 @@ class Header extends React.Component {
 const mapStateToProps = state => ({
     getProject: state.vm.toJSON.bind(state.vm),
     loadProject: state.vm.fromJSON.bind(state.vm),
+    currentLocale: state.intl.locale,
 });
 
-export default connect(mapStateToProps, () => ({}))(Header);
+const mapDispatchToProps = dispatch => ({
+    onChange: e => {
+        e.preventDefault();
+        dispatch(updateIntl(e.target.value));
+    }
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Header);

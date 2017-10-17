@@ -1,7 +1,7 @@
 [
   {
-    "id": "targetPane.addSprite",
+    "id": "gui.spriteSelector.addSprite",
     "description": "Button to add a sprite in the target pane",
-    "defaultMessage": "添加角色"
+    "defaultMessage": "Add Sprite"
   }
 ]

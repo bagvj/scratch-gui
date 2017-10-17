@@ -6,6 +6,15 @@ import VM from 'scratch-vm';
 import spriteLibraryContent from '../lib/libraries/sprites.json';
 
 import LibraryComponent from '../components/library/library.jsx';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
+
+const messages = defineMessages({
+    spriteLibrary: {
+        id: "gui.spriteLibrary.spriteLibrary",
+        description: "Title for sprite library in the sprite-library",
+        defaultMessage: "Sprite Library"
+    }
+})
 
 class SpriteLibrary extends React.PureComponent {
     constructor (props) {
@@ -65,7 +74,8 @@ class SpriteLibrary extends React.PureComponent {
         return (
             <LibraryComponent
                 data={this.state.sprites}
-                title="角色库"
+                // title="Sprite Library"
+                title={this.props.intl.formatMessage(messages.spriteLibrary)}
                 onItemMouseEnter={this.handleMouseEnter}
                 onItemMouseLeave={this.handleMouseLeave}
                 onItemSelected={this.handleItemSelect}
@@ -77,7 +87,9 @@ class SpriteLibrary extends React.PureComponent {
 
 SpriteLibrary.propTypes = {
     onRequestClose: PropTypes.func,
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+    intl: intlShape,
 };
 
-export default SpriteLibrary;
+// export default SpriteLibrary;
+export default injectIntl(SpriteLibrary);

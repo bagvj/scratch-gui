@@ -20,6 +20,6 @@
 	color: #197cd9;
 }
 
-.header span:last-of-type {
-    margin-right: 0;
+.header .language-select {
+	display: inline-block;
 }
