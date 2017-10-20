@@ -1,7 +1,7 @@
 const separator = '<sep gap="45"/>';
 
 const top = `
-    <category name="Top" colour="#FFFFFF" secondaryColour="#CCCCCC">
+    <category name="顶级" colour="#FFFFFF" secondaryColour="#CCCCCC">
         <block type="event_whenflagclicked"/>
         <block type="event_whenkeypressed">
         </block>
@@ -75,7 +75,7 @@ const top = `
 `;
 
 const motion = `
-    <category name="Motion" colour="#4C97FF" secondaryColour="#3373CC">
+    <category name="动作" colour="#4C97FF" secondaryColour="#3373CC">
         <block type="motion_movesteps">
             <value name="STEPS">
                 <shadow type="math_number">
@@ -193,7 +193,7 @@ const motion = `
 `;
 
 const looks = `
-    <category name="Looks" colour="#9966FF" secondaryColour="#774DCB">
+    <category name="外观" colour="#9966FF" secondaryColour="#774DCB">
         <block type="looks_sayforsecs">
             <value name="MESSAGE">
                 <shadow type="text">
@@ -296,7 +296,7 @@ const looks = `
 `;
 
 const sound = `
-    <category name="Sound" colour="#D65CD6" secondaryColour="#BD42BD">
+    <category name="声音" colour="#D65CD6" secondaryColour="#BD42BD">
         <block type="sound_play">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu"/>
@@ -391,7 +391,7 @@ const sound = `
 `;
 
 const events = `
-    <category name="Events" colour="#FFD500" secondaryColour="#CC9900">
+    <category name="事件" colour="#FFD500" secondaryColour="#CC9900">
         <block type="event_whenflagclicked"/>
         <block type="event_whenkeypressed">
         </block>
@@ -421,7 +421,7 @@ const events = `
 `;
 
 const control = `
-    <category name="Control" colour="#FFAB19" secondaryColour="#CF8B17">
+    <category name="控制" colour="#FFAB19" secondaryColour="#CF8B17">
         <block type="control_wait">
             <value name="DURATION">
                 <shadow type="math_positive_number">
@@ -453,7 +453,7 @@ const control = `
 `;
 
 const sensing = `
-    <category name="Sensing" colour="#4CBFE6" secondaryColour="#2E8EB8">
+    <category name="侦测" colour="#4CBFE6" secondaryColour="#2E8EB8">
         <block type="sensing_touchingobject">
             <value name="TOUCHINGOBJECTMENU">
                 <shadow type="sensing_touchingobjectmenu"/>
@@ -506,7 +506,7 @@ const sensing = `
 `;
 
 const operators = `
-    <category name="Operators" colour="#40BF4A" secondaryColour="#389438">
+    <category name="运算符" colour="#40BF4A" secondaryColour="#389438">
         <block type="operator_add">
             <value name="NUM1">
                 <shadow type="math_number">
@@ -667,7 +667,7 @@ const operators = `
 `;
 
 const data = `
-    <category name="Data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">
+    <category name="数据" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">
     </category>
 `;
 
