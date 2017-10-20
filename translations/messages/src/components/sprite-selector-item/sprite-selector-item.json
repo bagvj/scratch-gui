@@ -1,6 +1,6 @@
 [
   {
-    "id": "gui.spriteSelectorItem.contextMenuDuplicate",
+    "id": "contextMenu.duplicate",
     "description": "Menu item to duplicate in the right click menu",
     "defaultMessage": "duplicate"
   },
