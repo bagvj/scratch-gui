@@ -1,218 +1,218 @@
 {
-    "gui.backdropLibrary.backdropLibrary": {
-        "description": "Title for backdrops library in the backdrop-library",
-        "message": "Backdrop Library"
-    },
-    "gui.blocks.createVariable": {
-        "description": "Title for create variable in the blocks",
-        "message": "Create Variable"
-    },
-    "gui.costumeLibrary.costumeLibrary": {
-        "description": "Title for costume library in the costume-library",
-        "message": "Costume Library"
-    },
-    "gui.costumeTab.addBackdrop": {
-        "description": "Button to add a backdrop in the editor tab",
-        "message": "Add Backdrop"
-    },
-    "gui.costumeTab.addCostume": {
-        "description": "Button to add a costume in the editor tab",
-        "message": "Add Costume"
-    },
-    "gui.extensionLibrary.extensionLibrary": {
-        "description": "Title for extension library in the extension-library",
-        "message": "Extension Library"
-    },
-    "gui.greenFlag.go": {
-        "description": "Button to run blocks in the green-flag",
-        "message": "Go"
-    },
-    "gui.gui.addExtension": {
-        "description": "Button to add an extension in the target pane",
-        "message": "Extensions"
-    },
-    "gui.gui.blocks": {
-        "description": "Tab label in the gui tabs",
-        "message": "Blocks"
-    },
-    "gui.gui.costumes": {
-        "description": "Tab label in the gui tabs",
-        "message": "Costumes"
-    },
-    "gui.gui.sounds": {
-        "description": "Tab label in the gui tabs",
-        "message": "Sounds"
-    },
-    "gui.header.open": {
-        "description": "Label for the open button in the header",
-        "message": "Open"
-    },
-    "gui.header.save": {
-        "description": "Label for the save button in the header",
-        "message": "Save"
-    },
-    "gui.loadButton.load": {
-        "description": "Button for the load project in the load-button",
-        "message": "Load"
-    },
-    "gui.playbackStep.loading": {
-        "description": "Button to loading in the playback-step",
-        "message": "Loading"
-    },
-    "gui.playbackStep.play": {
-        "description": "Button to play in the playback-step",
-        "message": "Play"
-    },
-    "gui.playbackStep.save": {
-        "description": "Button to save in the playback-step",
-        "message": "Save"
-    },
-    "gui.playbackStep.stop": {
-        "description": "Button to stop in the playback-step",
-        "message": "Stop"
-    },
-    "gui.prompt.cancel": {
-        "description": "",
-        "message": "Cancel"
-    },
-    "gui.prompt.ok": {
-        "description": "",
-        "message": "OK"
-    },
-    "gui.soundEditor.echo": {
-        "description": "Title of the button to apply the echo effect",
-        "message": "Echo"
-    },
-    "gui.soundEditor.faster": {
-        "description": "Title of the button to apply the faster effect",
-        "message": "Faster"
-    },
-    "gui.soundEditor.louder": {
-        "description": "Title of the button to apply the louder effect",
-        "message": "Louder"
-    },
-    "gui.soundEditor.play": {
-        "description": "Title of the button to start playing the sound",
-        "message": "Play"
-    },
-    "gui.soundEditor.redo": {
-        "description": "Title of the button to redo",
-        "message": "Redo"
-    },
-    "gui.soundEditor.reverse": {
-        "description": "Title of the button to apply the reverse effect",
-        "message": "Reverse"
-    },
-    "gui.soundEditor.robot": {
-        "description": "Title of the button to apply the robot effect",
-        "message": "Robot"
-    },
-    "gui.soundEditor.save": {
-        "description": "Title of the button to save trimmed sound",
-        "message": "Save"
-    },
-    "gui.soundEditor.slower": {
-        "description": "Title of the button to apply the slower effect",
-        "message": "Slower"
-    },
-    "gui.soundEditor.softer": {
-        "description": "Title of the button to apply thr.softer effect",
-        "message": "Softer"
-    },
-    "gui.soundEditor.sound": {
-        "description": "Label for the name of the sound",
-        "message": "Sound"
-    },
-    "gui.soundEditor.stop": {
-        "description": "Title of the button to stop the sound",
-        "message": "Stop"
-    },
-    "gui.soundEditor.trim": {
-        "description": "Title of the button to start trimminging the sound",
-        "message": "Trim"
-    },
-    "gui.soundEditor.undo": {
-        "description": "Title of the button to undo",
-        "message": "Undo"
-    },
-    "gui.soundLibrary.soundLibrary": {
-        "description": "Title for sound library in the sound-library",
-        "message": "Sound Library"
-    },
-    "gui.soundTab.addSound": {
-        "description": "Button to add a sound in the editor tab",
-        "message": "Add Sound"
-    },
-    "gui.soundTab.recordSound": {
-        "description": "Button to record a sound in the editor tab",
-        "message": "Record Sound"
-    },
-    "gui.spriteInfo.allAround": {
-        "description": "Label for rotation all-around in the sprite-info",
-        "message": "all around"
-    },
-    "gui.spriteInfo.direction": {
-        "description": "Label for direction in the sprite-info",
-        "message": "Direction"
-    },
-    "gui.spriteInfo.doNotRotate": {
-        "description": "Label for rotation don't-rotate in the sprite-info",
-        "message": "don't rotate"
-    },
-    "gui.spriteInfo.leftRight": {
-        "description": "Label for rotation left-right in the sprite-info",
-        "message": "left-right"
-    },
-    "gui.spriteInfo.name": {
-        "description": "Placeholder for sprite name in the sprite-info",
-        "message": "Name"
-    },
-    "gui.spriteInfo.rotation": {
-        "description": "Label for rotation in the sprite-info",
-        "message": "Rotation"
-    },
-    "gui.spriteInfo.show": {
-        "description": "Label for show in the sprite-info",
-        "message": "Show"
-    },
-    "gui.spriteInfo.sprite": {
-        "description": "Label for sprite in the sprite-info",
-        "message": "Sprite"
-    },
-    "gui.spriteLibrary.spriteLibrary": {
-        "description": "Title for sprite library in the sprite-library",
-        "message": "Sprite Library"
-    },
-    "gui.spriteSelector.addSprite": {
-        "description": "Button to add a sprite in the target pane",
-        "message": "Add Sprite"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "description": "Menu item to delete in the right click menu",
-        "message": "delete"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "description": "Menu item to duplicate in the right click menu",
-        "message": "duplicate"
-    },
-    "gui.stageSelector.backdrops": {
-        "description": "Label for the backdrops in the stage selector",
-        "message": "Backdrops"
-    },
-    "gui.stageSelector.stage": {
-        "description": "Label for the stage in the stage selector",
-        "message": "Stage"
-    },
-    "gui.stageSelector.targetPaneAddBackdrop": {
-        "description": "Button to add a backdrop in the target pane",
-        "message": "Add Backdrop"
-    },
-    "gui.stopAll.stop": {
-        "description": "Button to stop all blocks in the stop-all",
-        "message": "Stop"
-    },
-    "gui.turboMode.active": {
-        "description": "Label indicating turbo mode is active",
-        "message": "Turbo Mode"
-    }
+  "gui.greenFlag.go": {
+    "message": "Go",
+    "description": "Button to run blocks in the green-flag"
+  },
+  "gui.gui.addExtension": {
+    "message": "Extensions",
+    "description": "Button to add an extension in the target pane"
+  },
+  "gui.gui.blocks": {
+    "message": "Blocks",
+    "description": "Tab label in the gui tabs"
+  },
+  "gui.gui.costumes": {
+    "message": "Costumes",
+    "description": "Tab label in the gui tabs"
+  },
+  "gui.gui.sounds": {
+    "message": "Sounds",
+    "description": "Tab label in the gui tabs"
+  },
+  "gui.loadButton.load": {
+    "message": "Load",
+    "description": "Button for the load project in the load-button"
+  },
+  "gui.header.open": {
+    "message": "Open",
+    "description": "Label for the open button in the header"
+  },
+  "gui.header.save": {
+    "message": "Save",
+    "description": "Label for the save button in the header"
+  },
+  "gui.prompt.cancel": {
+    "message": "Cancel",
+    "description": ""
+  },
+  "gui.prompt.ok": {
+    "message": "OK",
+    "description": ""
+  },
+  "gui.playbackStep.loading": {
+    "message": "Loading",
+    "description": "Button to loading in the playback-step"
+  },
+  "gui.playbackStep.save": {
+    "message": "Save",
+    "description": "Button to save in the playback-step"
+  },
+  "gui.playbackStep.play": {
+    "message": "Play",
+    "description": "Button to play in the playback-step"
+  },
+  "gui.playbackStep.stop": {
+    "message": "Stop",
+    "description": "Button to stop in the playback-step"
+  },
+  "gui.soundEditor.sound": {
+    "message": "Sound",
+    "description": "Label for the name of the sound"
+  },
+  "gui.soundEditor.play": {
+    "message": "Play",
+    "description": "Title of the button to start playing the sound"
+  },
+  "gui.soundEditor.stop": {
+    "message": "Stop",
+    "description": "Title of the button to stop the sound"
+  },
+  "gui.soundEditor.trim": {
+    "message": "Trim",
+    "description": "Title of the button to start trimminging the sound"
+  },
+  "gui.soundEditor.save": {
+    "message": "Save",
+    "description": "Title of the button to save trimmed sound"
+  },
+  "gui.soundEditor.undo": {
+    "message": "Undo",
+    "description": "Title of the button to undo"
+  },
+  "gui.soundEditor.redo": {
+    "message": "Redo",
+    "description": "Title of the button to redo"
+  },
+  "gui.soundEditor.faster": {
+    "message": "Faster",
+    "description": "Title of the button to apply the faster effect"
+  },
+  "gui.soundEditor.slower": {
+    "message": "Slower",
+    "description": "Title of the button to apply the slower effect"
+  },
+  "gui.soundEditor.echo": {
+    "message": "Echo",
+    "description": "Title of the button to apply the echo effect"
+  },
+  "gui.soundEditor.robot": {
+    "message": "Robot",
+    "description": "Title of the button to apply the robot effect"
+  },
+  "gui.soundEditor.louder": {
+    "message": "Louder",
+    "description": "Title of the button to apply the louder effect"
+  },
+  "gui.soundEditor.softer": {
+    "message": "Softer",
+    "description": "Title of the button to apply thr.softer effect"
+  },
+  "gui.soundEditor.reverse": {
+    "message": "Reverse",
+    "description": "Title of the button to apply the reverse effect"
+  },
+  "gui.spriteInfo.name": {
+    "message": "Name",
+    "description": "Placeholder for sprite name in the sprite-info"
+  },
+  "gui.spriteInfo.sprite": {
+    "message": "Sprite",
+    "description": "Label for sprite in the sprite-info"
+  },
+  "gui.spriteInfo.show": {
+    "message": "Show",
+    "description": "Label for show in the sprite-info"
+  },
+  "gui.spriteInfo.direction": {
+    "message": "Direction",
+    "description": "Label for direction in the sprite-info"
+  },
+  "gui.spriteInfo.rotation": {
+    "message": "Rotation",
+    "description": "Label for rotation in the sprite-info"
+  },
+  "gui.spriteInfo.leftRight": {
+    "message": "left-right",
+    "description": "Label for rotation left-right in the sprite-info"
+  },
+  "gui.spriteInfo.doNotRotate": {
+    "message": "don't rotate",
+    "description": "Label for rotation don't-rotate in the sprite-info"
+  },
+  "gui.spriteInfo.allAround": {
+    "message": "all around",
+    "description": "Label for rotation all-around in the sprite-info"
+  },
+  "gui.spriteSelectorItem.contextMenuDuplicate": {
+    "message": "duplicate",
+    "description": "Menu item to duplicate in the right click menu"
+  },
+  "gui.spriteSelectorItem.contextMenuDelete": {
+    "message": "delete",
+    "description": "Menu item to delete in the right click menu"
+  },
+  "gui.spriteSelector.addSprite": {
+    "message": "Add Sprite",
+    "description": "Button to add a sprite in the target pane"
+  },
+  "gui.stageSelector.targetPaneAddBackdrop": {
+    "message": "Add Backdrop",
+    "description": "Button to add a backdrop in the target pane"
+  },
+  "gui.stageSelector.stage": {
+    "message": "Stage",
+    "description": "Label for the stage in the stage selector"
+  },
+  "gui.stageSelector.backdrops": {
+    "message": "Backdrops",
+    "description": "Label for the backdrops in the stage selector"
+  },
+  "gui.stopAll.stop": {
+    "message": "Stop",
+    "description": "Button to stop all blocks in the stop-all"
+  },
+  "gui.turboMode.active": {
+    "message": "Turbo Mode",
+    "description": "Label indicating turbo mode is active"
+  },
+  "gui.backdropLibrary.backdropLibrary": {
+    "message": "Backdrop Library",
+    "description": "Title for backdrops library in the backdrop-library"
+  },
+  "gui.blocks.createVariable": {
+    "message": "Create Variable",
+    "description": "Title for create variable in the blocks"
+  },
+  "gui.costumeLibrary.costumeLibrary": {
+    "message": "Costume Library",
+    "description": "Title for costume library in the costume-library"
+  },
+  "gui.costumeTab.addBackdrop": {
+    "message": "Add Backdrop",
+    "description": "Button to add a backdrop in the editor tab"
+  },
+  "gui.costumeTab.addCostume": {
+    "message": "Add Costume",
+    "description": "Button to add a costume in the editor tab"
+  },
+  "gui.extensionLibrary.extensionLibrary": {
+    "message": "Extension Library",
+    "description": "Title for extension library in the extension-library"
+  },
+  "gui.soundLibrary.soundLibrary": {
+    "message": "Sound Library",
+    "description": "Title for sound library in the sound-library"
+  },
+  "gui.soundTab.recordSound": {
+    "message": "Record Sound",
+    "description": "Button to record a sound in the editor tab"
+  },
+  "gui.soundTab.addSound": {
+    "message": "Add Sound",
+    "description": "Button to add a sound in the editor tab"
+  },
+  "gui.spriteLibrary.spriteLibrary": {
+    "message": "Sprite Library",
+    "description": "Title for sprite library in the sprite-library"
+  }
 }
