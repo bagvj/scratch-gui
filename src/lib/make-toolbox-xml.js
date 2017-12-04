@@ -6,7 +6,7 @@ const motion = function (isStage, targetId) {
     return `
     <category name="动作" colour="#4C97FF" secondaryColour="#3373CC">
         ${isStage ? `
-        <label text="Stage selected: no motion blocks"></label>
+        <label text="选中的舞台：没有动作块"></label>
         ` : `
         <block type="motion_movesteps">
             <value name="STEPS">
