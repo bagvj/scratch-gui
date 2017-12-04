@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {FormattedMessage} from 'react-intl';
 
-import {ProjectLoader} from '../../lib/project-loader-hoc.jsx';
+import defaultProjectData from '../../lib/default-project/project.json';
 import {updateIntl} from '../../reducers/intl.js';
 import languages from 'scratch-l10n';
 
@@ -47,7 +47,7 @@ class Header extends React.Component {
             if(kenrobot && kenrobot.view) {
                 kenrobot.view.getProject = this.props.getProject;
                 kenrobot.view.loadProject = this.props.loadProject;
-                var defaultProject = JSON.stringify(ProjectLoader.DEFAULT_PROJECT_DATA);
+                var defaultProject = JSON.stringify(defaultProjectData);
                 kenrobot.view.newProject = _ => this.props.loadProject(defaultProject);
             }
         });
