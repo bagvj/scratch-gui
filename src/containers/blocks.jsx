@@ -9,12 +9,13 @@ import VM from 'scratch-vm';
 import Prompt from './prompt.jsx';
 import BlocksComponent from '../components/blocks/blocks.jsx';
 import ExtensionLibrary from './extension-library.jsx';
+import CustomProcedures from './custom-procedures.jsx';
 
 import {connect} from 'react-redux';
 import {updateToolbox} from '../reducers/toolbox';
 import {activateColorPicker} from '../reducers/color-picker';
 import {closeExtensionLibrary} from '../reducers/modals';
-
+import {activateCustomProcedures, deactivateCustomProcedures} from '../reducers/custom-procedures';
 import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
 const messages = defineMessages({
@@ -45,11 +46,13 @@ class Blocks extends React.Component {
             'handlePromptStart',
             'handlePromptCallback',
             'handlePromptClose',
+            'handleCustomProceduresClose',
             'onScriptGlowOn',
             'onScriptGlowOff',
             'onBlockGlowOn',
             'onBlockGlowOff',
             'handleExtensionAdded',
+            'handleBlocksInfoUpdate',
             'onTargetsUpdate',
             'onVisualReport',
             'onWorkspaceUpdate',
@@ -65,6 +68,7 @@ class Blocks extends React.Component {
     }
     componentDidMount () {
         this.ScratchBlocks.FieldColourSlider.activateEyedropper_ = this.props.onActivateColorPicker;
+        this.ScratchBlocks.Procedures.externalProcedureDefCallback = this.props.onActivateCustomProcedures;
 
         const workspaceConfig = defaultsDeep({},
             Blocks.defaultOptions,
@@ -78,16 +82,23 @@ class Blocks extends React.Component {
         addFunctionListener(this.workspace, 'zoom', this.onWorkspaceMetricsChange);
 
         this.attachVM();
+        this.props.vm.setLocale(this.props.locale, this.props.messages);
     }
     shouldComponentUpdate (nextProps, nextState) {
         return (
             this.state.prompt !== nextState.prompt ||
             this.props.isVisible !== nextProps.isVisible ||
             this.props.toolboxXML !== nextProps.toolboxXML ||
-            this.props.extensionLibraryVisible !== nextProps.extensionLibraryVisible
+            this.props.extensionLibraryVisible !== nextProps.extensionLibraryVisible ||
+            this.props.customProceduresVisible !== nextProps.customProceduresVisible ||
+            this.props.locale !== nextProps.locale
         );
     }
     componentDidUpdate (prevProps) {
+        if (prevProps.locale !== this.props.locale) {
+            this.props.vm.setLocale(this.props.locale, this.props.messages);
+        }
+
         if (prevProps.toolboxXML !== this.props.toolboxXML) {
             const selectedCategoryName = this.workspace.toolbox_.getSelectedItem().name_;
             this.workspace.updateToolbox(this.props.toolboxXML);
@@ -125,6 +136,7 @@ class Blocks extends React.Component {
         this.props.vm.addListener('workspaceUpdate', this.onWorkspaceUpdate);
         this.props.vm.addListener('targetsUpdate', this.onTargetsUpdate);
         this.props.vm.addListener('EXTENSION_ADDED', this.handleExtensionAdded);
+        this.props.vm.addListener('BLOCKSINFO_UPDATE', this.handleBlocksInfoUpdate);
     }
     detachVM () {
         this.props.vm.removeListener('SCRIPT_GLOW_ON', this.onScriptGlowOn);
@@ -135,6 +147,7 @@ class Blocks extends React.Component {
         this.props.vm.removeListener('workspaceUpdate', this.onWorkspaceUpdate);
         this.props.vm.removeListener('targetsUpdate', this.onTargetsUpdate);
         this.props.vm.removeListener('EXTENSION_ADDED', this.handleExtensionAdded);
+        this.props.vm.removeListener('BLOCKSINFO_UPDATE', this.handleBlocksInfoUpdate);
     }
     updateToolboxBlockValue (id, value) {
         const block = this.workspace
@@ -217,6 +230,10 @@ class Blocks extends React.Component {
         const toolboxXML = makeToolboxXML(target.isStage, target.id, dynamicBlocksXML);
         this.props.updateToolboxState(toolboxXML);
     }
+    handleBlocksInfoUpdate (blocksInfo) {
+        // @todo Later we should replace this to avoid all the warnings from redefining blocks.
+        this.handleExtensionAdded(blocksInfo);
+    }
     handleCategorySelected (categoryName) {
         this.workspace.toolbox_.setSelectedCategoryByName(categoryName);
     }
@@ -233,16 +250,23 @@ class Blocks extends React.Component {
     handlePromptClose () {
         this.setState({prompt: null});
     }
+    handleCustomProceduresClose (data) {
+        this.props.onRequestCloseCustomProcedures(data);
+        this.workspace.refreshToolboxSelection_();
+    }
     render () {
         /* eslint-disable no-unused-vars */
         const {
+            customProceduresVisible,
             extensionLibraryVisible,
             options,
             vm,
             isVisible,
             onActivateColorPicker,
             updateToolboxState,
+            onActivateCustomProcedures,
             onRequestCloseExtensionLibrary,
+            onRequestCloseCustomProcedures,
             toolboxXML,
             ...props
         } = this.props;
@@ -270,15 +294,28 @@ class Blocks extends React.Component {
                         onRequestClose={onRequestCloseExtensionLibrary}
                     />
                 ) : null}
+                {customProceduresVisible ? (
+                    <CustomProcedures
+                        options={{
+                            media: options.media
+                        }}
+                        onRequestClose={this.handleCustomProceduresClose}
+                    />
+                ) : null}
             </div>
         );
     }
 }
 
 Blocks.propTypes = {
+    customProceduresVisible: PropTypes.bool,
     extensionLibraryVisible: PropTypes.bool,
     isVisible: PropTypes.bool,
+    locale: PropTypes.string,
+    messages: PropTypes.objectOf(PropTypes.string),
     onActivateColorPicker: PropTypes.func,
+    onActivateCustomProcedures: PropTypes.func,
+    onRequestCloseCustomProcedures: PropTypes.func,
     onRequestCloseExtensionLibrary: PropTypes.func,
     options: PropTypes.shape({
         media: PropTypes.string,
@@ -299,7 +336,8 @@ Blocks.propTypes = {
             fieldShadow: PropTypes.string,
             dragShadowOpacity: PropTypes.number
         }),
-        comments: PropTypes.bool
+        comments: PropTypes.bool,
+        collapse: PropTypes.bool
     }),
     toolboxXML: PropTypes.string,
     updateToolboxState: PropTypes.func,
@@ -330,7 +368,8 @@ Blocks.defaultOptions = {
         fieldShadow: 'rgba(255, 255, 255, 0.3)',
         dragShadowOpacity: 0.6
     },
-    comments: false
+    comments: false,
+    collapse: false
 };
 
 Blocks.defaultProps = {
@@ -340,13 +379,20 @@ Blocks.defaultProps = {
 
 const mapStateToProps = state => ({
     extensionLibraryVisible: state.modals.extensionLibrary,
-    toolboxXML: state.toolbox.toolboxXML
+    locale: state.intl.locale,
+    messages: state.intl.messages,
+    toolboxXML: state.toolbox.toolboxXML,
+    customProceduresVisible: state.customProcedures.active
 });
 
 const mapDispatchToProps = dispatch => ({
     onActivateColorPicker: callback => dispatch(activateColorPicker(callback)),
+    onActivateCustomProcedures: (data, callback) => dispatch(activateCustomProcedures(data, callback)),
     onRequestCloseExtensionLibrary: () => {
         dispatch(closeExtensionLibrary());
+    },
+    onRequestCloseCustomProcedures: data => {
+        dispatch(deactivateCustomProcedures(data));
     },
     updateToolboxState: toolboxXML => {
         dispatch(updateToolbox(toolboxXML));

@@ -110,16 +110,16 @@ export default function (vm) {
 
     ScratchBlocks.Blocks.motion_goto_menu.init = function () {
         const json = jsonForMenuBlock('TO', spriteMenu, motionColors, [
-            ['鼠标指针', '_mouse_'],
-            ['随机位置', '_random_']
+            ['随机位置', '_random_'],
+            ['鼠标位置', '_mouse_']
         ]);
         this.jsonInit(json);
     };
 
     ScratchBlocks.Blocks.motion_glideto_menu.init = function () {
         const json = jsonForMenuBlock('TO', spriteMenu, motionColors, [
-            ['鼠标指针', '_mouse_'],
-            ['随机位置', '_random_']
+            ['随机位置', '_random_'],
+            ['鼠标位置', '_mouse_']
         ]);
         this.jsonInit(json);
     };

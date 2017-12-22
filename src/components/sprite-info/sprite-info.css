@@ -97,3 +97,12 @@
     user-select: none;
     outline: none;
 }
+
+.rotation-select:focus {
+    border-color: #4c97ff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.larger-input input {
+    width: 4rem;
+}

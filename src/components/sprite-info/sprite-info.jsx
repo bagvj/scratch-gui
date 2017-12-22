@@ -39,30 +39,14 @@ const messages = defineMessages({
         description: "Label for direction in the sprite-info",
         defaultMessage: "Direction"
     },
-    rotation: {
-        id: "gui.spriteInfo.rotation",
-        description: "Label for rotation in the sprite-info",
-        defaultMessage: "Rotation"
-    },
-    leftRight: {
-        id: "gui.spriteInfo.leftRight",
-        description: "Label for rotation left-right in the sprite-info",
-        defaultMessage: "left-right"
-    },
-    doNotRotate: {
-        id: "gui.spriteInfo.doNotRotate",
-        description: "Label for rotation don't-rotate in the sprite-info",
-        defaultMessage: "don't rotate"
-    },
-    allAround: {
-        id: "gui.spriteInfo.allAround",
-        description: "Label for rotation all-around in the sprite-info",
-        defaultMessage: "all around"
-    },
+    size: {
+        id: "gui.spriteInfo.size",
+        description: "Label for size in the sprite-info",
+        defaultMessage: "Size"
+    }
 })
 
 const BufferedInput = BufferedInputHOC(Input);
-const ROTATION_STYLES = ['left-right', 'don\'t rotate', 'all around'];
 
 class SpriteInfo extends React.Component {
     shouldComponentUpdate (nextProps) {
@@ -70,7 +54,7 @@ class SpriteInfo extends React.Component {
             this.props.direction !== nextProps.direction ||
             this.props.disabled !== nextProps.disabled ||
             this.props.name !== nextProps.name ||
-            this.props.rotationStyle !== nextProps.rotationStyle ||
+            this.props.size !== nextProps.size ||
             this.props.visible !== nextProps.visible ||
             this.props.x !== nextProps.x ||
             this.props.y !== nextProps.y
@@ -87,7 +71,7 @@ class SpriteInfo extends React.Component {
                             <BufferedInput
                                 disabled={this.props.disabled}
                                 placeholder={this.props.intl.formatMessage(messages.name)}
-                                tabIndex="1"
+                                tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.name}
                                 onSubmit={this.props.onChangeName}
@@ -110,7 +94,7 @@ class SpriteInfo extends React.Component {
                                 small
                                 disabled={this.props.disabled}
                                 placeholder="x"
-                                tabIndex="2"
+                                tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.x}
                                 onSubmit={this.props.onChangeX}
@@ -133,7 +117,7 @@ class SpriteInfo extends React.Component {
                                 small
                                 disabled={this.props.disabled}
                                 placeholder="y"
-                                tabIndex="3"
+                                tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.y}
                                 onSubmit={this.props.onChangeY}
@@ -161,7 +145,7 @@ class SpriteInfo extends React.Component {
                                         [styles.isDisabled]: this.props.disabled
                                     }
                                 )}
-                                tabIndex="4"
+                                tabIndex="0"
                                 onClick={this.props.onClickVisible}
                                 onKeyPress={this.props.onPressVisible}
                             >
@@ -180,7 +164,7 @@ class SpriteInfo extends React.Component {
                                         [styles.isDisabled]: this.props.disabled
                                     }
                                 )}
-                                tabIndex="5"
+                                tabIndex="0"
                                 onClick={this.props.onClickNotVisible}
                                 onKeyPress={this.props.onPressNotVisible}
                             >
@@ -191,37 +175,36 @@ class SpriteInfo extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.group}>
+                    <div className={classNames(styles.group, styles.largerInput)}>
                         <Label
                             secondary
-                            text={this.props.intl.formatMessage(messages.direction)}
+                            text={this.props.intl.formatMessage(messages.size)}
+                        >
+                            <BufferedInput
+                                small
+                                disabled={this.props.disabled}
+                                label={this.props.intl.formatMessage(messages.size)}
+                                tabIndex="0"
+                                type="text"
+                                value={this.props.disabled ? '' : this.props.size}
+                                onSubmit={this.props.onChangeSize}
+                            />
+                        </Label>
+                    </div>
+                    <div className={classNames(styles.group, styles.largerInput)}>
+                        <Label
+                            secondary
+                            text="Direction"
                         >
                             <BufferedInput
                                 small
                                 disabled={this.props.disabled}
                                 label={this.props.intl.formatMessage(messages.direction)}
-                                tabIndex="6"
+                                tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.direction}
                                 onSubmit={this.props.onChangeDirection}
                             />
-                        </Label>
-                    </div>
-                    <div className={styles.group}>
-                        <Label
-                            secondary
-                            text={this.props.intl.formatMessage(messages.rotation)}
-                        >
-                            <select
-                                className={classNames(styles.selectForm, styles.rotationSelect)}
-                                disabled={this.props.disabled}
-                                value={this.props.rotationStyle}
-                                onChange={this.props.onChangeRotationStyle}
-                            >
-                                <option key="left-right" value="left-right">{this.props.intl.formatMessage(messages.leftRight)}</option>
-                                <option key="don\'t rotate" value="don't rotate">{this.props.intl.formatMessage(messages.doNotRotate)}</option>
-                                <option key="all around" value="all around">{this.props.intl.formatMessage(messages.allAround)}</option>
-                            </select>
                         </Label>
                     </div>
                 </div>
@@ -239,14 +222,17 @@ SpriteInfo.propTypes = {
     name: PropTypes.string,
     onChangeDirection: PropTypes.func,
     onChangeName: PropTypes.func,
-    onChangeRotationStyle: PropTypes.func,
+    onChangeSize: PropTypes.func,
     onChangeX: PropTypes.func,
     onChangeY: PropTypes.func,
     onClickNotVisible: PropTypes.func,
     onClickVisible: PropTypes.func,
     onPressNotVisible: PropTypes.func,
     onPressVisible: PropTypes.func,
-    rotationStyle: PropTypes.oneOf(ROTATION_STYLES),
+    size: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
     visible: PropTypes.bool,
     x: PropTypes.oneOfType([
         PropTypes.string,

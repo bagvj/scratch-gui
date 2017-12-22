@@ -8,11 +8,12 @@ import VM from 'scratch-vm';
 
 import Blocks from '../../containers/blocks.jsx';
 import CostumeTab from '../../containers/costume-tab.jsx';
-import Controls from '../../containers/controls.jsx';
 import TargetPane from '../../containers/target-pane.jsx';
 import SoundTab from '../../containers/sound-tab.jsx';
+import StageHeader from '../../containers/stage-header.jsx';
 import Stage from '../../containers/stage.jsx';
 import {FormattedMessage} from 'react-intl';
+import PreviewModal from '../../containers/preview-modal.jsx';
 
 import Box from '../box/box.jsx';
 import IconButton from '../icon-button/icon-button.jsx';
@@ -36,6 +37,7 @@ const GUIComponent = props => {
         children,
         enableExtensions,
         vm,
+        previewInfoVisible,
         onExtensionButtonClick,
         onTabSelect,
         tabIndex,
@@ -63,7 +65,10 @@ const GUIComponent = props => {
             className={styles.pageWrapper}
             {...componentProps}
         >
-            <Header />
+            {previewInfoVisible ? (
+                <PreviewModal />
+            ) : null}
+            <MenuBar />
             <Box className={styles.bodyWrapper}>
                 <Box className={styles.flexWrapper}>
                     <Box className={styles.editorWrapper}>
@@ -130,7 +135,7 @@ const GUIComponent = props => {
 
                     <Box className={styles.stageAndTargetWrapper}>
                         <Box className={styles.stageMenuWrapper}>
-                            <Controls vm={vm} />
+                            <StageHeader vm={vm} />
                         </Box>
                         <Box className={styles.stageWrapper}>
                             <MediaQuery minWidth={layout.fullSizeMinWidth}>{isFullSize => (
@@ -159,6 +164,7 @@ GUIComponent.propTypes = {
     enableExtensions: PropTypes.bool,
     onExtensionButtonClick: PropTypes.func,
     onTabSelect: PropTypes.func,
+    previewInfoVisible: PropTypes.bool,
     tabIndex: PropTypes.number,
     vm: PropTypes.instanceOf(VM).isRequired
 };

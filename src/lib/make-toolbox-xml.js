@@ -175,9 +175,6 @@ const looks = function (isStage, targetId) {
             </value>
         </block>
         ${blockSeparator}
-        <block type="looks_show"/>
-        <block type="looks_hide"/>
-        ${blockSeparator}
         `}
         ${isStage ? `
             <block type="looks_switchbackdropto">
@@ -203,25 +200,8 @@ const looks = function (isStage, targetId) {
                     <shadow type="looks_backdrops"/>
                 </value>
             </block>
-        `}
-        ${blockSeparator}
-        <block type="looks_changeeffectby">
-            <value name="CHANGE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_seteffectto">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_cleargraphiceffects"/>
-        ${blockSeparator}
-        ${isStage ? '' : `
+            <block type="looks_nextbackdrop"/>
+            ${blockSeparator}
             <block type="looks_changesizeby">
                 <value name="CHANGE">
                     <shadow type="math_number">
@@ -236,7 +216,28 @@ const looks = function (isStage, targetId) {
                     </shadow>
                 </value>
             </block>
-            ${blockSeparator}
+        `}
+        ${blockSeparator}
+        <block type="looks_changeeffectby">
+            <value name="CHANGE">
+                <shadow type="math_number">
+                    <field name="NUM">25</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="looks_seteffectto">
+            <value name="VALUE">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="looks_cleargraphiceffects"/>
+        ${blockSeparator}
+        <block type="looks_show"/>
+        <block type="looks_hide"/>
+        ${blockSeparator}
+        ${isStage ? '' : `
             <block type="looks_gotofront"/>
             <block type="looks_gobacklayers">
                 <value name="NUM">
@@ -641,9 +642,16 @@ const operators = function () {
     `;
 };
 
-const data = function () {
+const variables = function () {
     return `
-    <category name="数据" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">
+    <category name="变量" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">
+    </category>
+    `;
+};
+
+const myBlocks = function () {
+    return `
+    <category name="我的Blocks" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE">
     </category>
     `;
 };
@@ -669,7 +677,8 @@ const makeToolboxXML = function (isStage, targetId, categoriesXML) {
         control(isStage, targetId), gap,
         sensing(isStage, targetId), gap,
         operators(isStage, targetId), gap,
-        data(isStage, targetId)
+        variables(isStage, targetId), gap,
+        myBlocks(isStage, targetId)
     ];
 
     if (categoriesXML) {

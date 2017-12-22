@@ -30,7 +30,11 @@ class BackdropLibrary extends React.Component {
             bitmapResolution: item.info.length > 2 ? item.info[2] : 1,
             skinId: null
         };
-        this.props.vm.addBackdrop(item.md5, vmBackdrop);
+        this.props.vm.addBackdrop(item.md5, vmBackdrop).then(() => {
+            if (this.props.onNewBackdrop) {
+                this.props.onNewBackdrop();
+            }
+        });
     }
     render () {
         return (
@@ -46,6 +50,7 @@ class BackdropLibrary extends React.Component {
 }
 
 BackdropLibrary.propTypes = {
+    onNewBackdrop: PropTypes.func,
     onRequestClose: PropTypes.func,
     vm: PropTypes.instanceOf(VM).isRequired,
     intl: intlShape,

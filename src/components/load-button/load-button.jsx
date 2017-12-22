@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import ButtonComponent from '../button/button.jsx';
+import {ComingSoonTooltip} from '../coming-soon/coming-soon.jsx';
 import {FormattedMessage} from 'react-intl';
 
 import styles from './load-button.css';
@@ -14,19 +15,28 @@ const LoadButtonComponent = ({
     ...props
 }) => (
     <span {...props}>
-        <ButtonComponent onClick={onClick}>
-            <FormattedMessage
-                defaultMessage="Load"
-                description="Button for the load project in the load-button"
-                id="gui.loadButton.load"
+        <ComingSoonTooltip
+            place="bottom"
+            tooltipId="load-button"
+        >
+            <ButtonComponent
+                disabled
+                onClick={onClick}
+            >
+                <FormattedMessage
+                	defaultMessage="Load"
+                	description="Button for the load project in the load-button"
+                	id="gui.loadButton.load"
+            	/>
+            </ButtonComponent>
+            <input
+                disabled
+                className={styles.fileInput}
+                ref={inputRef}
+                type="file"
+                onChange={onChange}
             />
-        </ButtonComponent>
-        <input
-            className={styles.fileInput}
-            ref={inputRef}
-            type="file"
-            onChange={onChange}
-        />
+        </ComingSoonTooltip>
     </span>
 );
 
