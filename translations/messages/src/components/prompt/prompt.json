@@ -1,5 +1,10 @@
 [
   {
+    "id": "gui.gui.variablePrompt",
+    "description": "Dropdown message for variable/list options",
+    "defaultMessage": "More Options"
+  },
+  {
     "id": "gui.prompt.cancel",
     "description": "",
     "defaultMessage": "Cancel"

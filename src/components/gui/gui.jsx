@@ -5,6 +5,7 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import MediaQuery from 'react-responsive';
 import tabStyles from 'react-tabs/style/react-tabs.css';
 import VM from 'scratch-vm';
+import Renderer from 'scratch-render';
 
 import Blocks from '../../containers/blocks.jsx';
 import CostumeTab from '../../containers/costume-tab.jsx';
@@ -13,11 +14,13 @@ import SoundTab from '../../containers/sound-tab.jsx';
 import StageHeader from '../../containers/stage-header.jsx';
 import Stage from '../../containers/stage.jsx';
 import {FormattedMessage} from 'react-intl';
-import PreviewModal from '../../containers/preview-modal.jsx';
 
 import Box from '../box/box.jsx';
+import FeedbackForm from '../feedback-form/feedback-form.jsx';
 import IconButton from '../icon-button/icon-button.jsx';
 import Header from '../menu-bar/header.jsx';
+import PreviewModal from '../../containers/preview-modal.jsx';
+import WebGlModal from '../../containers/webgl-modal.jsx';
 
 import layout from '../../lib/layout-constants.js';
 import styles from './gui.css';
@@ -36,6 +39,7 @@ const GUIComponent = props => {
         basePath,
         children,
         enableExtensions,
+        feedbackFormVisible,
         vm,
         previewInfoVisible,
         onExtensionButtonClick,
@@ -60,6 +64,8 @@ const GUIComponent = props => {
         tabSelected: classNames(tabStyles.reactTabsTabSelected, styles.isSelected)
     };
 
+    const isRendererSupported = Renderer.isSupported();
+
     return (
         <Box
             className={styles.pageWrapper}
@@ -68,7 +74,13 @@ const GUIComponent = props => {
             {previewInfoVisible ? (
                 <PreviewModal />
             ) : null}
-            <MenuBar />
+            {feedbackFormVisible ? (
+                <FeedbackForm />
+            ) : null}
+            {isRendererSupported ? null : (
+                <WebGlModal />
+            )}
+            <Header />
             <Box className={styles.bodyWrapper}>
                 <Box className={styles.flexWrapper}>
                     <Box className={styles.editorWrapper}>
@@ -138,14 +150,18 @@ const GUIComponent = props => {
                             <StageHeader vm={vm} />
                         </Box>
                         <Box className={styles.stageWrapper}>
-                            <MediaQuery minWidth={layout.fullSizeMinWidth}>{isFullSize => (
-                                <Stage
-                                    height={isFullSize ? layout.fullStageHeight : layout.smallerStageHeight}
-                                    shrink={0}
-                                    vm={vm}
-                                    width={isFullSize ? layout.fullStageWidth : layout.smallerStageWidth}
-                                />
-                            )}</MediaQuery>
+                            {/* eslint-disable arrow-body-style */}
+                            <MediaQuery minWidth={layout.fullSizeMinWidth}>{isFullSize => {
+                                return isRendererSupported ? (
+                                    <Stage
+                                        height={isFullSize ? layout.fullStageHeight : layout.smallerStageHeight}
+                                        shrink={0}
+                                        vm={vm}
+                                        width={isFullSize ? layout.fullStageWidth : layout.smallerStageWidth}
+                                    />
+                                ) : null;
+                            }}</MediaQuery>
+                            {/* eslint-enable arrow-body-style */}
                         </Box>
                         <Box className={styles.targetWrapper}>
                             <TargetPane
@@ -162,6 +178,7 @@ GUIComponent.propTypes = {
     basePath: PropTypes.string,
     children: PropTypes.node,
     enableExtensions: PropTypes.bool,
+    feedbackFormVisible: PropTypes.bool,
     onExtensionButtonClick: PropTypes.func,
     onTabSelect: PropTypes.func,
     previewInfoVisible: PropTypes.bool,

@@ -8,8 +8,7 @@ import Box from '../box/box.jsx';
 import Button from '../button/button.jsx';
 import {ComingSoonTooltip} from '../coming-soon/coming-soon.jsx';
 import Controls from '../../containers/controls.jsx';
-
-import {STAGE_SIZES} from '../../reducers/stage-size';
+import {getStageSize} from '../../lib/screen-utils.js';
 
 import fullScreenIcon from './icon--fullscreen.svg';
 import largeStageIcon from './icon--large-stage.svg';
@@ -43,8 +42,8 @@ const messages = defineMessages({
 
 const StageHeaderComponent = function (props) {
     const {
-        stageSize,
         isFullScreen,
+        onKeyPress,
         onSetStageLarge,
         onSetStageFull,
         onSetStageUnFull,
@@ -52,18 +51,20 @@ const StageHeaderComponent = function (props) {
     } = props;
 
     let header = null;
+    const stageSize = getStageSize(isFullScreen);
 
     if (isFullScreen) {
         header = (
             <Box className={styles.stageHeaderWrapperOverlay}>
-                <Box className={styles.stageMenuWrapper}>
+                <Box
+                    className={styles.stageMenuWrapper}
+                    style={{width: stageSize.width}}
+                >
                     <Controls vm={vm} />
                     <Button
-                        className={classNames(
-                            styles.stageButton,
-                            styles.stageButtonActive
-                        )}
+                        className={styles.stageButton}
                         onClick={onSetStageUnFull}
+                        onKeyPress={onKeyPress}
                     >
                         <img
                             alt={props.intl.formatMessage(messages.unFullStageSizeMessage)}
@@ -107,10 +108,7 @@ const StageHeaderComponent = function (props) {
                                 <Button
                                     className={classNames(
                                         styles.stageButton,
-                                        styles.stageButtonRight,
-                                        {
-                                            [styles.stageButtonActive]: stageSize === STAGE_SIZES.large
-                                        }
+                                        styles.stageButtonRight
                                     )}
                                     onClick={onSetStageLarge}
                                 >
@@ -147,10 +145,10 @@ const StageHeaderComponent = function (props) {
 StageHeaderComponent.propTypes = {
     intl: intlShape,
     isFullScreen: PropTypes.bool.isRequired,
+    onKeyPress: PropTypes.func.isRequired,
     onSetStageFull: PropTypes.func.isRequired,
     onSetStageLarge: PropTypes.func.isRequired,
     onSetStageUnFull: PropTypes.func.isRequired,
-    stageSize: PropTypes.oneOf(Object.keys(STAGE_SIZES)).isRequired,
     vm: PropTypes.instanceOf(VM).isRequired
 };
 

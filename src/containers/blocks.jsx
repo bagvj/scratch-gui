@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import VMScratchBlocks from '../lib/blocks';
 import VM from 'scratch-vm';
+
+//import analytics from '../lib/analytics';
 import Prompt from './prompt.jsx';
 import BlocksComponent from '../components/blocks/blocks.jsx';
 import ExtensionLibrary from './extension-library.jsx';
@@ -16,15 +18,6 @@ import {updateToolbox} from '../reducers/toolbox';
 import {activateColorPicker} from '../reducers/color-picker';
 import {closeExtensionLibrary} from '../reducers/modals';
 import {activateCustomProcedures, deactivateCustomProcedures} from '../reducers/custom-procedures';
-import {defineMessages, intlShape, injectIntl} from 'react-intl';
-
-const messages = defineMessages({
-    createVariable: {
-        id: "gui.blocks.createVariable",
-        description: "Title for create variable in the blocks",
-        defaultMessage: "Create Variable"
-    }
-})
 
 const addFunctionListener = (object, property, callback) => {
     const oldFn = object[property];
@@ -83,6 +76,8 @@ class Blocks extends React.Component {
 
         this.attachVM();
         this.props.vm.setLocale(this.props.locale, this.props.messages);
+
+        //analytics.pageview('/editors/blocks');
     }
     shouldComponentUpdate (nextProps, nextState) {
         return (
@@ -161,8 +156,8 @@ class Blocks extends React.Component {
     onTargetsUpdate () {
         if (this.props.vm.editingTarget) {
             ['glide', 'move', 'set'].forEach(prefix => {
-                this.updateToolboxBlockValue(`${prefix}x`, this.props.vm.editingTarget.x.toFixed(0));
-                this.updateToolboxBlockValue(`${prefix}y`, this.props.vm.editingTarget.y.toFixed(0));
+                this.updateToolboxBlockValue(`${prefix}x`, Math.round(this.props.vm.editingTarget.x).toString());
+                this.updateToolboxBlockValue(`${prefix}y`, Math.round(this.props.vm.editingTarget.y).toString());
             });
         }
     }
@@ -240,8 +235,11 @@ class Blocks extends React.Component {
     setBlocks (blocks) {
         this.blocks = blocks;
     }
-    handlePromptStart (message, defaultValue, callback) {
-        this.setState({prompt: {callback, message, defaultValue}});
+    handlePromptStart (message, defaultValue, callback, optTitle) {
+        const p = {prompt: {callback, message, defaultValue}};
+        p.prompt.title = optTitle ? optTitle : 'New Variable';
+        p.prompt.showMoreOptions = optTitle !== 'New Message';
+        this.setState(p);
     }
     handlePromptCallback (data) {
         this.state.prompt.callback(data);
@@ -281,8 +279,8 @@ class Blocks extends React.Component {
                     <Prompt
                         label={this.state.prompt.message}
                         placeholder={this.state.prompt.defaultValue}
-                        // title="New Variable" // @todo the only prompt is for new variables
-                        title={this.props.intl.formatMessage(messages.createVariable)}
+                        showMoreOptions={this.state.prompt.showMoreOptions}
+                        title={this.state.prompt.title}
                         onCancel={this.handlePromptClose}
                         onOk={this.handlePromptCallback}
                     />
@@ -341,8 +339,7 @@ Blocks.propTypes = {
     }),
     toolboxXML: PropTypes.string,
     updateToolboxState: PropTypes.func,
-    vm: PropTypes.instanceOf(VM).isRequired,
-    intl: intlShape,
+    vm: PropTypes.instanceOf(VM).isRequired
 };
 
 Blocks.defaultOptions = {
@@ -399,7 +396,7 @@ const mapDispatchToProps = dispatch => ({
     }
 });
 
-export default injectIntl(connect(
+export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Blocks));
+)(Blocks);

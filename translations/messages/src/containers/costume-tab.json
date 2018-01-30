@@ -2,11 +2,21 @@
   {
     "id": "gui.costumeTab.addBackdrop",
     "description": "Button to add a backdrop in the editor tab",
-    "defaultMessage": "Add Backdrop"
+    "defaultMessage": "Add Backdrop From Library"
   },
   {
     "id": "gui.costumeTab.addCostume",
     "description": "Button to add a costume in the editor tab",
-    "defaultMessage": "Add Costume"
+    "defaultMessage": "Add Costume From Library"
+  },
+  {
+    "id": "gui.costumeTab.addBlankBackdrop",
+    "description": "Button to add a blank backdrop in the editor tab",
+    "defaultMessage": "Add Blank Backdrop"
+  },
+  {
+    "id": "gui.costumeTab.addBlankCostume",
+    "description": "Button to add a blank costume in the editor tab",
+    "defaultMessage": "Add Blank Costume"
   }
 ]

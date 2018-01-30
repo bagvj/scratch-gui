@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.menuBar.giveFeedback",
+    "description": "Label for feedback form modal button",
+    "defaultMessage": "Give Feedback"
+  }
+]
