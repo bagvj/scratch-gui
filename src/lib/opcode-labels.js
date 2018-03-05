@@ -2,33 +2,33 @@ const opcodeMap = {
     // Motion
     motion_direction: {
         category: 'motion',
-        label: 'direction'
+        label: '方向'
     },
     motion_xposition: {
         category: 'motion',
-        label: 'x position'
+        label: 'x位置'
     },
     motion_yposition: {
         category: 'motion',
-        label: 'y position'
+        label: 'y位置'
     },
 
     // Looks
     looks_size: {
         category: 'looks',
-        label: 'size'
+        label: '尺寸'
     },
     looks_costumenumbername: {
         category: 'looks',
-        labelFn: params => `costume ${params.NUMBER_NAME}`
+        labelFn: params => `造型 ${params.NUMBER_NAME}`
     },
     looks_backdropnumbername: {
         category: 'looks',
-        labelFn: params => `backdrop ${params.NUMBER_NAME}`
+        labelFn: params => `背景 ${params.NUMBER_NAME}`
     },
     looks_backdropname: {
         category: 'looks',
-        label: 'backdrop name'
+        label: '背景名字'
     },
 
     // Data
@@ -44,7 +44,7 @@ const opcodeMap = {
     // Sound
     sound_volume: {
         category: 'sound',
-        label: 'volume'
+        label: '音量'
     },
     sound_tempo: {
         category: 'sound',
@@ -54,7 +54,7 @@ const opcodeMap = {
     // Sensing
     sensing_answer: {
         category: 'sensing',
-        label: 'answer'
+        label: '回答'
     },
     sensing_loudness: {
         category: 'sensing',
@@ -72,7 +72,7 @@ const opcodeMap = {
     },
     sensing_timer: {
         category: 'sensing',
-        label: 'timer'
+        label: '计时器'
     }
 };
 

@@ -139,7 +139,7 @@ const looks = function (isStage, targetId) {
         <block type="looks_sayforsecs">
             <value name="MESSAGE">
                 <shadow type="text">
-                    <field name="TEXT">Hello!</field>
+                    <field name="TEXT">你好!</field>
                 </shadow>
             </value>
             <value name="SECS">
@@ -151,14 +151,14 @@ const looks = function (isStage, targetId) {
         <block type="looks_say">
             <value name="MESSAGE">
                 <shadow type="text">
-                    <field name="TEXT">Hello!</field>
+                    <field name="TEXT">你好!</field>
                 </shadow>
             </value>
         </block>
         <block type="looks_thinkforsecs">
             <value name="MESSAGE">
                 <shadow type="text">
-                    <field name="TEXT">Hmm...</field>
+                    <field name="TEXT">额...</field>
                 </shadow>
             </value>
             <value name="SECS">
@@ -170,7 +170,7 @@ const looks = function (isStage, targetId) {
         <block type="looks_think">
             <value name="MESSAGE">
                 <shadow type="text">
-                    <field name="TEXT">Hmm...</field>
+                    <field name="TEXT">额...</field>
                 </shadow>
             </value>
         </block>
@@ -425,7 +425,7 @@ const sensing = function (isStage) {
         <block id="askandwait" type="sensing_askandwait">
             <value name="QUESTION">
                 <shadow type="text">
-                    <field name="TEXT">What's your name?</field>
+                    <field name="TEXT">你叫什么名字呀?</field>
                 </shadow>
             </value>
         </block>
@@ -568,12 +568,12 @@ const operators = function () {
         <block type="operator_join">
             <value name="STRING1">
                 <shadow type="text">
-                    <field name="TEXT">hello</field>
+                    <field name="TEXT">你好</field>
                 </shadow>
             </value>
             <value name="STRING2">
                 <shadow type="text">
-                    <field name="TEXT">world</field>
+                    <field name="TEXT">世界</field>
                 </shadow>
             </value>
         </block>
@@ -585,26 +585,26 @@ const operators = function () {
             </value>
             <value name="STRING">
                 <shadow type="text">
-                    <field name="TEXT">world</field>
+                    <field name="TEXT">嗨</field>
                 </shadow>
             </value>
         </block>
         <block type="operator_length">
             <value name="STRING">
                 <shadow type="text">
-                    <field name="TEXT">world</field>
+                    <field name="TEXT">嗨</field>
                 </shadow>
             </value>
         </block>
         <block type="operator_contains" id="operator_contains">
           <value name="STRING1">
             <shadow type="text">
-              <field name="TEXT">hello</field>
+              <field name="TEXT">这几个字里</field>
             </shadow>
           </value>
           <value name="STRING2">
             <shadow type="text">
-              <field name="TEXT">world</field>
+              <field name="TEXT">嗨</field>
             </shadow>
           </value>
         </block>
