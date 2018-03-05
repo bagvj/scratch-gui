@@ -1,7 +1,27 @@
 [
   {
-    "id": "gui.spriteSelector.addSprite",
-    "description": "Button to add a sprite in the target pane",
-    "defaultMessage": "Add Sprite"
+    "id": "gui.spriteSelector.addSpriteFromLibrary",
+    "description": "Button to add a sprite in the target pane from library",
+    "defaultMessage": "Sprite Library"
+  },
+  {
+    "id": "gui.spriteSelector.addSpriteFromPaint",
+    "description": "Button to add a sprite in the target pane from paint",
+    "defaultMessage": "Paint"
+  },
+  {
+    "id": "gui.spriteSelector.addSpriteFromSurprise",
+    "description": "Button to add a random sprite in the target pane",
+    "defaultMessage": "Surprise"
+  },
+  {
+    "id": "gui.spriteSelector.addSpriteFromFile",
+    "description": "Button to add a sprite in the target pane from file",
+    "defaultMessage": "Coming Soon"
+  },
+  {
+    "id": "gui.spriteSelector.addSpriteFromCamera",
+    "description": "Button to add a sprite in the target pane from camera",
+    "defaultMessage": "Coming Soon"
   }
 ]

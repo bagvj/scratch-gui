@@ -25,6 +25,11 @@
     "defaultMessage": "Try It! {caticon}"
   },
   {
+    "id": "gui.previewModal.viewproject",
+    "description": "Label for button to import a 2.0 project",
+    "defaultMessage": "View 2.0 Project"
+  },
+  {
     "id": "gui.previewInfo.previewfaq",
     "description": "Invitation to try 3.0 preview",
     "defaultMessage": "To learn more, go to the {previewFaqLink}."
