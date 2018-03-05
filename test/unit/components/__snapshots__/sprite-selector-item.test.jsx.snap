@@ -6,6 +6,8 @@ exports[`SpriteSelectorItemComponent matches snapshot when selected 1`] = `
   onClick={[Function]}
   onContextMenu={[Function]}
   onMouseDown={[Function]}
+  onMouseEnter={undefined}
+  onMouseLeave={undefined}
   onMouseOut={[Function]}
   onMouseUp={[Function]}
   onTouchEnd={[Function]}
@@ -26,6 +28,12 @@ exports[`SpriteSelectorItemComponent matches snapshot when selected 1`] = `
   <canvas
     className={undefined}
     height={32}
+    style={
+      Object {
+        "height": "32px",
+        "width": "32px",
+      }
+    }
     width={32}
   />
   <div

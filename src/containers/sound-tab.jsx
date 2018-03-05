@@ -1,16 +1,21 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import bindAll from 'lodash.bindall';
-import {FormattedMessage} from 'react-intl';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
 import VM from 'scratch-vm';
 
 import AssetPanel from '../components/asset-panel/asset-panel.jsx';
 import soundIcon from '../components/asset-panel/icon--sound.svg';
 import addSoundFromLibraryIcon from '../components/asset-panel/icon--add-sound-lib.svg';
 import addSoundFromRecordingIcon from '../components/asset-panel/icon--add-sound-record.svg';
+import fileUploadIcon from '../components/action-menu/icon--file-upload.svg';
+import surpriseIcon from '../components/action-menu/icon--surprise.svg';
+
 import RecordModal from './record-modal.jsx';
 import SoundEditor from './sound-editor.jsx';
 import SoundLibrary from './sound-library.jsx';
+
+import soundLibraryContent from '../lib/libraries/sounds.json';
 
 import {connect} from 'react-redux';
 
@@ -26,7 +31,9 @@ class SoundTab extends React.Component {
         bindAll(this, [
             'handleSelectSound',
             'handleDeleteSound',
-            'handleNewSound'
+            'handleDuplicateSound',
+            'handleNewSound',
+            'handleSurpriseSound'
         ]);
         this.state = {selectedSoundIndex: 0};
     }
@@ -51,6 +58,15 @@ class SoundTab extends React.Component {
 
     handleDeleteSound (soundIndex) {
         this.props.vm.deleteSound(soundIndex);
+        if (soundIndex >= this.state.selectedSoundIndex) {
+            this.setState({selectedSoundIndex: Math.max(0, soundIndex - 1)});
+        }
+    }
+
+    handleDuplicateSound (soundIndex) {
+        this.props.vm.duplicateSound(soundIndex).then(() => {
+            this.setState({selectedSoundIndex: soundIndex + 1});
+        });
     }
 
     handleNewSound () {
@@ -62,8 +78,23 @@ class SoundTab extends React.Component {
         this.setState({selectedSoundIndex: Math.max(sounds.length - 1, 0)});
     }
 
+    handleSurpriseSound () {
+        const soundItem = soundLibraryContent[Math.floor(Math.random() * soundLibraryContent.length)];
+        const vmSound = {
+            format: soundItem.format,
+            md5: soundItem.md5,
+            rate: soundItem.rate,
+            sampleCount: soundItem.sampleCount,
+            name: soundItem.name
+        };
+        this.props.vm.addSound(vmSound).then(() => {
+            this.handleNewSound();
+        });
+    }
+
     render () {
         const {
+            intl,
             vm,
             onNewSoundFromLibraryClick,
             onNewSoundFromRecordingClick
@@ -82,31 +113,46 @@ class SoundTab extends React.Component {
             }
         )) : [];
 
-        const recordSoundMsg = (
-            <FormattedMessage
-                defaultMessage="Record Sound"
-                description="Button to record a sound in the editor tab"
-                id="gui.soundTab.recordSound"
-            />
-        );
-        const addSoundMsg = (
-            <FormattedMessage
-                defaultMessage="Add Sound"
-                description="Button to add a sound in the editor tab"
-                id="gui.soundTab.addSound"
-            />
-        );
+        const messages = defineMessages({
+            fileUploadSound: {
+                defaultMessage: 'Coming Soon',
+                description: 'Button to upload sound from file in the editor tab',
+                id: 'gui.soundTab.fileUploadSound'
+            },
+            surpriseSound: {
+                defaultMessage: 'Surprise',
+                description: 'Button to get a random sound in the editor tab',
+                id: 'gui.soundTab.surpriseSound'
+            },
+            recordSound: {
+                defaultMessage: 'Record',
+                description: 'Button to record a sound in the editor tab',
+                id: 'gui.soundTab.recordSound'
+            },
+            addSound: {
+                defaultMessage: 'Sound Library',
+                description: 'Button to add a sound in the editor tab',
+                id: 'gui.soundTab.addSoundFromLibrary'
+            }
+        });
 
         return (
             <AssetPanel
                 buttons={[{
-                    message: recordSoundMsg,
-                    img: addSoundFromRecordingIcon,
-                    onClick: onNewSoundFromRecordingClick
-                }, {
-                    message: addSoundMsg,
+                    title: intl.formatMessage(messages.addSound),
                     img: addSoundFromLibraryIcon,
                     onClick: onNewSoundFromLibraryClick
+                }, {
+                    title: intl.formatMessage(messages.fileUploadSound),
+                    img: fileUploadIcon
+                }, {
+                    title: intl.formatMessage(messages.surpriseSound),
+                    img: surpriseIcon,
+                    onClick: this.handleSurpriseSound
+                }, {
+                    title: intl.formatMessage(messages.recordSound),
+                    img: addSoundFromRecordingIcon,
+                    onClick: onNewSoundFromRecordingClick
                 }]}
                 items={sounds.map(sound => ({
                     url: soundIcon,
@@ -114,6 +160,7 @@ class SoundTab extends React.Component {
                 }))}
                 selectedItemIndex={this.state.selectedSoundIndex}
                 onDeleteClick={this.handleDeleteSound}
+                onDuplicateClick={this.handleDuplicateSound}
                 onItemClick={this.handleSelectSound}
             >
                 {sprite.sounds && sprite.sounds[this.state.selectedSoundIndex] ? (
@@ -138,6 +185,7 @@ class SoundTab extends React.Component {
 
 SoundTab.propTypes = {
     editingTarget: PropTypes.string,
+    intl: intlShape,
     onNewSoundFromLibraryClick: PropTypes.func.isRequired,
     onNewSoundFromRecordingClick: PropTypes.func.isRequired,
     onRequestCloseSoundLibrary: PropTypes.func.isRequired,
@@ -179,7 +227,7 @@ const mapDispatchToProps = dispatch => ({
     }
 });
 
-export default connect(
+export default injectIntl(connect(
     mapStateToProps,
     mapDispatchToProps
-)(SoundTab);
+)(SoundTab));

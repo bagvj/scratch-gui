@@ -235,10 +235,12 @@ class Blocks extends React.Component {
     setBlocks (blocks) {
         this.blocks = blocks;
     }
-    handlePromptStart (message, defaultValue, callback, optTitle) {
+    handlePromptStart (message, defaultValue, callback, optTitle, optVarType) {
         const p = {prompt: {callback, message, defaultValue}};
-        p.prompt.title = optTitle ? optTitle : 'New Variable';
-        p.prompt.showMoreOptions = optTitle !== 'New Message';
+        p.prompt.title = optTitle ? optTitle :
+            this.ScratchBlocks.VARIABLE_MODAL_TITLE;
+        p.prompt.showMoreOptions =
+            optVarType !== this.ScratchBlocks.BROADCAST_MESSAGE_VARIABLE_TYPE;
         this.setState(p);
     }
     handlePromptCallback (data) {
@@ -250,7 +252,10 @@ class Blocks extends React.Component {
     }
     handleCustomProceduresClose (data) {
         this.props.onRequestCloseCustomProcedures(data);
-        this.workspace.refreshToolboxSelection_();
+        const ws = this.workspace;
+        ws.refreshToolboxSelection_();
+        // @todo ensure this does not break on localization
+        ws.toolbox_.scrollToCategoryByName('My Blocks');
     }
     render () {
         /* eslint-disable no-unused-vars */

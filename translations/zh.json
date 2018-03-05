@@ -1,0 +1,358 @@
+{
+  "gui.unsupportedBrowser.label": {
+    "message": "不支持Internet Explorer",
+    "description": ""
+  },
+  "gui.unsupportedBrowser.description": {
+    "message": "非常抱歉， Scratch 3.0不支持Internet Explorer. 我们推荐您使用其它浏览器，如Google Chrome、Mozilla Firefox或者Microsoft Edge.",
+    "description": "Unsupported browser description"
+  },
+  "gui.unsupportedBrowser.back": {
+    "message": "返回",
+    "description": "Label for button go back when browser is unsupported"
+  },
+  "gui.unsupportedBrowser.previewfaq": {
+    "message": "想了解更多，请访问{previewFaqLink}.",
+    "description": "Scratch 3.0 FAQ description"
+  },
+  "gui.unsupportedBrowser.previewfaqlink": {
+    "message": "FAQ",
+    "description": "link to Scratch 3.0 FAQ page"
+  },
+  "gui.comingSoon.message1": {
+    "message": "敬请期待{emoji}",
+    "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+  },
+  "gui.comingSoon.message2": {
+    "message": "敬请期待",
+    "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+  },
+  "gui.comingSoon.message3": {
+    "message": "敬请期待{emoji}",
+    "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+  },
+  "gui.customProcedures.addAnInputNumberText": {
+    "message": "添加一个输入",
+    "description": "Label for button to add a number/text input"
+  },
+  "gui.customProcedures.numberTextType": {
+    "message": "数字或文本",
+    "description": "Description of the number/text input type"
+  },
+  "gui.customProcedures.addAnInputBoolean": {
+    "message": "添加一个输入",
+    "description": "Label for button to add a boolean input"
+  },
+  "gui.customProcedures.booleanType": {
+    "message": "布尔",
+    "description": "Description of the boolean input type"
+  },
+  "gui.customProcedures.addALabel": {
+    "message": "添加一个标签",
+    "description": "Label for button to add a label"
+  },
+  "gui.customProcedures.runWithoutScreenRefresh": {
+    "message": "不刷新地运行",
+    "description": "Label for checkbox to run without screen refresh"
+  },
+  "gui.customProcedures.cancel": {
+    "message": "取消",
+    "description": "Label for button to cancel custom procedure edits"
+  },
+  "gui.customProcedures.ok": {
+    "message": "确定",
+    "description": "Label for button to save new custom procedure"
+  },
+  "gui.greenFlag.go": {
+    "message": "运行",
+    "description": "Button to run blocks in the green-flag"
+  },
+  "gui.gui.addExtension": {
+    "message": "扩展",
+    "description": "Button to add an extension in the target pane"
+  },
+  "gui.gui.blocks": {
+    "message": "脚本",
+    "description": "Tab label in the gui tabs"
+  },
+  "gui.gui.costumes": {
+    "message": "造型",
+    "description": "Tab label in the gui tabs"
+  },
+  "gui.gui.sounds": {
+    "message": "声音",
+    "description": "Tab label in the gui tabs"
+  },
+  "gui.extensionLibrary.comingSoon": {
+    "message": "敬请期待",
+    "description": "Label for extensions that are not yet implemented"
+  },
+  "gui.loadButton.load": {
+    "message": "打开",
+    "description": "Button for the load project in the load-button"
+  },
+  "gui.header.open": {
+    "message": "打开",
+    "description": "Label for the open button in the header"
+  },
+  "gui.header.save": {
+    "message": "保存",
+    "description": "Label for the save button in the header"
+  },
+  "gui.menuBar.giveFeedback": {
+    "message": "反馈我们",
+    "description": "Label for feedback form modal button"
+  },
+  "gui.previewInfo.label": {
+    "message": "尝试 Scratch 3.0",
+    "description": "Scratch 3.0 modal label - for accessibility"
+  },
+  "gui.previewInfo.welcome": {
+    "message": "欢迎使用Scratch 3.0预览版",
+    "description": "Header for Preview Info Modal"
+  },
+  "gui.previewInfo.invitation": {
+    "message": "我们正在开发新版Scratch. 很高兴您试用它!",
+    "description": "Invitation to try 3.0 preview"
+  },
+  "gui.previewInfo.notnow": {
+    "message": "不是现在",
+    "description": "Label for button to back out of trying Scratch 3.0 preview"
+  },
+  "gui.previewModal.tryit": {
+    "message": "试用{caticon}",
+    "description": "Label for button to try Scratch 3.0 preview"
+  },
+  "gui.previewInfo.previewfaq": {
+    "message": "想了解更多，请访问{previewFaqLink}.",
+    "description": "Invitation to try 3.0 preview"
+  },
+  "gui.previewInfo.previewfaqlink": {
+    "message": "FAQ",
+    "description": "link to Scratch 3.0 preview FAQ page"
+  },
+  "gui.gui.variablePrompt": {
+    "message": "更多选项",
+    "description": "Dropdown message for variable/list options"
+  },
+  "gui.prompt.cancel": {
+    "message": "取消",
+    "description": ""
+  },
+  "gui.prompt.ok": {
+    "message": "确定",
+    "description": ""
+  },
+  "gui.playbackStep.loading": {
+    "message": "载入中",
+    "description": "Button to loading in the playback-step"
+  },
+  "gui.playbackStep.save": {
+    "message": "保存",
+    "description": "Button to save in the playback-step"
+  },
+  "gui.playbackStep.play": {
+    "message": "播放",
+    "description": "Button to play in the playback-step"
+  },
+  "gui.playbackStep.stop": {
+    "message": "停止",
+    "description": "Button to stop in the playback-step"
+  },
+  "gui.soundEditor.sound": {
+    "message": "声音",
+    "description": "Label for the name of the sound"
+  },
+  "gui.soundEditor.play": {
+    "message": "播放",
+    "description": "Title of the button to start playing the sound"
+  },
+  "gui.soundEditor.stop": {
+    "message": "停止",
+    "description": "Title of the button to stop the sound"
+  },
+  "gui.soundEditor.trim": {
+    "message": "剪裁",
+    "description": "Title of the button to start trimminging the sound"
+  },
+  "gui.soundEditor.save": {
+    "message": "保存",
+    "description": "Title of the button to save trimmed sound"
+  },
+  "gui.soundEditor.undo": {
+    "message": "撤消",
+    "description": "Title of the button to undo"
+  },
+  "gui.soundEditor.redo": {
+    "message": "重做",
+    "description": "Title of the button to redo"
+  },
+  "gui.soundEditor.faster": {
+    "message": "加快",
+    "description": "Title of the button to apply the faster effect"
+  },
+  "gui.soundEditor.slower": {
+    "message": "减慢",
+    "description": "Title of the button to apply the slower effect"
+  },
+  "gui.soundEditor.echo": {
+    "message": "回声",
+    "description": "Title of the button to apply the echo effect"
+  },
+  "gui.soundEditor.robot": {
+    "message": "机器",
+    "description": "Title of the button to apply the robot effect"
+  },
+  "gui.soundEditor.louder": {
+    "message": "响亮",
+    "description": "Title of the button to apply the louder effect"
+  },
+  "gui.soundEditor.softer": {
+    "message": "柔和",
+    "description": "Title of the button to apply thr.softer effect"
+  },
+  "gui.soundEditor.reverse": {
+    "message": "反转",
+    "description": "Title of the button to apply the reverse effect"
+  },
+  "gui.spriteInfo.name": {
+    "message": "名字",
+    "description": "Placeholder for sprite name in the sprite-info"
+  },
+  "gui.spriteInfo.sprite": {
+    "message": "角色",
+    "description": "Label for sprite in the sprite-info"
+  },
+  "gui.spriteInfo.show": {
+    "message": "显示",
+    "description": "Label for show in the sprite-info"
+  },
+  "gui.spriteInfo.direction": {
+    "message": "方向",
+    "description": "Label for direction in the sprite-info"
+  },
+  "gui.spriteInfo.size": {
+    "message": "大小",
+    "description": "Label for size in the sprite-info"
+  },
+  "gui.spriteSelectorItem.contextMenuDuplicate": {
+    "message": "复制",
+    "description": "Menu item to duplicate in the right click menu"
+  },
+  "gui.spriteSelectorItem.contextMenuDelete": {
+    "message": "删除",
+    "description": "Menu item to delete in the right click menu"
+  },
+  "gui.spriteSelector.addSprite": {
+    "message": "添加角色",
+    "description": "Button to add a sprite in the target pane"
+  },
+  "gui.gui.stageSizeLarge": {
+    "message": "舞台大小切换 - 大",
+    "description": "Button to change stage size to large"
+  },
+  "gui.gui.stageSizeSmall": {
+    "message": "舞台大小切换 - 小",
+    "description": "Button to change stage size to small"
+  },
+  "gui.gui.stageSizeFull": {
+    "message": "舞台大小切换 - 全屏",
+    "description": "Button to change stage size to full screen"
+  },
+  "gui.gui.stageSizeUnFull": {
+    "message": "舞台大小切换 - 非全屏",
+    "description": "Button to get out of full screen mode"
+  },
+  "gui.stageSelector.targetPaneAddBackdrop": {
+    "message": "添加背景",
+    "description": "Button to add a backdrop in the target pane"
+  },
+  "gui.stageSelector.stage": {
+    "message": "舞台",
+    "description": "Label for the stage in the stage selector"
+  },
+  "gui.stageSelector.backdrops": {
+    "message": "背景",
+    "description": "Label for the backdrops in the stage selector"
+  },
+  "gui.stopAll.stop": {
+    "message": "停止",
+    "description": "Button to stop all blocks in the stop-all"
+  },
+  "gui.turboMode.active": {
+    "message": "加速模式",
+    "description": "Label indicating turbo mode is active"
+  },
+  "gui.webglModal.label": {
+    "message": "您的浏览器不支持WebGL",
+    "description": "WebGL missing title"
+  },
+  "gui.webglModal.description": {
+    "message": "很遗憾，您的浏览器或电脑 {webGlLink}. 这项技术需要Scratch 3.0才能运行.",
+    "description": "WebGL missing message"
+  },
+  "gui.webglModal.webgllink": {
+    "message": "不支持WebGL",
+    "description": "link part of your browser does not support WebGL message"
+  },
+  "gui.webglModal.back": {
+    "message": "返回",
+    "description": "Label for button go back when browser is unsupported"
+  },
+  "gui.webglModal.previewfaq": {
+    "message": "想了解更多，请访问{previewFaqLink}.",
+    "description": "Scratch 3.0 FAQ description"
+  },
+  "gui.webglModal.previewfaqlink": {
+    "message": "FAQ",
+    "description": "link to Scratch 3.0 FAQ page"
+  },
+  "gui.backdropLibrary.backdropLibrary": {
+    "message": "背景库",
+    "description": "Title for backdrops library in the backdrop-library"
+  },
+  "gui.blocks.createVariable": {
+    "message": "创建变量",
+    "description": "Title for create variable in the blocks"
+  },
+  "gui.costumeLibrary.costumeLibrary": {
+    "message": "造型库",
+    "description": "Title for costume library in the costume-library"
+  },
+  "gui.costumeTab.addBackdrop": {
+    "message": "添加背景",
+    "description": "Button to add a backdrop in the editor tab"
+  },
+  "gui.costumeTab.addCostume": {
+    "message": "添加造型",
+    "description": "Button to add a costume in the editor tab"
+  },
+  "gui.costumeTab.addBlankBackdrop": {
+    "message": "添加空背景",
+    "description": "Button to add a blank backdrop in the editor tab"
+  },
+  "gui.costumeTab.addBlankCostume": {
+    "message": "添加空造型",
+    "description": "Button to add a blank costume in the editor tab"
+  },
+  "gui.extensionLibrary.extensionLibrary": {
+    "message": "扩展库",
+    "description": "Title for extension library in the extension-library"
+  },
+  "gui.soundLibrary.soundLibrary": {
+    "message": "声音库",
+    "description": "Title for sound library in the sound-library"
+  },
+  "gui.soundTab.recordSound": {
+    "message": "记录声音",
+    "description": "Button to record a sound in the editor tab"
+  },
+  "gui.soundTab.addSound": {
+    "message": "添加声音",
+    "description": "Button to add a sound in the editor tab"
+  },
+  "gui.spriteLibrary.spriteLibrary": {
+    "message": "角色库",
+    "description": "Title for sprite library in the sprite-library"
+  }
+}

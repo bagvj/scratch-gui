@@ -31,6 +31,7 @@ const StopAllComponent = function (props) {
                     [styles.isActive]: active
                 }
             )}
+            draggable={false}
             src={stopAllIcon}
             // title={title}
             title={props.intl.formatMessage(messages.stop)}

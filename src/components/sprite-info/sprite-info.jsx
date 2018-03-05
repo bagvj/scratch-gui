@@ -69,6 +69,7 @@ class SpriteInfo extends React.Component {
                     <div className={classNames(styles.group, styles.spriteName)}>
                         <Label text={this.props.intl.formatMessage(messages.sprite)}>
                             <BufferedInput
+                                className={styles.spriteInput}
                                 disabled={this.props.disabled}
                                 placeholder={this.props.intl.formatMessage(messages.name)}
                                 tabIndex="0"
@@ -194,7 +195,7 @@ class SpriteInfo extends React.Component {
                     <div className={classNames(styles.group, styles.largerInput)}>
                         <Label
                             secondary
-                            text="Direction"
+                            text={this.props.intl.formatMessage(messages.direction)}
                         >
                             <BufferedInput
                                 small
