@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Modal from '../modal/modal.jsx';
 import Box from '../box/box.jsx';
-import {FormattedMessage} from 'react-intl';
+import {FormattedMessage, defineMessages, intlShape, injectIntl} from 'react-intl';
 
 import booleanInputIcon from './icon--boolean-input.svg';
 import textInputIcon from './icon--text-input.svg';
@@ -10,10 +10,18 @@ import labelIcon from './icon--label.svg';
 
 import styles from './custom-procedures.css';
 
+const messages = defineMessages({
+    makeABlock: {
+        id: 'gui.customProcedures.makeABlock',
+        description: 'Make a Block',
+        defaultMessage: 'Make a Block'
+    }
+});
+
 const CustomProcedures = props => (
     <Modal
         className={styles.modalContent}
-        contentLabel="Make a Block"
+        contentLabel={props.intl.formatMessage(messages.makeABlock)}
         onRequestClose={props.onCancel}
     >
         <Box
@@ -139,7 +147,9 @@ CustomProcedures.propTypes = {
     onCancel: PropTypes.func.isRequired,
     onOk: PropTypes.func.isRequired,
     onToggleWarp: PropTypes.func.isRequired,
-    warp: PropTypes.bool.isRequired
+    warp: PropTypes.bool.isRequired,
+    intl: intlShape,
 };
 
-export default CustomProcedures;
+// export default CustomProcedures;
+export default injectIntl(CustomProcedures);

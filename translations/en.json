@@ -31,6 +31,22 @@
     "message": "We're working on it {emoji}",
     "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
   },
+  "gui.crashMessage.reload": {
+    "message": "Reload",
+    "description": "reload"
+  },
+  "gui.crashMessage.title": {
+    "message": "Oops! Something went wrong.",
+    "description": "crash message title"
+  },
+  "gui.crashMessage.content": {
+    "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\nautomatically reported to the Scratch Team. Please refresh your page to try\nagain.",
+    "description": "crash message body"
+  },
+  "gui.customProcedures.makeABlock": {
+    "message": "Make a Block",
+    "description": "Make a Block"
+  },
   "gui.customProcedures.addAnInputNumberText": {
     "message": "Add an input",
     "description": "Label for button to add a number/text input"
@@ -227,6 +243,22 @@
     "message": "Stop",
     "description": "Button to stop in the playback-step"
   },
+  "gui.recordingStep.clickButton": {
+    "message": "Begin recording by clicking the button below",
+    "description": "Begin recording by clicking the button below"
+  },
+  "gui.recordingStep.permission": {
+    "message": "↖️  We need your permission to use your microphone",
+    "description": "permission to microphone"
+  },
+  "gui.recordingStep.record": {
+    "message": "Record",
+    "description": "record"
+  },
+  "gui.recordingStep.stopRecording": {
+    "message": "Stop recording",
+    "description": "Stop recording"
+  },
   "gui.soundEditor.sound": {
     "message": "Sound",
     "description": "Label for the name of the sound"
@@ -419,21 +451,29 @@
     "message": "Costume Library",
     "description": "Title for costume library in the costume-library"
   },
-  "gui.costumeTab.addBackdrop": {
-    "message": "Add Backdrop From Library",
+  "gui.costumeTab.addBackdropFromLibrary": {
+    "message": "Backdrop Library",
     "description": "Button to add a backdrop in the editor tab"
   },
-  "gui.costumeTab.addCostume": {
-    "message": "Add Costume From Library",
+  "gui.costumeTab.addCostumeFromLibrary": {
+    "message": "Costume Library",
     "description": "Button to add a costume in the editor tab"
   },
-  "gui.costumeTab.addBlankBackdrop": {
-    "message": "Add Blank Backdrop",
-    "description": "Button to add a blank backdrop in the editor tab"
-  },
   "gui.costumeTab.addBlankCostume": {
-    "message": "Add Blank Costume",
+    "message": "Paint",
     "description": "Button to add a blank costume in the editor tab"
+  },
+  "gui.costumeTab.addSurpriseCostume": {
+    "message": "Surprise",
+    "description": "Button to add a surprise costume in the editor tab"
+  },
+  "gui.costumeTab.addFileCostume": {
+    "message": "Coming Soon",
+    "description": "Button to add a file upload costume in the editor tab"
+  },
+  "gui.costumeTab.addCameraCostume": {
+    "message": "Coming Soon",
+    "description": "Button to use the camera to create a costume costume in the editor tab"
   },
   "gui.extensionLibrary.extensionLibrary": {
     "message": "Extension Library",

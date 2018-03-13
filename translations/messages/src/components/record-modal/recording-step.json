@@ -1,0 +1,22 @@
+[
+  {
+    "id": "gui.recordingStep.clickButton",
+    "description": "Begin recording by clicking the button below",
+    "defaultMessage": "Begin recording by clicking the button below"
+  },
+  {
+    "id": "gui.recordingStep.permission",
+    "description": "permission to microphone",
+    "defaultMessage": "↖️  We need your permission to use your microphone"
+  },
+  {
+    "id": "gui.recordingStep.record",
+    "description": "record",
+    "defaultMessage": "Record"
+  },
+  {
+    "id": "gui.recordingStep.stopRecording",
+    "description": "Stop recording",
+    "defaultMessage": "Stop recording"
+  }
+]

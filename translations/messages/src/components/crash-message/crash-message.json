@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gui.crashMessage.reload",
+    "description": "reload",
+    "defaultMessage": "Reload"
+  },
+  {
+    "id": "gui.crashMessage.title",
+    "description": "crash message title",
+    "defaultMessage": "Oops! Something went wrong."
+  },
+  {
+    "id": "gui.crashMessage.content",
+    "description": "crash message body",
+    "defaultMessage": "We are so sorry, but it looks like Scratch has crashed. This bug has been\nautomatically reported to the Scratch Team. Please refresh your page to try\nagain."
+  }
+]

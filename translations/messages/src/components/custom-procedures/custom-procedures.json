@@ -1,5 +1,10 @@
 [
   {
+    "id": "gui.customProcedures.makeABlock",
+    "description": "Make a Block",
+    "defaultMessage": "Make a Block"
+  },
+  {
     "id": "gui.customProcedures.addAnInputNumberText",
     "description": "Label for button to add a number/text input",
     "defaultMessage": "Add an input"

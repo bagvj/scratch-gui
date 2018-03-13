@@ -31,6 +31,22 @@
     "message": "敬请期待{emoji}",
     "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
   },
+  "gui.crashMessage.reload": {
+    "message": "重新加载",
+    "description": "reload"
+  },
+  "gui.crashMessage.title": {
+    "message": "额…出了个小问题",
+    "description": "crash message title"
+  },
+  "gui.crashMessage.content": {
+    "message": "非常抱歉，程序崩溃了，不过这个bug已经上报给开发团队<br />请刷新页面然后重试",
+    "description": "crash message body"
+  },
+  "gui.customProcedures.makeABlock": {
+    "message": "创建一个块",
+    "description": "Make a Block"
+  },
   "gui.customProcedures.addAnInputNumberText": {
     "message": "添加一个输入",
     "description": "Label for button to add a number/text input"
@@ -227,6 +243,22 @@
     "message": "停止",
     "description": "Button to stop in the playback-step"
   },
+  "gui.recordingStep.clickButton": {
+    "message": "点击下面的按钮开始录制",
+    "description": "Begin recording by clicking the button below"
+  },
+  "gui.recordingStep.permission": {
+    "message": "↖️  需要授权才能使用麦克风",
+    "description": "permission to microphone"
+  },
+  "gui.recordingStep.record": {
+    "message": "开始录制",
+    "description": "record"
+  },
+  "gui.recordingStep.stopRecording": {
+    "message": "停止录制",
+    "description": "Stop recording"
+  },
   "gui.soundEditor.sound": {
     "message": "声音",
     "description": "Label for the name of the sound"
@@ -419,21 +451,29 @@
     "message": "造型库",
     "description": "Title for costume library in the costume-library"
   },
-  "gui.costumeTab.addBackdrop": {
+  "gui.costumeTab.addBackdropFromLibrary": {
     "message": "添加背景",
     "description": "Button to add a backdrop in the editor tab"
   },
-  "gui.costumeTab.addCostume": {
-    "message": "添加造型",
+  "gui.costumeTab.addCostumeFromLibrary": {
+    "message": "造型库",
     "description": "Button to add a costume in the editor tab"
   },
-  "gui.costumeTab.addBlankBackdrop": {
-    "message": "添加空背景",
-    "description": "Button to add a blank backdrop in the editor tab"
-  },
   "gui.costumeTab.addBlankCostume": {
-    "message": "添加空造型",
+    "message": "绘制造型",
     "description": "Button to add a blank costume in the editor tab"
+  },
+  "gui.costumeTab.addSurpriseCostume": {
+    "message": "惊喜",
+    "description": "Button to add a surprise costume in the editor tab"
+  },
+  "gui.costumeTab.addFileCostume": {
+    "message": "敬请期待",
+    "description": "Button to add a file upload costume in the editor tab"
+  },
+  "gui.costumeTab.addCameraCostume": {
+    "message": "敬请期待",
+    "description": "Button to use the camera to create a costume costume in the editor tab"
   },
   "gui.extensionLibrary.extensionLibrary": {
     "message": "扩展库",
@@ -452,11 +492,11 @@
     "description": "Button to get a random sound in the editor tab"
   },
   "gui.soundTab.recordSound": {
-    "message": "记录声音",
+    "message": "录制声音",
     "description": "Button to record a sound in the editor tab"
   },
-  "gui.soundTab.addSound": {
-    "message": "添加声音",
+  "gui.soundTab.addSoundFromLibrary": {
+    "message": "声音库",
     "description": "Button to add a sound in the editor tab"
   },
   "gui.spriteLibrary.spriteLibrary": {

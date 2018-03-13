@@ -650,7 +650,7 @@ const variables = function () {
 
 const myBlocks = function () {
     return `
-    <category name="我的Blocks" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE">
+    <category name="我的块" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE">
     </category>
     `;
 };
