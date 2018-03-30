@@ -52,7 +52,7 @@ webpackJsonp([1],{
 
 		kenrobot.viewType = "scratch3";
 		registerShortcut();
-		kenrobot.on("app", "command", onCommand).on("project", "open-by", onProjectOpenBy);
+		kenrobot.on("app", "command", onCommand).on("project", "open-by", onProjectOpenBy).on("project", "load", onProjectLoad);
 	}
 
 	function onCommand(command) {
@@ -60,12 +60,15 @@ webpackJsonp([1],{
 			case "new-project":
 				projectExtra = {};
 				kenrobot.view.newProject();
+				setTimeout(function () {
+					return kenrobot.view.project = kenrobot.view.getProject();
+				}, 1000);
 				break;
 			case "open-project":
 				onOpenProject();
 				break;
 			case "save-project":
-				onSaveProject();
+				onSaveProject(false, arguments.length <= 1 ? undefined : arguments[1]);
 				break;
 			case "save-as-project":
 				onSaveProject(true);
@@ -82,11 +85,7 @@ webpackJsonp([1],{
 	}
 
 	function onOpenProject(name) {
-		kenrobot.postMessage("app:projectNewOpen", "scratch3", name).then(function (result) {
-			projectExtra = result.extra;
-			kenrobot.view.loadProject(result.data);
-			kenrobot.trigger("util", "message", "打开成功");
-		}, function (err) {
+		kenrobot.postMessage("app:projectOpen", "scratch3", name).then(onProjectLoad, function (err) {
 			kenrobot.trigger("util", "message", {
 				text: "打开失败",
 				type: "error"
@@ -94,11 +93,18 @@ webpackJsonp([1],{
 		});
 	}
 
-	function onSaveProject(saveAs) {
+	function onProjectLoad(project) {
+		projectExtra = { path: project.path, project_name: project.project_name };
+		kenrobot.view.loadProject(project.data);
+		kenrobot.view.project = project.data;
+		kenrobot.trigger("util", "message", "打开成功");
+	}
+
+	function onSaveProject(saveAs, saveCallback) {
 		var doSave = function doSave(_) {
 			if (projectExtra.path) {
-				saveProject(kenrobot.view.getProject(), saveAs);
-			} else if (saveAs || !projectExtra.name) {
+				saveProject(kenrobot.view.getProject(), saveAs, saveCallback);
+			} else if (saveAs || !projectExtra.project_name) {
 				kenrobot.trigger("prompt", "show", {
 					title: "项目保存",
 					placeholder: "项目名字",
@@ -111,16 +117,16 @@ webpackJsonp([1],{
 							return;
 						}
 
-						projectExtra.name = name;
-						saveProject(kenrobot.view.getProject(), saveAs);
+						projectExtra.project_name = name;
+						saveProject(kenrobot.view.getProject(), saveAs, saveCallback);
 					}
 				});
 			} else {
-				saveProject(kenrobot.view.getProject(), saveAs);
+				saveProject(kenrobot.view.getProject(), saveAs, saveCallback);
 			}
 		};
 
-		if (kenrobot.getUserInfo() || saveAs || projectExtra.hasShowSave) {
+		if (kenrobot.user || saveAs || projectExtra.hasShowSave) {
 			doSave();
 		} else {
 			projectExtra.hasShowSave = true;
@@ -128,17 +134,19 @@ webpackJsonp([1],{
 		}
 	}
 
-	function saveProject(projectData, saveAs) {
+	function saveProject(data, saveAs, callback) {
 		var promise;
 		if (saveAs) {
-			promise = kenrobot.postMessage("app:projectNewSaveAs", projectExtra.name, "scratch3", projectData);
+			promise = kenrobot.postMessage("app:projectSaveAs", projectExtra.project_name, data, "scratch3");
 		} else {
-			promise = kenrobot.postMessage("app:projectNewSave", projectExtra.name, "scratch3", projectData, projectExtra.path);
+			promise = kenrobot.postMessage("app:projectSave", projectExtra.project_name, data, "scratch3", projectExtra.path);
 		}
 
 		promise.then(function (result) {
 			projectExtra = Object.assign(projectExtra, result);
+			kenrobot.view.project = result.data;
 			kenrobot.trigger("util", "message", "保存成功");
+			callback && callback();
 		}, function (err) {
 			kenrobot.trigger("util", "message", {
 				text: "保存失败",
