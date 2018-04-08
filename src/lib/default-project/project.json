@@ -57,17 +57,17 @@
 		"id": "9xJ@2eKXvx:/*Q^3Rib#",
 		"name": "小度",
 		"isStage": false,
-		"x": 0,
-		"y": 0,
-		"size": 100,
+		"x": -50,
+		"y": 70,
+		"size": 50,
 		"direction": 90,
 		"draggable": false,
 		"currentCostume": 0,
 		"costume": {
 			"name": "costume1",
 			"bitmapResolution": 1,
-			"rotationCenterX": 47,
-			"rotationCenterY": 55,
+			"rotationCenterX": 50,
+			"rotationCenterY": 50,
 			"skinId": 0,
 			"dataFormat": "svg",
 			"assetId": "09dc888b0b7df19f70d81588ae73420e"
@@ -81,16 +81,16 @@
 		"costumes": [{
 			"name": "costume1",
 			"bitmapResolution": 1,
-			"rotationCenterX": 47,
-			"rotationCenterY": 55,
+			"rotationCenterX": 50,
+			"rotationCenterY": 50,
 			"skinId": 0,
 			"dataFormat": "svg",
 			"assetId": "09dc888b0b7df19f70d81588ae73420e"
 		}, {
 			"name": "costume2",
 			"bitmapResolution": 1,
-			"rotationCenterX": 47,
-			"rotationCenterY": 55,
+			"rotationCenterX": 50,
+			"rotationCenterY": 50,
 			"skinId": 1,
 			"dataFormat": "svg",
 			"assetId": "3696356a03a8d938318876a593572843"
