@@ -49,6 +49,8 @@ class Header extends React.Component {
                 kenrobot.view.loadProject = this.props.loadProject;
                 var defaultProject = JSON.stringify(defaultProjectData);
                 kenrobot.view.newProject = _ => this.props.loadProject(defaultProject);
+
+                setTimeout(() => kenrobot.trigger("app", "ready"), 400);
             }
         });
     }
