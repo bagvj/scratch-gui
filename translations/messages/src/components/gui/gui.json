@@ -18,5 +18,10 @@
     "id": "gui.gui.sounds",
     "description": "Tab label in the gui tabs",
     "defaultMessage": "Sounds"
+  },
+  {
+    "id": "gui.gui.python",
+    "description": "Tab label in the gui tabs",
+    "defaultMessage": "Python"
   }
 ]

@@ -381,11 +381,13 @@ const control = function (isStage) {
             </block>
         ` : `
             <block type="control_start_as_clone"/>
+            
             <block type="control_create_clone_of">
                 <value name="CLONE_OPTION">
                     <shadow type="control_create_clone_of_menu"/>
                 </value>
             </block>
+
             <block type="control_delete_this_clone"/>
         `}
         ${categorySeparator}
@@ -654,7 +656,29 @@ const myBlocks = function () {
     </category>
     `;
 };
+const ai = function () {
+    return `
+    <category name="AI" colour="#ff0000" secondaryColour="#cc0000">
+        <block type="ai_recognitionspeech"/>
+        
+        ${blockSeparator}
 
+        <block type="ai_listentome"/>
+
+        ${blockSeparator}
+
+        <block type="ai_playAudio"/>
+
+        ${blockSeparator}
+
+        <block id="of" type="ai_of">
+            <value name="OBJECT">
+                <shadow id="ai_of_object_menu" type="ai_of_object_menu"/>
+            </value>
+        </block>
+    </category>
+    `;
+};
 const xmlOpen = '<xml style="display: none">';
 const xmlClose = '</xml>';
 
@@ -677,7 +701,8 @@ const makeToolboxXML = function (isStage, targetId, categoriesXML) {
         sensing(isStage, targetId), gap,
         operators(isStage, targetId), gap,
         variables(isStage, targetId), gap,
-        myBlocks(isStage, targetId)
+        myBlocks(isStage, targetId), gap,
+        ai(isStage, targetId), gap
     ];
 
     if (categoriesXML) {

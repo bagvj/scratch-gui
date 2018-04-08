@@ -126,6 +126,13 @@ const GUIComponent = props => {
                                         id="gui.gui.sounds"
                                     />
                                 </Tab>
+                                <Tab className={tabClassNames.tab}>
+                                    <FormattedMessage
+                                        defaultMessage="Python"
+                                        description="Tab label in the gui tabs"
+                                        id="gui.gui.python"
+                                    />
+                                </Tab>
                             </TabList>
                             <TabPanel className={tabClassNames.tabPanel}>
                                 <Box className={styles.blocksWrapper}>
