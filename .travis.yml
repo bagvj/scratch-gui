@@ -3,17 +3,16 @@ sudo: required
 dist: trusty
 addons:
     chrome: stable
-before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
 node_js:
-- 6
+- 8
+env:
+  - NODE_ENV=production
 cache:
   directories:
   - node_modules
 install:
-- npm install
-- npm update
+- npm --production=false install
+- npm --production=false update
 before_deploy:
 - npm --no-git-tag-version version 0.1.0-prerelease.$(date +%Y%m%d%H%M%S)
 - git config --global user.email $(git log --pretty=format:"%ae" -n1)
@@ -32,7 +31,9 @@ deploy:
   script: npm run --silent deploy -- -x -a -r https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
 - provider: npm
   on:
-    branch: master
+    branch:
+    - master
+    - develop
   skip_cleanup: true
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN

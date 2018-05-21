@@ -99,6 +99,72 @@
         ]
     },
     {
+        "name": "Avery Walking-a",
+        "md5": "ed334e546806dfbf26d2591d7ddb12d0.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Avery Walking-b",
+        "md5": "c295731e8666ad2e1575fb4b4f82988d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            102,
+            1
+        ]
+    },
+    {
+        "name": "Avery Walking-c",
+        "md5": "597a834225c9949e419dff7db1bc2453.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            48,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Avery Walking-d",
+        "md5": "ce9622d11d24607eec7988196b38c3c6.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            101,
+            1
+        ]
+    },
+    {
+        "name": "Avery-a",
+        "md5": "21393c9114c7d34b1df7ccd12c793672.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Avery-b",
+        "md5": "cc55f2f09599edc4ae0876e8b3d187d0.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            94,
+            1
+        ]
+    },
+    {
         "name": "Ball-a",
         "md5": "10117ddaefa98d819f2b1df93805622f.svg",
         "type": "costume",
@@ -150,6 +216,50 @@
         "info": [
             22,
             22,
+            1
+        ]
+    },
+    {
+        "name": "Ballerina-a",
+        "md5": "6051bb7008cf17c8853a6f81f04c8a0f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Ballerina-b",
+        "md5": "8bc5e47fb1439e29e11e9e3f2e20c6de.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Ballerina-c",
+        "md5": "6d3a07761b294f705987b0af58f8e335.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Ballerina-d",
+        "md5": "c3164795edf39e436272f425b4f5e487.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
             1
         ]
     },
@@ -220,7 +330,7 @@
         ]
     },
     {
-        "name": "Bat1-a ",
+        "name": "Bat1-a",
         "md5": "7ad915f8e0884f497a24d5bb61ea8a4a.svg",
         "type": "costume",
         "tags": [],
@@ -231,7 +341,7 @@
         ]
     },
     {
-        "name": "Bat1-b ",
+        "name": "Bat1-b",
         "md5": "f127434672b872a902346ef3c1af45f2.svg",
         "type": "costume",
         "tags": [],
@@ -242,7 +352,7 @@
         ]
     },
     {
-        "name": "Bat2-a ",
+        "name": "Bat2-a",
         "md5": "647d4bd53163f94a7dabf623ccab7fd3.svg",
         "type": "costume",
         "tags": [],
@@ -253,7 +363,7 @@
         ]
     },
     {
-        "name": "Bat2-b ",
+        "name": "Bat2-b",
         "md5": "8aa1d20e4f7761becbe9bafa75290465.svg",
         "type": "costume",
         "tags": [],
@@ -271,6 +381,160 @@
         "info": [
             34,
             33,
+            1
+        ]
+    },
+    {
+        "name": "Bear-a",
+        "md5": "5a4148d7684fc95f38c58a1672062c9e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            100,
+            90,
+            1
+        ]
+    },
+    {
+        "name": "Bear-b",
+        "md5": "d6517131718621a7aae8fc4f27de1ded.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            80,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-a",
+        "md5": "d15eddb1a0f0ff0fa867bc006b46685d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-b",
+        "md5": "06e3f1bcf4f46b83df3820d92430f202.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-c",
+        "md5": "13a3584040c9903b1824bb249d7f8a0e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-d",
+        "md5": "c5d49a105619c497be45a5d2c43a740a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-e",
+        "md5": "ece252d79c2d30c647c43c58986d9671.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-f",
+        "md5": "ff66b87efec0e647dc30ec58df168ec4.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-g",
+        "md5": "d1404b12adf0d6b1b881f0dca47ce21a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear-walk-h",
+        "md5": "489055be58a7d9806e1d50455c88c399.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Bear1-a",
+        "md5": "598722f70e86e6f9b23ef97680baaa9c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            56,
+            93,
+            1
+        ]
+    },
+    {
+        "name": "Bear1-b",
+        "md5": "76ceb0de4409f42713b50cbc1fb45af5.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            56,
+            93,
+            1
+        ]
+    },
+    {
+        "name": "Bear2-a",
+        "md5": "3eb8e16a983ff23c418374389c81bd30.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            37,
+            42,
+            1
+        ]
+    },
+    {
+        "name": "Bear2-b",
+        "md5": "12bb6960ac01b65ae9b5e5e7f79700ac.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            51,
+            42,
             1
         ]
     },
@@ -293,6 +557,127 @@
         "info": [
             59,
             69,
+            1
+        ]
+    },
+    {
+        "name": "Bells-a",
+        "md5": "1f151bee966df3f0c41138941713280e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            53,
+            51,
+            1
+        ]
+    },
+    {
+        "name": "Bells-b",
+        "md5": "5b3879a162881aed93169bf0a6680f45.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            48,
+            31,
+            1
+        ]
+    },
+    {
+        "name": "Ben-a",
+        "md5": "7f32d8d78ad64f50c018b7b578de2e18.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            76,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Ben-b",
+        "md5": "fb012e5d1baf80d33ae95fba3511151a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            76,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Ben-c",
+        "md5": "be0b1397965cf8ff2c4cecb84795138a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            76,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Ben-d",
+        "md5": "e2aefdb538ebbb24e1ab1464f75ef134.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            76,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Bowl-a",
+        "md5": "86f616639846f06fef29931e6b9b59de.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            30,
+            15,
+            1
+        ]
+    },
+    {
+        "name": "Bowtie-a",
+        "md5": "534d9924d2f9bfe240f041e3ce55ccf5.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            11,
+            4,
+            1
+        ]
+    },
+    {
+        "name": "Bowtie-b",
+        "md5": "8be1e90e19cd1faced8a2e83c2b5c90d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            11,
+            4,
+            1
+        ]
+    },
+    {
+        "name": "Bread",
+        "md5": "68366160ce0ac1221cdde4455eca9cba.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            37,
+            12,
+            1
+        ]
+    },
+    {
+        "name": "Broom",
+        "md5": "836197f784bc4c4decfb1a5a60ca6c56.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            135,
+            25,
             1
         ]
     },
@@ -507,7 +892,7 @@
     },
     {
         "name": "Button4-a",
-        "md5": "8782b457cdf4a10ca016ff1ec0c744ef.svg",
+        "md5": "ecfe263bc256349777e571eaf39761d4.svg",
         "type": "costume",
         "tags": [],
         "info": [
@@ -518,7 +903,7 @@
     },
     {
         "name": "Button4-b",
-        "md5": "840f4ef01849e459fd84f5470a3b0080.svg",
+        "md5": "9c49edde00b80cd22d636a0577a9b1c9.svg",
         "type": "costume",
         "tags": [],
         "info": [
@@ -616,6 +1001,17 @@
         ]
     },
     {
+        "name": "Cat1",
+        "md5": "09dc888b0b7df19f70d81588ae73420e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            47,
+            55,
+            1
+        ]
+    },
+    {
         "name": "Cat1 Flying-a",
         "md5": "1e81725d2d2c7de4a2dd4a145198a43c.svg",
         "type": "costume",
@@ -634,6 +1030,72 @@
         "info": [
             42,
             44,
+            1
+        ]
+    },
+    {
+        "name": "Cat2",
+        "md5": "01ae57fd339529445cb890978ef8a054.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            87,
+            39,
+            1
+        ]
+    },
+    {
+        "name": "Centaur-a",
+        "md5": "45c1890ae0ab41f24f67ea74bec006c9.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            110,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Centaur-b",
+        "md5": "783e8cd43e0c1feca25f639cb5cbc7da.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            110,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Centaur-c",
+        "md5": "d09f7160383c6399354c3d9960e852db.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            110,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Centaur-d",
+        "md5": "1ba8b4d384f995688c1b7048d1935697.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            110,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Cloud",
+        "md5": "47005a1f20309f577a03a67abbb6b94e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            71,
+            45,
             1
         ]
     },
@@ -682,24 +1144,13 @@
         ]
     },
     {
-        "name": "Costume1",
-        "md5": "09dc888b0b7df19f70d81588ae73420e.svg",
+        "name": "Convertible3",
+        "md5": "b6ac3c9e1789cba2302d2ef82d62d019.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            47,
-            55,
-            1
-        ]
-    },
-    {
-        "name": "Costume2",
-        "md5": "3696356a03a8d938318876a593572843.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            47,
-            55,
+            75,
+            75,
             1
         ]
     },
@@ -722,6 +1173,193 @@
         "info": [
             75,
             75,
+            1
+        ]
+    },
+    {
+        "name": "Creature1-a",
+        "md5": "a560c6eab2e1de2462bdaeb1d698736c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            54,
+            80,
+            1
+        ]
+    },
+    {
+        "name": "Creature1-b",
+        "md5": "8042b71fc2ae322151c0a3a163701333.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            60,
+            78,
+            1
+        ]
+    },
+    {
+        "name": "Creature1-c",
+        "md5": "e12a83c8f1c0545b59fe8673e9fac79c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            63,
+            164,
+            1
+        ]
+    },
+    {
+        "name": "Crystal-a",
+        "md5": "8520264d48537bea17b7f6d18e9bb558.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            15,
+            15,
+            1
+        ]
+    },
+    {
+        "name": "Crystal-b",
+        "md5": "b62ce1dc2d34741bad036664a01912fb.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            12,
+            24,
+            1
+        ]
+    },
+    {
+        "name": "Dani-a",
+        "md5": "f3038fb0f4a00806b02081c6789dd8cf.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            115,
+            1
+        ]
+    },
+    {
+        "name": "Dani-b",
+        "md5": "e5c7dd4905a78e1d54087b7165dd1e8c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            82,
+            115,
+            1
+        ]
+    },
+    {
+        "name": "Dani-c",
+        "md5": "cbc5f9c67022af201d498bc9b35608b8.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            113,
+            1
+        ]
+    },
+    {
+        "name": "Dee-a",
+        "md5": "aa239b7ccdce6bddf06900c709525764.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            52,
+            99,
+            1
+        ]
+    },
+    {
+        "name": "Dee-b",
+        "md5": "62b4ac1b735599e21af77c390b178095.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            33,
+            99,
+            1
+        ]
+    },
+    {
+        "name": "Dee-c",
+        "md5": "6aa6196ce3245e93b8d1299f33adffcd.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            36,
+            102,
+            1
+        ]
+    },
+    {
+        "name": "Dee-d",
+        "md5": "2159a6be8f7ff450d0b5e938ca34a3f4.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            33,
+            99,
+            1
+        ]
+    },
+    {
+        "name": "Dee-e",
+        "md5": "e358d2a7e3a0a680928657161ce81a0a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            32,
+            99,
+            1
+        ]
+    },
+    {
+        "name": "Devin-a",
+        "md5": "b1897e56265470b55fa65fabe2423c55.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Devin-b",
+        "md5": "873fbd641768c8f753a6568da97633e7.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            40,
+            96,
+            1
+        ]
+    },
+    {
+        "name": "Devin-c",
+        "md5": "eac3c03d86cebb42c8f30e373cb7f623.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            32,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Devin-d",
+        "md5": "fa6a75afb0e4b822b91d8bb20d40c68f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            41,
+            95,
             1
         ]
     },
@@ -1089,6 +1727,61 @@
         ]
     },
     {
+        "name": "Dove-a",
+        "md5": "6dde2b880ad6ddeaea2a53821befb86d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            86,
+            59,
+            1
+        ]
+    },
+    {
+        "name": "Dove-b",
+        "md5": "1c0bc118044d7f6033bc9cd1ef555590.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            88,
+            57,
+            1
+        ]
+    },
+    {
+        "name": "Dragon-a",
+        "md5": "8aed65cee4cfe22b4f4b8e749092dbbb.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            210,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Dragon-b",
+        "md5": "c3360f16bb78b136d9911325da9fda49.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            210,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Dragon-c",
+        "md5": "e81af82ebde008c167ebc6874df3ecb4.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            210,
+            150,
+            1
+        ]
+    },
+    {
         "name": "Dragon1-a",
         "md5": "ee0082b436d6d5dc3de33047166e7bf2.svg",
         "type": "costume",
@@ -1133,17 +1826,6 @@
         ]
     },
     {
-        "name": "Drum-c",
-        "md5": "50cf928f06481ff823e18e70c01df807.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            43,
-            60,
-            1
-        ]
-    },
-    {
         "name": "Drum-cymbal-a",
         "md5": "d6d41862fda966df1455d2dbff5e1988.svg",
         "type": "costume",
@@ -1157,17 +1839,6 @@
     {
         "name": "Drum-cymbal-b",
         "md5": "e6b7d7d8874bc4b7be58afe927157554.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            30,
-            74,
-            1
-        ]
-    },
-    {
-        "name": "Drum-cymbal-c",
-        "md5": "0e85f690e8eaf153ae20cbbbb88ca60c.svg",
         "type": "costume",
         "tags": [],
         "info": [
@@ -1199,17 +1870,6 @@
         ]
     },
     {
-        "name": "Drum-highhat-c",
-        "md5": "c6f2467a5226f7d372d15669c5099a41.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            33,
-            73,
-            1
-        ]
-    },
-    {
         "name": "Drum-kit",
         "md5": "131d040d86ecea62ccd175a8709c7866.svg",
         "type": "costume",
@@ -1232,24 +1892,13 @@
         ]
     },
     {
-        "name": "Drum-kit-c",
-        "md5": "4ca5c6eee4d907b98fb62340bd4a2cde.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            58,
-            78,
-            1
-        ]
-    },
-    {
         "name": "Drum-snare-a",
-        "md5": "31a81bb560abf30cbc44bcdd581d5ccc.svg",
+        "md5": "b0255be93e3c8be6ac687f4199a25c4b.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            40,
-            69,
+            23,
+            50,
             1
         ]
     },
@@ -1265,17 +1914,6 @@
         ]
     },
     {
-        "name": "Drum-snare-c",
-        "md5": "878ea646cbbd2a9e24fdeb8d98c3e24f.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            40,
-            69,
-            1
-        ]
-    },
-    {
         "name": "Duck",
         "md5": "c3baf7eedfbdac8cd1e4f1f1f779dc0c.svg",
         "type": "costume",
@@ -1283,6 +1921,17 @@
         "info": [
             61,
             59,
+            1
+        ]
+    },
+    {
+        "name": "Earth",
+        "md5": "814197522984a302972998b1a7f92d91.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            72,
+            72,
             1
         ]
     },
@@ -1364,6 +2013,61 @@
         ]
     },
     {
+        "name": "Elf-a",
+        "md5": "00748a750dc4fd754ce4debb5e3595c0.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Elf-b",
+        "md5": "91815a19569ef9f0ef68bca56bb80446.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Elf-c",
+        "md5": "8153eaf84bc3db9a671cafd34506243b.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Elf-d",
+        "md5": "2432797fc69a62fc643505b0ba039169.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Elf-e",
+        "md5": "a06e6c93b143ae2a7b776bd1deee6b59.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            140,
+            1
+        ]
+    },
+    {
         "name": "Empty",
         "md5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
         "type": "costume",
@@ -1371,6 +2075,61 @@
         "info": [
             0,
             0,
+            1
+        ]
+    },
+    {
+        "name": "Fairy-a",
+        "md5": "fe97687c7f1b747bb6f41c252cc5926a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Fairy-b",
+        "md5": "c8e0d935b2e4372ecc813705a79be3eb.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Fairy-c",
+        "md5": "4d0740d1b5be93256ad235062daa876b.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Fairy-d",
+        "md5": "ca555dadd377431e38a3bc67ece4d36a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Fairy-e",
+        "md5": "a681f6d6044abdebcdd6634ce85da484.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            140,
             1
         ]
     },
@@ -1463,6 +2222,17 @@
         ]
     },
     {
+        "name": "Fruitsalad",
+        "md5": "dbf8cc34f7ca18b4a008d2890dba56b7.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            30,
+            22,
+            1
+        ]
+    },
+    {
         "name": "Ghost1 ",
         "md5": "c88579c578f2d171de78612f2ff9c9d9.svg",
         "type": "costume",
@@ -1492,6 +2262,72 @@
         "info": [
             75,
             75,
+            1
+        ]
+    },
+    {
+        "name": "Gift-a",
+        "md5": "abeae2217b3ce67b1ff761cd7a89274d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            33,
+            25,
+            1
+        ]
+    },
+    {
+        "name": "Gift-b",
+        "md5": "5cae973c98f2d98b51e6c6b3c9602f8c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            33,
+            26,
+            1
+        ]
+    },
+    {
+        "name": "Giga Walk1",
+        "md5": "f76bc420011db2cdb2de378c1536f6da.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            70,
+            107,
+            1
+        ]
+    },
+    {
+        "name": "Giga Walk2",
+        "md5": "43b5874e8a54f93bd02727f0abf6905b.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            71,
+            107,
+            1
+        ]
+    },
+    {
+        "name": "Giga Walk3",
+        "md5": "9aab3bbb375765391978be4f6d478ab3.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            71,
+            107,
+            1
+        ]
+    },
+    {
+        "name": "Giga Walk4",
+        "md5": "22e4ae40919cf0fe6b4d7649d14a6e71.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            73,
+            110,
             1
         ]
     },
@@ -1536,6 +2372,39 @@
         "info": [
             73,
             96,
+            1
+        ]
+    },
+    {
+        "name": "Glass Water-a",
+        "md5": "c364b9e1f4bcdc61705032d89eaaa0a1.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            48,
+            1
+        ]
+    },
+    {
+        "name": "Glass Water-b",
+        "md5": "bc07ce6a2004ac91ce704531a1c526e5.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            48,
+            1
+        ]
+    },
+    {
+        "name": "Glasses",
+        "md5": "5fcf716b53f223bc86b10ab0eca3e162.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            16,
+            9,
             1
         ]
     },
@@ -1595,6 +2464,50 @@
         ]
     },
     {
+        "name": "Goblin-a",
+        "md5": "f10eaedff51f50f0809a7b4b310337fa.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            40,
+            80,
+            1
+        ]
+    },
+    {
+        "name": "Goblin-b",
+        "md5": "71e7c77d89299cd99739b1216fc03a85.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            40,
+            80,
+            1
+        ]
+    },
+    {
+        "name": "Goblin-c",
+        "md5": "ab0611427d6f9b54d83672cf9e554876.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            40,
+            80,
+            1
+        ]
+    },
+    {
+        "name": "Goblin-d",
+        "md5": "87dd413e7a8545bea9b3da208a5d5735.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            40,
+            80,
+            1
+        ]
+    },
+    {
         "name": "Gobo-a",
         "md5": "1f5ea0d12f85aed2e471cdd21b0bd6d7.svg",
         "type": "costume",
@@ -1628,6 +2541,50 @@
         ]
     },
     {
+        "name": "Green Flag",
+        "md5": "173e20ac537d2c278ed621be3db3fc87.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            70,
+            30,
+            1
+        ]
+    },
+    {
+        "name": "Griffin-a",
+        "md5": "d2ddc25b224ad72240f92e632afc7c69.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            110,
+            1
+        ]
+    },
+    {
+        "name": "Griffin-fly-a",
+        "md5": "03d75e0c7c34e8618545a5f4913db4ea.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            110,
+            1
+        ]
+    },
+    {
+        "name": "Griffin-fly-b",
+        "md5": "ff0795d15b6f3990345f72bc483a3353.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            110,
+            1
+        ]
+    },
+    {
         "name": "Guitar-a",
         "md5": "cb8c2a5e69da7538e1dd73cb7ff4a666.svg",
         "type": "costume",
@@ -1641,17 +2598,6 @@
     {
         "name": "Guitar-b",
         "md5": "fed44bd1091628c060f45060a84f2885.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            47,
-            83,
-            1
-        ]
-    },
-    {
-        "name": "Guitar-c",
-        "md5": "5cfe9faacb98d35a702cfa633967a5b5.svg",
         "type": "costume",
         "tags": [],
         "info": [
@@ -1683,17 +2629,6 @@
         ]
     },
     {
-        "name": "Guitar-electric1-c",
-        "md5": "4cb069d2a290c0a153f196de725d357c.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            42,
-            85,
-            1
-        ]
-    },
-    {
         "name": "Guitar-electric2-a",
         "md5": "1fc433b89038f9e16092c9f4d7514cca.svg",
         "type": "costume",
@@ -1716,13 +2651,145 @@
         ]
     },
     {
-        "name": "Guitar-electric2-c",
-        "md5": "7f5f8b6d772657566e3dee24c9a9c538.svg",
+        "name": "Hat",
+        "md5": "b3beb1f52d371428d70b65a0c4c5c001.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            38,
-            94,
+            52,
+            60,
+            1
+        ]
+    },
+    {
+        "name": "Hat Beanie",
+        "md5": "3271da33e4108ed08a303c2244739fbf.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            28,
+            19,
+            1
+        ]
+    },
+    {
+        "name": "Hat Party2-a",
+        "md5": "9b7a84fe3e50621752917e4e484a1e2f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Hat Winter",
+        "md5": "6c2ee1b97f6ec2b3457a25a3975a2009.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            26,
+            101,
+            1
+        ]
+    },
+    {
+        "name": "Hat Wizard",
+        "md5": "581571e8c8f5adeb01565e12b1b77b58.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            76,
+            69,
+            1
+        ]
+    },
+    {
+        "name": "Headband",
+        "md5": "961148d1605a1bd8ce80ed8d39e831c2.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            53,
+            43,
+            1
+        ]
+    },
+    {
+        "name": "Heart Code",
+        "md5": "497c5df9e02467202ff93096dccaf91f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            58,
+            61,
+            1
+        ]
+    },
+    {
+        "name": "Heart Face",
+        "md5": "4ab84263da32069cf97cc0fa52729a0d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            59,
+            52,
+            1
+        ]
+    },
+    {
+        "name": "Heart Love It",
+        "md5": "d448acd247f10f32bef7823cd433f928.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            58,
+            61,
+            1
+        ]
+    },
+    {
+        "name": "Heart Purple",
+        "md5": "b15362bb6b02a59e364db9081ccf19aa.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            66,
+            62,
+            1
+        ]
+    },
+    {
+        "name": "Heart Red",
+        "md5": "6e79e087c866a016f99ee482e1aeba47.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            65,
+            56,
+            1
+        ]
+    },
+    {
+        "name": "Heart Smile",
+        "md5": "74a8f75d139d330b715787edbbacd83d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            58,
+            61,
+            1
+        ]
+    },
+    {
+        "name": "Heart Sweet",
+        "md5": "a39d78d33b051e8b12a4b2a10d77b249.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            58,
+            61,
             1
         ]
     },
@@ -1804,6 +2871,17 @@
         ]
     },
     {
+        "name": "Home Button",
+        "md5": "1bac530a0701a8fc88bb0802ae6787a3.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            72,
+            72,
+            1
+        ]
+    },
+    {
         "name": "Horse1-a",
         "md5": "32f4d80477cd070cb0848e555d374060.svg",
         "type": "costume",
@@ -1870,6 +2948,50 @@
         ]
     },
     {
+        "name": "Jar-a",
+        "md5": "73784b267083733e08bcf06aa7d6536a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            20,
+            25,
+            1
+        ]
+    },
+    {
+        "name": "Jar-b",
+        "md5": "a37eb72115966a75bc1bf521deeccc0c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            20,
+            25,
+            1
+        ]
+    },
+    {
+        "name": "Jeans-a",
+        "md5": "4e283da8c59bcbb9803bdc0016b14c21.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            22,
+            25,
+            1
+        ]
+    },
+    {
+        "name": "Jeans-b",
+        "md5": "01732aa03a48482093fbed3ea402c4a9.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            22,
+            25,
+            1
+        ]
+    },
+    {
         "name": "Jellyfish-a",
         "md5": "9e6563e417350af3094c2ed02b9b0bbd.svg",
         "type": "costume",
@@ -1910,61 +3032,6 @@
         "info": [
             99,
             86,
-            1
-        ]
-    },
-    {
-        "name": "Jez-b",
-        "md5": "f1e74f3c02333e9e2068e8baf4e77aa0.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            67,
-            95,
-            1
-        ]
-    },
-    {
-        "name": "Jez-c",
-        "md5": "e2482cf509c312935f08be0e2e2c9d84.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            67,
-            95,
-            1
-        ]
-    },
-    {
-        "name": "Jez-d",
-        "md5": "569e736b519199efddfbae2572f7e92b.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            67,
-            95,
-            1
-        ]
-    },
-    {
-        "name": "Jez-e",
-        "md5": "2261bed0f2cc819def17969158297b4f.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            77,
-            95,
-            1
-        ]
-    },
-    {
-        "name": "Jez-f",
-        "md5": "d7f44adb3dc7906b9dfb3599a028e0d6.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            62,
-            94,
             1
         ]
     },
@@ -2013,6 +3080,17 @@
         ]
     },
     {
+        "name": "Key",
+        "md5": "af35300cef35803e11f4ed744dc5e818.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            42,
+            27,
+            1
+        ]
+    },
+    {
         "name": "Keyboard-a",
         "md5": "c67d180e964926b6393ac14781541b39.svg",
         "type": "costume",
@@ -2035,17 +3113,6 @@
         ]
     },
     {
-        "name": "Keyboard-c",
-        "md5": "4ee5e7c6d0463d9b50e0c593e70e1e31.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            72,
-            68,
-            1
-        ]
-    },
-    {
         "name": "Kiran-a",
         "md5": "9de23c4a7a7fbb67136b539241346854.svg",
         "type": "costume",
@@ -2053,6 +3120,61 @@
         "info": [
             67,
             95,
+            1
+        ]
+    },
+    {
+        "name": "Kiran-b",
+        "md5": "f1e74f3c02333e9e2068e8baf4e77aa0.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            67,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Kiran-c",
+        "md5": "e2482cf509c312935f08be0e2e2c9d84.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            67,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Kiran-d",
+        "md5": "569e736b519199efddfbae2572f7e92b.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            67,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Kiran-e",
+        "md5": "2261bed0f2cc819def17969158297b4f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            77,
+            95,
+            1
+        ]
+    },
+    {
+        "name": "Kiran-f",
+        "md5": "d7f44adb3dc7906b9dfb3599a028e0d6.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            62,
+            94,
             1
         ]
     },
@@ -2075,6 +3197,61 @@
         "info": [
             41,
             43,
+            1
+        ]
+    },
+    {
+        "name": "Ladybug2-a",
+        "md5": "c018a3eed966d5f92c69f2188dfd2aae.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            28,
+            1
+        ]
+    },
+    {
+        "name": "Ladybug2-b",
+        "md5": "a2bb15ace808e070a2b815502952b292.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            28,
+            1
+        ]
+    },
+    {
+        "name": "Laptop",
+        "md5": "76f456b30b98eeefd7c942b27b524e31.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Lightning",
+        "md5": "c2d636ab2b491e591536afc3d49cbecd.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            21,
+            83,
+            1
+        ]
+    },
+    {
+        "name": "Line",
+        "md5": "1b2cfb4d4746522aeb84e16a62820299.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            239,
+            7,
             1
         ]
     },
@@ -2134,6 +3311,17 @@
         ]
     },
     {
+        "name": "Magicwand",
+        "md5": "3db9bfe57d561557795633c5cda44e8c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            41,
+            18,
+            1
+        ]
+    },
+    {
         "name": "Max-a",
         "md5": "e10cca3bdbc09d039c2f937574f7a6ea.svg",
         "type": "costume",
@@ -2178,6 +3366,50 @@
         ]
     },
     {
+        "name": "Mermaid-a",
+        "md5": "36db41c47259881c26d9b98a806d3308.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            92,
+            130,
+            1
+        ]
+    },
+    {
+        "name": "Mermaid-b",
+        "md5": "564bf3f466df3b3e8aba71eeae8255ab.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            92,
+            130,
+            1
+        ]
+    },
+    {
+        "name": "Mermaid-swim-a",
+        "md5": "9f973b89b68f7d8147f157cbac8af341.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            115,
+            1
+        ]
+    },
+    {
+        "name": "Mermaid-swim-b",
+        "md5": "2295784bb8e6354bfa7676089235cb9f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            115,
+            1
+        ]
+    },
+    {
         "name": "Microphone-a",
         "md5": "9126b6362313e20578fb88d38902cd4c.svg",
         "type": "costume",
@@ -2191,17 +3423,6 @@
     {
         "name": "Microphone-b",
         "md5": "29988ebbde49beaceb06d9eb66138b80.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            40,
-            88,
-            1
-        ]
-    },
-    {
-        "name": "Microphone-c",
-        "md5": "021d6da78b7bda374da4bdb50d4cbc4f.svg",
         "type": "costume",
         "tags": [],
         "info": [
@@ -2321,7 +3542,7 @@
         ]
     },
     {
-        "name": "Monkey2-a",
+        "name": "Monkey-a",
         "md5": "6e4de762dbd52cd2b6356694a9668211.svg",
         "type": "costume",
         "tags": [],
@@ -2332,7 +3553,7 @@
         ]
     },
     {
-        "name": "Monkey2-b",
+        "name": "Monkey-b",
         "md5": "7662a3a0f4c6fa21fdf2de33bd80fe5f.svg",
         "type": "costume",
         "tags": [],
@@ -2343,13 +3564,57 @@
         ]
     },
     {
-        "name": "Monkey2-c",
+        "name": "Monkey-c",
         "md5": "db8eb50b948047181922310bb94511fb.svg",
         "type": "costume",
         "tags": [],
         "info": [
             68,
             99,
+            1
+        ]
+    },
+    {
+        "name": "Mouse1-a",
+        "md5": "e1f0c26afecbe9d4b9923d8e6bf489a8.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            27,
+            1
+        ]
+    },
+    {
+        "name": "Mouse1-b",
+        "md5": "f5e477a3f94fc98ba3cd927228405646.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            65,
+            21,
+            1
+        ]
+    },
+    {
+        "name": "Muffin-a",
+        "md5": "e00161f08c77d10e72e44b6e01243e63.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            48,
+            1
+        ]
+    },
+    {
+        "name": "Muffin-b",
+        "md5": "fb60c3f8d6a892813299daa33b91df23.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            85,
+            48,
             1
         ]
     },
@@ -2394,6 +3659,17 @@
         "info": [
             61,
             60,
+            1
+        ]
+    },
+    {
+        "name": "Neigh Pony",
+        "md5": "176c4fb4df80df899ca28a48bd1f0edf.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            74,
+            78,
             1
         ]
     },
@@ -2453,6 +3729,50 @@
         ]
     },
     {
+        "name": "Orange",
+        "md5": "780ee2ef342f79a81b4c353725331138.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            19,
+            18,
+            1
+        ]
+    },
+    {
+        "name": "Orange2-a",
+        "md5": "89b11d2a404c3972b65743f743cc968a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            24,
+            1
+        ]
+    },
+    {
+        "name": "Orange2-b",
+        "md5": "5f7998e007dfa70e70bbd8d43199ebba.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            27,
+            1
+        ]
+    },
+    {
+        "name": "Orange2-c",
+        "md5": "466e9e2d62ee135a2dabd5593e6f8407.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            33,
+            1
+        ]
+    },
+    {
         "name": "Owl-a",
         "md5": "a312273b198fcacf68976e3cc74fadb4.svg",
         "type": "costume",
@@ -2482,6 +3802,17 @@
         "info": [
             113,
             54,
+            1
+        ]
+    },
+    {
+        "name": "Paddle",
+        "md5": "8038149bdfe24733ea2144d37d297815.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            44,
+            7,
             1
         ]
     },
@@ -2541,13 +3872,145 @@
         ]
     },
     {
-        "name": "Penguin1",
+        "name": "Partyhat1",
+        "md5": "70a7f535d8857cf9175492415361c361.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Pencil-a",
+        "md5": "4495fcb0443cebc5d43e66243a88f1ac.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            54,
+            1
+        ]
+    },
+    {
+        "name": "Pencil-b",
+        "md5": "21088922dbe127f6d2e58e2e83fb632e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            48,
+            68,
+            1
+        ]
+    },
+    {
+        "name": "Penguin1-a",
         "md5": "c17d9e4bdb59c574e0c34aa70af516da.svg",
         "type": "costume",
         "tags": [],
         "info": [
             54,
             61,
+            1
+        ]
+    },
+    {
+        "name": "Penguin1-b",
+        "md5": "35fec7aa5f60cca945fe0615413f1f08.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            48,
+            62,
+            1
+        ]
+    },
+    {
+        "name": "Penguin1-c",
+        "md5": "18fa51a64ebd5518f0c5c465525346e5.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            48,
+            61,
+            1
+        ]
+    },
+    {
+        "name": "Penguin2-a",
+        "md5": "eaaaa7068e78a51d73ba437f1ec5763e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            79,
+            1
+        ]
+    },
+    {
+        "name": "Penguin2-b",
+        "md5": "5a80f4b2fd20d43e4f7cb4189c08d99c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            45,
+            79,
+            1
+        ]
+    },
+    {
+        "name": "Penguin2-c",
+        "md5": "394e79f5f9a462064ece2a9a6606a07d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            50,
+            78,
+            1
+        ]
+    },
+    {
+        "name": "Pico Walk1",
+        "md5": "8eab5fe20dd249bf22964298b1d377eb.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            54,
+            71,
+            1
+        ]
+    },
+    {
+        "name": "Pico Walk2",
+        "md5": "39ecd3c38d3f2cd81e3a17ee6c25699f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            54,
+            71,
+            1
+        ]
+    },
+    {
+        "name": "Pico Walk3",
+        "md5": "43f7d92dcf9eadf77c07a6fc1eb4104f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            54,
+            70,
+            1
+        ]
+    },
+    {
+        "name": "Pico Walk4",
+        "md5": "2582d012d57bca59bc0315c5c5954958.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            54,
+            70,
             1
         ]
     },
@@ -2592,6 +4055,116 @@
         "info": [
             55,
             66,
+            1
+        ]
+    },
+    {
+        "name": "Planet2",
+        "md5": "978784738c1d9dd4b1d397fd18bdf406.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            72,
+            72,
+            1
+        ]
+    },
+    {
+        "name": "Potion-a",
+        "md5": "a317b50b255a208455a7733091adad23.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            15,
+            21,
+            1
+        ]
+    },
+    {
+        "name": "Potion-b",
+        "md5": "5f96576605c3a022df48278b630da745.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            15,
+            28,
+            1
+        ]
+    },
+    {
+        "name": "Potion-c",
+        "md5": "92d0184c28fac9acb0fb720ec599d61d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            15,
+            42,
+            1
+        ]
+    },
+    {
+        "name": "Prince",
+        "md5": "a760bed1cfc28a30b2dc7fd045c90792.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Princess-a",
+        "md5": "fcbf44a543dfda884d8acbd6af66faad.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Princess-b",
+        "md5": "562e5eba4a598118411be3062cfbb26f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Princess-c",
+        "md5": "f3e5f466d406745cf1b6ce44b0567b9a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Princess-d",
+        "md5": "663134f64588f0c55e77767ba9039cfe.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Princess-e",
+        "md5": "ad0ecbf907d132ddbb547666551ac087.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            150,
             1
         ]
     },
@@ -2750,6 +4323,17 @@
         ]
     },
     {
+        "name": "Reindeer",
+        "md5": "0fff0b181cc4d9250b5b985cc283b049.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            70,
+            1
+        ]
+    },
+    {
         "name": "Ripley-a",
         "md5": "417ec9f25ad70281564e85e67c97aa08.svg",
         "type": "costume",
@@ -2860,46 +4444,13 @@
         ]
     },
     {
-        "name": "Sam-a",
-        "md5": "7f32d8d78ad64f50c018b7b578de2e18.svg",
+        "name": "Rocks",
+        "md5": "82c79fdb6a7d9c49ab7f70ee79a3d7f8.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            76,
-            75,
-            1
-        ]
-    },
-    {
-        "name": "Sam-b",
-        "md5": "fb012e5d1baf80d33ae95fba3511151a.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            76,
-            75,
-            1
-        ]
-    },
-    {
-        "name": "Sam-c",
-        "md5": "be0b1397965cf8ff2c4cecb84795138a.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            76,
-            75,
-            1
-        ]
-    },
-    {
-        "name": "Sam-d",
-        "md5": "e2aefdb538ebbb24e1ab1464f75ef134.svg",
-        "type": "costume",
-        "tags": [],
-        "info": [
-            76,
-            75,
+            59,
+            15,
             1
         ]
     },
@@ -2926,13 +4477,200 @@
         ]
     },
     {
-        "name": "Saxophone-c",
-        "md5": "29751826f768bc1568092f267525ae8b.svg",
+        "name": "Scarf1",
+        "md5": "9db18d2a2b3c9859654fc1b4832e6076.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            47,
-            80,
+            54,
+            36,
+            1
+        ]
+    },
+    {
+        "name": "Scarf2",
+        "md5": "ce66662165e2756070f1b12e0a7cb5db.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            23,
+            16,
+            1
+        ]
+    },
+    {
+        "name": "Shark-a",
+        "md5": "4ca6776e9c021e8b21c3346793c9361d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            60,
+            1
+        ]
+    },
+    {
+        "name": "Shark-a ",
+        "md5": "7c0a907eae79462f69f8e2af8e7df828.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Shark-b",
+        "md5": "0bb623f0bbec53ee9667cee0b7ad6d47.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            150,
+            60,
+            1
+        ]
+    },
+    {
+        "name": "Shark-b ",
+        "md5": "cff9ae87a93294693a0650b38a7a33d2.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Shark-c ",
+        "md5": "afeae3f998598424f7c50918507f6ce6.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            77,
+            37,
+            1
+        ]
+    },
+    {
+        "name": "Shirt Blouse",
+        "md5": "918a507af6bbae9e7f36f0d949900838.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            35,
+            28,
+            1
+        ]
+    },
+    {
+        "name": "Shirt Collar-a",
+        "md5": "b7ecf6503e27e9ab5c086eaf07d22b94.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            30,
+            57,
+            1
+        ]
+    },
+    {
+        "name": "Shirt Collar-b",
+        "md5": "f1b20c3350e8a7e92a2fb1925ad4158b.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            30,
+            57,
+            1
+        ]
+    },
+    {
+        "name": "Shirt Collar-c",
+        "md5": "5f04b99416a794e04d0855f446780f18.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            30,
+            57,
+            1
+        ]
+    },
+    {
+        "name": "Shirt-t",
+        "md5": "5d7fa4f1788f03d2962f1624d6eac800.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            28,
+            1
+        ]
+    },
+    {
+        "name": "Shirt2-a",
+        "md5": "5946e7a1e36c6d97ae47d41dd8595a41.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            48,
+            1
+        ]
+    },
+    {
+        "name": "Shirt2-a2",
+        "md5": "5b78ab09592126b6bbe2d4907d203909.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            39,
+            48,
+            1
+        ]
+    },
+    {
+        "name": "Shoes1",
+        "md5": "ffab4cc284070b50ac317e515f59f7d8.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            36,
+            23,
+            1
+        ]
+    },
+    {
+        "name": "Shoes2",
+        "md5": "1dc5d568d98405c370b91a230397a7f9.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            40,
+            8,
+            1
+        ]
+    },
+    {
+        "name": "Singer1",
+        "md5": "e47ef1af3b925e5ac9e3b3f809d440b3.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Skates",
+        "md5": "00e5e173400662875a26bb7d6556346a.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            44,
+            -21,
             1
         ]
     },
@@ -2966,6 +4704,17 @@
         "info": [
             142,
             68,
+            1
+        ]
+    },
+    {
+        "name": "Snowflake",
+        "md5": "67de2af723246de37d7379b76800ee0b.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            104,
+            103,
             1
         ]
     },
@@ -3058,6 +4807,50 @@
         ]
     },
     {
+        "name": "Star",
+        "md5": "ab0914e53e360477275e58b83ec4d423.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            21,
+            19,
+            1
+        ]
+    },
+    {
+        "name": "Starfish-a",
+        "md5": "3d1101bbc24ae292a36356af325f660c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            75,
+            75,
+            1
+        ]
+    },
+    {
+        "name": "Starfish-b ",
+        "md5": "ad8007f4e63693984d4adc466ffa3ad2.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            53,
+            60,
+            1
+        ]
+    },
+    {
+        "name": "Stop",
+        "md5": "5b9e3e8edffb0bd4914113609eec5e04.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            25,
+            25,
+            1
+        ]
+    },
+    {
         "name": "Strawberry-a",
         "md5": "734556fb8e14740f2cbc971238b71d47.svg",
         "type": "costume",
@@ -3109,6 +4902,61 @@
         "info": [
             57,
             58,
+            1
+        ]
+    },
+    {
+        "name": "Sun",
+        "md5": "55c931c65456822c0c56a2b30e3e550d.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            72,
+            72,
+            1
+        ]
+    },
+    {
+        "name": "Sunglasses1",
+        "md5": "424393e8705aeadcfecb8559ce4dcea2.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            37,
+            14,
+            1
+        ]
+    },
+    {
+        "name": "Sunglasses2",
+        "md5": "3185d2295bbf2c5ebd0688c9e4f13076.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            29,
+            10,
+            1
+        ]
+    },
+    {
+        "name": "Taco-a",
+        "md5": "d224b30c54bd4d6000c935938c7f5d7e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            20,
+            15,
+            1
+        ]
+    },
+    {
+        "name": "Taco-b",
+        "md5": "6dee4f866d79e6475d9824ba11973037.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            56,
+            15,
             1
         ]
     },
@@ -3245,6 +5093,39 @@
         ]
     },
     {
+        "name": "Tree1",
+        "md5": "8c40e2662c55d17bc384f47165ac43c1.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            77,
+            126,
+            1
+        ]
+    },
+    {
+        "name": "Trees-a",
+        "md5": "866ed2c2971bb04157e14e935ac8521c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            94,
+            1
+        ]
+    },
+    {
+        "name": "Trees-b",
+        "md5": "f1393dde1bb0fc512577995b27616d86.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            36,
+            87,
+            1
+        ]
+    },
+    {
         "name": "Trumpet-a",
         "md5": "8fa7459ed5877bb14c6625e688be70e7.svg",
         "type": "costume",
@@ -3267,24 +5148,123 @@
         ]
     },
     {
-        "name": "Trumpet-c",
-        "md5": "680dd004c24690af1e95c4beb22cd615.svg",
+        "name": "Unicorn",
+        "md5": "bd2cf980966c13d5ad3ab403bae4bb05.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            37,
-            73,
+            100,
+            100,
             1
         ]
     },
     {
-        "name": "Unicorn",
-        "md5": "a04def38351e7fd805226345cac4fbfe.svg",
+        "name": "Unicorn-run-a",
+        "md5": "c6456df027561c74b70b8b25ab83fec9.svg",
         "type": "costume",
         "tags": [],
         "info": [
-            75,
-            75,
+            130,
+            100,
+            1
+        ]
+    },
+    {
+        "name": "Unicorn-run-b",
+        "md5": "f2d6c5b62b56d0cc51598126c74e0ace.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            100,
+            1
+        ]
+    },
+    {
+        "name": "Unicorn-run-c",
+        "md5": "fba367b11a710bf542333649c4d68e1e.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            100,
+            1
+        ]
+    },
+    {
+        "name": "Unicorn-run-d",
+        "md5": "20bad70a67e0c7ed3255c65780cdb2a8.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            100,
+            1
+        ]
+    },
+    {
+        "name": "Unicorn-run-e",
+        "md5": "39db08aafdde1542e755b8ead8df7a1f.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            100,
+            1
+        ]
+    },
+    {
+        "name": "Unicorn-run-f",
+        "md5": "d66d0625702433a4cbd7591e39676700.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            130,
+            100,
+            1
+        ]
+    },
+    {
+        "name": "Vest-a",
+        "md5": "f8285ca9564451c62a0e3d75b8a714e8.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            18,
+            62,
+            1
+        ]
+    },
+    {
+        "name": "Vest-b",
+        "md5": "77d553eea3910ab8f5bac3d2da601061.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            18,
+            62,
+            1
+        ]
+    },
+    {
+        "name": "Wand",
+        "md5": "1aa56e9ef7043eaf36ecfe8e330271b7.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            12,
+            42,
+            1
+        ]
+    },
+    {
+        "name": "Wanda",
+        "md5": "450bc8fbd5ab6bc2e83576aad58cd07c.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            49,
+            68,
             1
         ]
     },
@@ -3333,6 +5313,50 @@
         ]
     },
     {
+        "name": "Witch-a",
+        "md5": "cbc54e15cd62f0c16369587377636099.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            65,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Witch-b",
+        "md5": "64d2c4c51e6cb6008cd5e93f77e6f591.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            65,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Witch-c",
+        "md5": "00b768c3da5b4ee3efddf05d1eb88de2.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            65,
+            140,
+            1
+        ]
+    },
+    {
+        "name": "Witch-d",
+        "md5": "4fe4c0ee34a9028f2c6988b7294a61c1.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            65,
+            140,
+            1
+        ]
+    },
+    {
         "name": "Wizard",
         "md5": "4df1dd733f6ee4a2d8842478ac2c4661.svg",
         "type": "costume",
@@ -3340,6 +5364,61 @@
         "info": [
             76,
             86,
+            1
+        ]
+    },
+    {
+        "name": "Wizard-a",
+        "md5": "9632aab80fce1c5bdb58150b29cb0067.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            87,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Wizard-b",
+        "md5": "36c9b8b93ddb2c392b7145862fc4e8d8.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            79,
+            144,
+            1
+        ]
+    },
+    {
+        "name": "Wizard-c",
+        "md5": "16d4d221a2182278cfa6b0621f455cf6.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            87,
+            150,
+            1
+        ]
+    },
+    {
+        "name": "Wizard-toad-a",
+        "md5": "fd5c4cce36e866489febc227e23b21aa.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            87,
+            80,
+            1
+        ]
+    },
+    {
+        "name": "Wizard-toad-b",
+        "md5": "4c260807d4ac4c0ad39760f1efeef1de.svg",
+        "type": "costume",
+        "tags": [],
+        "info": [
+            87,
+            80,
             1
         ]
     },
@@ -3366,7 +5445,7 @@
         ]
     },
     {
-        "name": "ZBlock-a",
+        "name": "Block-a",
         "md5": "602a16930a8050e1298e1a0ae844363e.svg",
         "type": "costume",
         "tags": [],
@@ -3377,7 +5456,7 @@
         ]
     },
     {
-        "name": "ZBlock-b",
+        "name": "Block-b",
         "md5": "f8c683cf71660e8ac1f8855599857a25.svg",
         "type": "costume",
         "tags": [],
@@ -3388,7 +5467,7 @@
         ]
     },
     {
-        "name": "ZBlock-c",
+        "name": "Block-c",
         "md5": "f8f4cc686ffc5a4113a99f70b09abd32.svg",
         "type": "costume",
         "tags": [],
@@ -3399,7 +5478,7 @@
         ]
     },
     {
-        "name": "ZBlock-d",
+        "name": "Block-d",
         "md5": "aee2d71ef0293b33479bff9423d16b67.svg",
         "type": "costume",
         "tags": [],
@@ -3410,7 +5489,7 @@
         ]
     },
     {
-        "name": "ZBlock-e",
+        "name": "Block-e",
         "md5": "16c6257316ff94cc7539ccdfc24e5fb8.svg",
         "type": "costume",
         "tags": [],
@@ -3421,7 +5500,7 @@
         ]
     },
     {
-        "name": "ZBlock-f",
+        "name": "Block-f",
         "md5": "34c090c1f573c569332ead68cb99b595.svg",
         "type": "costume",
         "tags": [],
@@ -3432,7 +5511,7 @@
         ]
     },
     {
-        "name": "ZBlock-g",
+        "name": "Block-g",
         "md5": "8bb2382627004eb08ff10ea8171cc724.svg",
         "type": "costume",
         "tags": [],
@@ -3443,7 +5522,7 @@
         ]
     },
     {
-        "name": "ZBlock-h",
+        "name": "Block-h",
         "md5": "f1578807d4a124fc02b639a8febeaab3.svg",
         "type": "costume",
         "tags": [],
@@ -3454,7 +5533,7 @@
         ]
     },
     {
-        "name": "ZBlock-i",
+        "name": "Block-i",
         "md5": "341bc70442886d6fdf959f2a97a63554.svg",
         "type": "costume",
         "tags": [],
@@ -3465,7 +5544,7 @@
         ]
     },
     {
-        "name": "ZBlock-j",
+        "name": "Block-j",
         "md5": "4b420cce964beedf2c1dc43faa59fdec.svg",
         "type": "costume",
         "tags": [],
@@ -3476,7 +5555,7 @@
         ]
     },
     {
-        "name": "ZBlock-k",
+        "name": "Block-k",
         "md5": "19601cc33449813aa93a47c63167e5c1.svg",
         "type": "costume",
         "tags": [],
@@ -3487,7 +5566,7 @@
         ]
     },
     {
-        "name": "ZBlock-l",
+        "name": "Block-l",
         "md5": "87358e3c9b9f5be4376253ce08d0192d.svg",
         "type": "costume",
         "tags": [],
@@ -3498,7 +5577,7 @@
         ]
     },
     {
-        "name": "ZBlock-m",
+        "name": "Block-m",
         "md5": "7ba0642be1f0080c0d273ea96e29b1e8.svg",
         "type": "costume",
         "tags": [],
@@ -3509,7 +5588,7 @@
         ]
     },
     {
-        "name": "ZBlock-n",
+        "name": "Block-n",
         "md5": "6c1fbc57821744bd9356ce9a21ed70f7.svg",
         "type": "costume",
         "tags": [],
@@ -3520,7 +5599,7 @@
         ]
     },
     {
-        "name": "ZBlock-o",
+        "name": "Block-o",
         "md5": "e88638200a73e167d0e266a343019cec.svg",
         "type": "costume",
         "tags": [],
@@ -3531,7 +5610,7 @@
         ]
     },
     {
-        "name": "ZBlock-p",
+        "name": "Block-p",
         "md5": "ad2fc3a1c6538678915633a11ab6ec73.svg",
         "type": "costume",
         "tags": [],
@@ -3542,7 +5621,7 @@
         ]
     },
     {
-        "name": "ZBlock-q",
+        "name": "Block-q",
         "md5": "64da9da8684c74deb567dbdb661d3a52.svg",
         "type": "costume",
         "tags": [],
@@ -3553,7 +5632,7 @@
         ]
     },
     {
-        "name": "ZBlock-r",
+        "name": "Block-r",
         "md5": "73e8d46f7475476d8cb4cfcfc75ee50d.svg",
         "type": "costume",
         "tags": [],
@@ -3564,7 +5643,7 @@
         ]
     },
     {
-        "name": "ZBlock-s",
+        "name": "Block-s",
         "md5": "9feb5593fed51e88dbb3128cfc290d29.svg",
         "type": "costume",
         "tags": [],
@@ -3575,7 +5654,7 @@
         ]
     },
     {
-        "name": "ZBlock-t",
+        "name": "Block-t",
         "md5": "d29c1caf5cf195740c38f279e82a77a4.svg",
         "type": "costume",
         "tags": [],
@@ -3586,7 +5665,7 @@
         ]
     },
     {
-        "name": "ZBlock-u",
+        "name": "Block-u",
         "md5": "faef46b7bf589c36300142f6f03c5d32.svg",
         "type": "costume",
         "tags": [],
@@ -3597,7 +5676,7 @@
         ]
     },
     {
-        "name": "ZBlock-v",
+        "name": "Block-v",
         "md5": "65e2f4821ab084827e22920acb61c92b.svg",
         "type": "costume",
         "tags": [],
@@ -3608,7 +5687,7 @@
         ]
     },
     {
-        "name": "ZBlock-w",
+        "name": "Block-w",
         "md5": "5ab197b4f70b2f98a3658c7ccdc3351d.svg",
         "type": "costume",
         "tags": [],
@@ -3619,7 +5698,7 @@
         ]
     },
     {
-        "name": "ZBlock-x",
+        "name": "Block-x",
         "md5": "cb9dff35f05e823d954e47e4a717a48c.svg",
         "type": "costume",
         "tags": [],
@@ -3630,7 +5709,7 @@
         ]
     },
     {
-        "name": "ZBlock-y",
+        "name": "Block-y",
         "md5": "4c13c440bcb35c8c3aa6226374fced3f.svg",
         "type": "costume",
         "tags": [],
@@ -3641,7 +5720,7 @@
         ]
     },
     {
-        "name": "ZBlock-z",
+        "name": "Block-z",
         "md5": "0ccff1898f1bf1b25333d581db09fae2.svg",
         "type": "costume",
         "tags": [],
@@ -3652,7 +5731,7 @@
         ]
     },
     {
-        "name": "ZGlow-0",
+        "name": "Glow-0",
         "md5": "38b2b342659adc6fa289090975e0e71d.svg",
         "type": "costume",
         "tags": [],
@@ -3663,7 +5742,7 @@
         ]
     },
     {
-        "name": "ZGlow-1",
+        "name": "Glow-1",
         "md5": "2c88706210672655401fe09edd8ff6a7.svg",
         "type": "costume",
         "tags": [],
@@ -3674,7 +5753,7 @@
         ]
     },
     {
-        "name": "ZGlow-2",
+        "name": "Glow-2",
         "md5": "b9faa5708a799a1607f0325a7af2561c.svg",
         "type": "costume",
         "tags": [],
@@ -3685,7 +5764,7 @@
         ]
     },
     {
-        "name": "ZGlow-3",
+        "name": "Glow-3",
         "md5": "cf42a50552ce26032ead712ac4f36c23.svg",
         "type": "costume",
         "tags": [],
@@ -3696,7 +5775,7 @@
         ]
     },
     {
-        "name": "ZGlow-4",
+        "name": "Glow-4",
         "md5": "3ffa6aee373e28fc36b9395ac4d0467e.svg",
         "type": "costume",
         "tags": [],
@@ -3707,7 +5786,7 @@
         ]
     },
     {
-        "name": "ZGlow-5",
+        "name": "Glow-5",
         "md5": "85d87d32e7e9e6be122c905b0d2e7e33.svg",
         "type": "costume",
         "tags": [],
@@ -3718,7 +5797,7 @@
         ]
     },
     {
-        "name": "ZGlow-6",
+        "name": "Glow-6",
         "md5": "62cc2a6def27f19d11ed56e86e95aac5.svg",
         "type": "costume",
         "tags": [],
@@ -3729,7 +5808,7 @@
         ]
     },
     {
-        "name": "ZGlow-7",
+        "name": "Glow-7",
         "md5": "8887983eb4df2e62a2ed4770a1d98d60.svg",
         "type": "costume",
         "tags": [],
@@ -3740,7 +5819,7 @@
         ]
     },
     {
-        "name": "ZGlow-8",
+        "name": "Glow-8",
         "md5": "4c42c4cb0c1e090d0f9570416d3c80c8.svg",
         "type": "costume",
         "tags": [],
@@ -3751,7 +5830,7 @@
         ]
     },
     {
-        "name": "ZGlow-9",
+        "name": "Glow-9",
         "md5": "7bcb7e2e48f5cb770c83d4267922fec0.svg",
         "type": "costume",
         "tags": [],
@@ -3762,7 +5841,7 @@
         ]
     },
     {
-        "name": "ZGlow-A",
+        "name": "Glow-A",
         "md5": "d5aa299350c24c747200a64b63b1aa52.svg",
         "type": "costume",
         "tags": [],
@@ -3773,7 +5852,7 @@
         ]
     },
     {
-        "name": "ZGlow-B",
+        "name": "Glow-B",
         "md5": "a2e95f268a6cab03f3e94b3b0b792d83.svg",
         "type": "costume",
         "tags": [],
@@ -3784,7 +5863,7 @@
         ]
     },
     {
-        "name": "ZGlow-C",
+        "name": "Glow-C",
         "md5": "9779a4a40934f04a4bf84920b258d7c9.svg",
         "type": "costume",
         "tags": [],
@@ -3795,7 +5874,7 @@
         ]
     },
     {
-        "name": "ZGlow-D",
+        "name": "Glow-D",
         "md5": "3555b8bbbbcdc00354bf6fa81ac7042f.svg",
         "type": "costume",
         "tags": [],
@@ -3806,7 +5885,7 @@
         ]
     },
     {
-        "name": "ZGlow-E",
+        "name": "Glow-E",
         "md5": "44dbc655d5ac9f13618473848e23484e.svg",
         "type": "costume",
         "tags": [],
@@ -3817,7 +5896,7 @@
         ]
     },
     {
-        "name": "ZGlow-F",
+        "name": "Glow-F",
         "md5": "dec417e749e43d7de3985155f5f5a7a0.svg",
         "type": "costume",
         "tags": [],
@@ -3828,7 +5907,7 @@
         ]
     },
     {
-        "name": "ZGlow-G",
+        "name": "Glow-G",
         "md5": "cf4aa465cd8fb7049cc571d7546a7eb1.svg",
         "type": "costume",
         "tags": [],
@@ -3839,7 +5918,7 @@
         ]
     },
     {
-        "name": "ZGlow-H",
+        "name": "Glow-H",
         "md5": "8d9bd5f00ea1ac6f92d0f97ee491b0f3.svg",
         "type": "costume",
         "tags": [],
@@ -3850,7 +5929,7 @@
         ]
     },
     {
-        "name": "ZGlow-I",
+        "name": "Glow-I",
         "md5": "0e86de55840103dcd50199ab2b765de7.svg",
         "type": "costume",
         "tags": [],
@@ -3861,7 +5940,7 @@
         ]
     },
     {
-        "name": "ZGlow-J",
+        "name": "Glow-J",
         "md5": "b3832145eacc39f91bd3a9a6673fa05c.svg",
         "type": "costume",
         "tags": [],
@@ -3872,7 +5951,7 @@
         ]
     },
     {
-        "name": "ZGlow-K",
+        "name": "Glow-K",
         "md5": "f4e37a7552ba05e995613211a7146de5.svg",
         "type": "costume",
         "tags": [],
@@ -3883,7 +5962,7 @@
         ]
     },
     {
-        "name": "ZGlow-L",
+        "name": "Glow-L",
         "md5": "a75e45773ea6afaf8ae44f79f936fc82.svg",
         "type": "costume",
         "tags": [],
@@ -3894,7 +5973,7 @@
         ]
     },
     {
-        "name": "ZGlow-M",
+        "name": "Glow-M",
         "md5": "219b06faa5b816347165450d148213b4.svg",
         "type": "costume",
         "tags": [],
@@ -3905,7 +5984,7 @@
         ]
     },
     {
-        "name": "ZGlow-N",
+        "name": "Glow-N",
         "md5": "4b724479fb3b2184fd8be6f83fb20e54.svg",
         "type": "costume",
         "tags": [],
@@ -3916,7 +5995,7 @@
         ]
     },
     {
-        "name": "ZGlow-O",
+        "name": "Glow-O",
         "md5": "38b2b342659adc6fa289090975e0e71d.svg",
         "type": "costume",
         "tags": [],
@@ -3927,7 +6006,7 @@
         ]
     },
     {
-        "name": "ZGlow-P",
+        "name": "Glow-P",
         "md5": "1cfa849cc967069730b7e9d0809c9dc1.svg",
         "type": "costume",
         "tags": [],
@@ -3938,7 +6017,7 @@
         ]
     },
     {
-        "name": "ZGlow-Q",
+        "name": "Glow-Q",
         "md5": "9d35979e9404ac234301269fcd7de288.svg",
         "type": "costume",
         "tags": [],
@@ -3949,7 +6028,7 @@
         ]
     },
     {
-        "name": "ZGlow-R",
+        "name": "Glow-R",
         "md5": "fc067ee076ecaba8430ccd54d9414c1b.svg",
         "type": "costume",
         "tags": [],
@@ -3960,7 +6039,7 @@
         ]
     },
     {
-        "name": "ZGlow-S",
+        "name": "Glow-S",
         "md5": "19a93db8a294ccaec4d6eef4020a446f.svg",
         "type": "costume",
         "tags": [],
@@ -3971,7 +6050,7 @@
         ]
     },
     {
-        "name": "ZGlow-T",
+        "name": "Glow-T",
         "md5": "d7bcda522a1e9504dafcf2fa0fcde39b.svg",
         "type": "costume",
         "tags": [],
@@ -3982,7 +6061,7 @@
         ]
     },
     {
-        "name": "ZGlow-U",
+        "name": "Glow-U",
         "md5": "790482a3c3691a1e96ef34eee7303872.svg",
         "type": "costume",
         "tags": [],
@@ -3993,7 +6072,7 @@
         ]
     },
     {
-        "name": "ZGlow-V",
+        "name": "Glow-V",
         "md5": "6a00388d8dc6be645b843cef9c22681c.svg",
         "type": "costume",
         "tags": [],
@@ -4004,7 +6083,7 @@
         ]
     },
     {
-        "name": "ZGlow-W",
+        "name": "Glow-W",
         "md5": "1a9ea7305a85b271c1de79beafe16cb4.svg",
         "type": "costume",
         "tags": [],
@@ -4015,7 +6094,7 @@
         ]
     },
     {
-        "name": "ZGlow-X",
+        "name": "Glow-X",
         "md5": "ec4e65b9ae475a676973128f4205df5f.svg",
         "type": "costume",
         "tags": [],
@@ -4026,7 +6105,7 @@
         ]
     },
     {
-        "name": "ZGlow-Y",
+        "name": "Glow-Y",
         "md5": "683cd093bb3b254733a15df6f843464c.svg",
         "type": "costume",
         "tags": [],
@@ -4037,7 +6116,7 @@
         ]
     },
     {
-        "name": "ZGlow-Z",
+        "name": "Glow-Z",
         "md5": "db89a4c9b123123542e0b7556ed3ff9f.svg",
         "type": "costume",
         "tags": [],
@@ -4048,7 +6127,7 @@
         ]
     },
     {
-        "name": "ZPixel-0",
+        "name": "Pixel-0",
         "md5": "cd1f984997b44de464bbf86fc073b280.svg",
         "type": "costume",
         "tags": [],
@@ -4059,7 +6138,7 @@
         ]
     },
     {
-        "name": "ZPixel-1",
+        "name": "Pixel-1",
         "md5": "4ec3d6c4ef14112ed7c6ba6b9549da3b.svg",
         "type": "costume",
         "tags": [],
@@ -4070,7 +6149,7 @@
         ]
     },
     {
-        "name": "ZPixel-2",
+        "name": "Pixel-2",
         "md5": "d0136e77a646a3ad719aaa7f8f95a7ff.svg",
         "type": "costume",
         "tags": [],
@@ -4081,7 +6160,7 @@
         ]
     },
     {
-        "name": "ZPixel-3",
+        "name": "Pixel-3",
         "md5": "7c1700f0dcfb418662d29ba6faa114e7.svg",
         "type": "costume",
         "tags": [],
@@ -4092,7 +6171,7 @@
         ]
     },
     {
-        "name": "ZPixel-4",
+        "name": "Pixel-4",
         "md5": "6238b9b95fad7f7aa9cef9bde5bde474.svg",
         "type": "costume",
         "tags": [],
@@ -4103,7 +6182,7 @@
         ]
     },
     {
-        "name": "ZPixel-5",
+        "name": "Pixel-5",
         "md5": "aef915acf1d49deed46692411e6c6039.svg",
         "type": "costume",
         "tags": [],
@@ -4114,7 +6193,7 @@
         ]
     },
     {
-        "name": "ZPixel-6",
+        "name": "Pixel-6",
         "md5": "e6ad1d1fe44a1c63c8f99c0bbb893a44.svg",
         "type": "costume",
         "tags": [],
@@ -4125,7 +6204,7 @@
         ]
     },
     {
-        "name": "ZPixel-7",
+        "name": "Pixel-7",
         "md5": "469b4fb6f6f8721e2c244ae9c71a7e66.svg",
         "type": "costume",
         "tags": [],
@@ -4136,7 +6215,7 @@
         ]
     },
     {
-        "name": "ZPixel-8",
+        "name": "Pixel-8",
         "md5": "5bfcf2c715b81ae380ae2983bb4c5bb2.svg",
         "type": "costume",
         "tags": [],
@@ -4147,7 +6226,7 @@
         ]
     },
     {
-        "name": "ZPixel-9",
+        "name": "Pixel-9",
         "md5": "8014a66c758f1bc389194c988badb382.svg",
         "type": "costume",
         "tags": [],
@@ -4158,7 +6237,7 @@
         ]
     },
     {
-        "name": "ZPixel-A",
+        "name": "Pixel-A",
         "md5": "a54da6be420c9e8e7cb02e2a568f3442.svg",
         "type": "costume",
         "tags": [],
@@ -4169,7 +6248,7 @@
         ]
     },
     {
-        "name": "ZPixel-B",
+        "name": "Pixel-B",
         "md5": "e47682020873e276f550421f0d854523.svg",
         "type": "costume",
         "tags": [],
@@ -4180,7 +6259,7 @@
         ]
     },
     {
-        "name": "ZPixel-C",
+        "name": "Pixel-C",
         "md5": "ee1958ffbae4e0fd836622ae183b55bd.svg",
         "type": "costume",
         "tags": [],
@@ -4191,7 +6270,7 @@
         ]
     },
     {
-        "name": "ZPixel-D",
+        "name": "Pixel-D",
         "md5": "d759df99f347d9b7d59e1f703e8e1438.svg",
         "type": "costume",
         "tags": [],
@@ -4202,7 +6281,7 @@
         ]
     },
     {
-        "name": "ZPixel-E",
+        "name": "Pixel-E",
         "md5": "059a64a90014dc69c510b562cdf94df7.svg",
         "type": "costume",
         "tags": [],
@@ -4213,7 +6292,7 @@
         ]
     },
     {
-        "name": "ZPixel-F",
+        "name": "Pixel-F",
         "md5": "ebbc6dc0f7d1a89b159aac3f76fe52f4.svg",
         "type": "costume",
         "tags": [],
@@ -4224,7 +6303,7 @@
         ]
     },
     {
-        "name": "ZPixel-G",
+        "name": "Pixel-G",
         "md5": "203dfa253635f0e52059e835c51fa6f8.svg",
         "type": "costume",
         "tags": [],
@@ -4235,7 +6314,7 @@
         ]
     },
     {
-        "name": "ZPixel-H",
+        "name": "Pixel-H",
         "md5": "d9a94d9b9abc9e26eb91d22d197a1556.svg",
         "type": "costume",
         "tags": [],
@@ -4246,7 +6325,7 @@
         ]
     },
     {
-        "name": "ZPixel-I",
+        "name": "Pixel-I",
         "md5": "aeb851adc39da9582a379af1ed6d0efe.svg",
         "type": "costume",
         "tags": [],
@@ -4257,7 +6336,7 @@
         ]
     },
     {
-        "name": "ZPixel-J",
+        "name": "Pixel-J",
         "md5": "c18906f764b2889a8fc0b3c16db28bf0.svg",
         "type": "costume",
         "tags": [],
@@ -4268,7 +6347,7 @@
         ]
     },
     {
-        "name": "ZPixel-K",
+        "name": "Pixel-K",
         "md5": "4483633d2ae26987d0efe359aaf1357b.svg",
         "type": "costume",
         "tags": [],
@@ -4279,7 +6358,7 @@
         ]
     },
     {
-        "name": "ZPixel-L",
+        "name": "Pixel-L",
         "md5": "0625b64705d62748c6105e969859fe0d.svg",
         "type": "costume",
         "tags": [],
@@ -4290,7 +6369,7 @@
         ]
     },
     {
-        "name": "ZPixel-M",
+        "name": "Pixel-M",
         "md5": "46ccf731f158b9dda75f4e71a5bcd282.svg",
         "type": "costume",
         "tags": [],
@@ -4301,7 +6380,7 @@
         ]
     },
     {
-        "name": "ZPixel-N",
+        "name": "Pixel-N",
         "md5": "f9d3b49b5962ff4070fae186b8b71e39.svg",
         "type": "costume",
         "tags": [],
@@ -4312,7 +6391,7 @@
         ]
     },
     {
-        "name": "ZPixel-O",
+        "name": "Pixel-O",
         "md5": "668b21968078f3b7b1a9ccd74407fa1e.svg",
         "type": "costume",
         "tags": [],
@@ -4323,7 +6402,7 @@
         ]
     },
     {
-        "name": "ZPixel-P",
+        "name": "Pixel-P",
         "md5": "02011265d2597175c7496da667265f4a.svg",
         "type": "costume",
         "tags": [],
@@ -4334,7 +6413,7 @@
         ]
     },
     {
-        "name": "ZPixel-Q",
+        "name": "Pixel-Q",
         "md5": "8c77c87dd0ed2613873cff0795ffc701.svg",
         "type": "costume",
         "tags": [],
@@ -4345,7 +6424,7 @@
         ]
     },
     {
-        "name": "ZPixel-R",
+        "name": "Pixel-R",
         "md5": "c94daea3bd1e8cec36e1aa4e0b1d3f2b.svg",
         "type": "costume",
         "tags": [],
@@ -4356,7 +6435,7 @@
         ]
     },
     {
-        "name": "ZPixel-S",
+        "name": "Pixel-S",
         "md5": "2fedb1b52f4a4500938a3a52085344e6.svg",
         "type": "costume",
         "tags": [],
@@ -4367,7 +6446,7 @@
         ]
     },
     {
-        "name": "ZPixel-T",
+        "name": "Pixel-T",
         "md5": "3f481b967f82014c7cf6dd14d438c32d.svg",
         "type": "costume",
         "tags": [],
@@ -4378,7 +6457,7 @@
         ]
     },
     {
-        "name": "ZPixel-U",
+        "name": "Pixel-U",
         "md5": "a207644e4adb613f410f80a7e123db60.svg",
         "type": "costume",
         "tags": [],
@@ -4389,7 +6468,7 @@
         ]
     },
     {
-        "name": "ZPixel-V",
+        "name": "Pixel-V",
         "md5": "1bb20febe562fa291bea94be1e2d44ba.svg",
         "type": "costume",
         "tags": [],
@@ -4400,7 +6479,7 @@
         ]
     },
     {
-        "name": "ZPixel-W",
+        "name": "Pixel-W",
         "md5": "34b628e8c84cc551a1fa740b85afb750.svg",
         "type": "costume",
         "tags": [],
@@ -4411,7 +6490,7 @@
         ]
     },
     {
-        "name": "ZPixel-X",
+        "name": "Pixel-X",
         "md5": "4cc2d68ceb08176481e882ed39e4f5d5.svg",
         "type": "costume",
         "tags": [],
@@ -4422,7 +6501,7 @@
         ]
     },
     {
-        "name": "ZPixel-Y",
+        "name": "Pixel-Y",
         "md5": "e6c377982c023761796eaed1047169e6.svg",
         "type": "costume",
         "tags": [],
@@ -4433,7 +6512,7 @@
         ]
     },
     {
-        "name": "ZPixel-Z",
+        "name": "Pixel-Z",
         "md5": "ecadc3a562c9aa963717fcdf07ec96b4.svg",
         "type": "costume",
         "tags": [],

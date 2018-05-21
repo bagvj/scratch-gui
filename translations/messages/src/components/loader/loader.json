@@ -37,7 +37,7 @@
   {
     "id": "gui.loader.message8",
     "description": "One of the loading messages",
-    "defaultMessage": "Preparing emojiis …"
+    "defaultMessage": "Preparing emojis …"
   },
   {
     "id": "gui.loader.headline",

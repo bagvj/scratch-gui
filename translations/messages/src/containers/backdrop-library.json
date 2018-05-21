@@ -1,7 +1,7 @@
 [
   {
-    "id": "gui.backdropLibrary.backdropLibrary",
-    "description": "Title for backdrops library in the backdrop-library",
-    "defaultMessage": "Backdrop Library"
+    "id": "gui.costumeLibrary.chooseABackdrop",
+    "description": "Heading for the backdrop library",
+    "defaultMessage": "Choose a Backdrop"
   }
 ]

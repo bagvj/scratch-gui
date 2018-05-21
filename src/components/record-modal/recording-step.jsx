@@ -6,30 +6,6 @@ import Waveform from '../waveform/waveform.jsx';
 
 import styles from './record-modal.css';
 import stopIcon from './icon--stop-recording.svg';
-import {defineMessages} from 'react-intl';
-
-const messages = defineMessages({
-    clickButton: {
-        defaultMessage: 'Begin recording by clicking the button below',
-        description: 'Begin recording by clicking the button below',
-        id: 'gui.recordingStep.clickButton'
-    },
-    permission: {
-        defaultMessage: '↖️ \u00A0We need your permission to use your microphone',
-        description: 'permission to microphone',
-        id: 'gui.recordingStep.permission'
-    },
-    record: {
-        defaultMessage: 'Record',
-        description: 'record',
-        id: 'gui.recordingStep.record'
-    },
-    stopRecording: {
-        defaultMessage: 'Stop recording',
-        description: 'Stop recording',
-        id: 'gui.recordingStep.stopRecording'
-    },
-});
 
 const RecordingStep = props => (
     <Box>
@@ -51,7 +27,8 @@ const RecordingStep = props => (
                     />
                 ) : (
                     <span className={styles.helpText}>
-                        {props.listening ? messages.clickButton : messages.permission}
+                        {props.listening ? 'Begin recording by clicking the button below' :
+                            '↖️ \u00A0We need your permission to use your microphone'}
                     </span>
                 )}
             </Box>
@@ -89,7 +66,7 @@ const RecordingStep = props => (
                 )}
                 <div className={styles.helpText}>
                     <span className={styles.recordingText}>
-                        {props.recording ? messages.stopRecording : messages.record}
+                        {props.recording ? 'Stop recording' : 'Record'}
                     </span>
                 </div>
             </button>

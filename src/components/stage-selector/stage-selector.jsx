@@ -9,7 +9,6 @@ import CostumeCanvas from '../costume-canvas/costume-canvas.jsx';
 import styles from './stage-selector.css';
 
 import backdropIcon from '../action-menu/icon--backdrop.svg';
-import cameraIcon from '../action-menu/icon--camera.svg';
 import fileUploadIcon from '../action-menu/icon--file-upload.svg';
 import paintIcon from '../action-menu/icon--paint.svg';
 import surpriseIcon from '../action-menu/icon--surprise.svg';
@@ -18,7 +17,7 @@ const messages = defineMessages({
     addBackdropFromLibrary: {
         id: 'gui.spriteSelector.addBackdropFromLibrary',
         description: 'Button to add a stage in the target pane from library',
-        defaultMessage: 'Backdrop Library'
+        defaultMessage: 'Choose a Backdrop'
     },
     addBackdropFromPaint: {
         id: 'gui.stageSelector.addBackdropFromPaint',
@@ -33,21 +32,19 @@ const messages = defineMessages({
     addBackdropFromFile: {
         id: 'gui.stageSelector.addBackdropFromFile',
         description: 'Button to add a stage in the target pane from file',
-        defaultMessage: 'Coming Soon'
-    },
-    addBackdropFromCamera: {
-        id: 'gui.stageSelector.addBackdropFromCamera',
-        description: 'Button to add a stage in the target pane from camera',
-        defaultMessage: 'Coming Soon'
+        defaultMessage: 'Upload Backdrop'
     }
 });
 
 const StageSelector = props => {
     const {
         backdropCount,
+        fileInputRef,
         intl,
         selected,
         url,
+        onBackdropFileUploadClick,
+        onBackdropFileUpload,
         onClick,
         onNewBackdropClick,
         onSurpriseBackdropClick,
@@ -74,9 +71,9 @@ const StageSelector = props => {
             {url ? (
                 <CostumeCanvas
                     className={styles.costumeCanvas}
-                    height={42}
+                    height={54}
                     url={url}
-                    width={56}
+                    width={72}
                 />
             ) : null}
             <div className={styles.label}>
@@ -92,20 +89,21 @@ const StageSelector = props => {
                 img={backdropIcon}
                 moreButtons={[
                     {
-                        title: intl.formatMessage(messages.addBackdropFromCamera),
-                        img: cameraIcon
-                    }, {
                         title: intl.formatMessage(messages.addBackdropFromFile),
-                        img: fileUploadIcon
+                        img: fileUploadIcon,
+                        onClick: onBackdropFileUploadClick,
+                        fileAccept: '.svg, .png, .jpg, .jpeg', // Bitmap coming soon
+                        fileChange: onBackdropFileUpload,
+                        fileInput: fileInputRef
                     }, {
                         title: intl.formatMessage(messages.addBackdropFromSurprise),
                         img: surpriseIcon,
-                        onClick: onSurpriseBackdropClick // TODO NEED REAL FUNCTION
+                        onClick: onSurpriseBackdropClick
 
                     }, {
                         title: intl.formatMessage(messages.addBackdropFromPaint),
                         img: paintIcon,
-                        onClick: onEmptyBackdropClick // TODO NEED REAL FUNCTION
+                        onClick: onEmptyBackdropClick
                     }
                 ]}
                 title={intl.formatMessage(messages.addBackdropFromLibrary)}
@@ -117,7 +115,10 @@ const StageSelector = props => {
 
 StageSelector.propTypes = {
     backdropCount: PropTypes.number.isRequired,
+    fileInputRef: PropTypes.func,
     intl: intlShape.isRequired,
+    onBackdropFileUpload: PropTypes.func,
+    onBackdropFileUploadClick: PropTypes.func,
     onClick: PropTypes.func,
     onEmptyBackdropClick: PropTypes.func,
     onNewBackdropClick: PropTypes.func,

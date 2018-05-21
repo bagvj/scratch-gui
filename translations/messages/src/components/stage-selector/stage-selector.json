@@ -2,7 +2,7 @@
   {
     "id": "gui.spriteSelector.addBackdropFromLibrary",
     "description": "Button to add a stage in the target pane from library",
-    "defaultMessage": "Backdrop Library"
+    "defaultMessage": "Choose a Backdrop"
   },
   {
     "id": "gui.stageSelector.addBackdropFromPaint",
@@ -17,12 +17,7 @@
   {
     "id": "gui.stageSelector.addBackdropFromFile",
     "description": "Button to add a stage in the target pane from file",
-    "defaultMessage": "Coming Soon"
-  },
-  {
-    "id": "gui.stageSelector.addBackdropFromCamera",
-    "description": "Button to add a stage in the target pane from camera",
-    "defaultMessage": "Coming Soon"
+    "defaultMessage": "Upload Backdrop"
   },
   {
     "id": "gui.stageSelector.stage",

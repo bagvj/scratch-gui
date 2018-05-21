@@ -1,27 +1,27 @@
 [
   {
-    "id": "gui.spriteInfo.name",
-    "description": "Placeholder for sprite name in the sprite-info",
+    "id": "gui.SpriteInfo.spritePlaceholder",
+    "description": "Placeholder text for sprite name",
     "defaultMessage": "Name"
   },
   {
-    "id": "gui.spriteInfo.sprite",
-    "description": "Label for sprite in the sprite-info",
+    "id": "gui.SpriteInfo.sprite",
+    "description": "Sprite info label",
     "defaultMessage": "Sprite"
   },
   {
-    "id": "gui.spriteInfo.show",
-    "description": "Label for show in the sprite-info",
+    "id": "gui.SpriteInfo.show",
+    "description": "Sprite info show label",
     "defaultMessage": "Show"
   },
   {
-    "id": "gui.spriteInfo.direction",
-    "description": "Label for direction in the sprite-info",
-    "defaultMessage": "Direction"
+    "id": "gui.SpriteInfo.size",
+    "description": "Sprite info size label",
+    "defaultMessage": "Size"
   },
   {
-    "id": "gui.spriteInfo.size",
-    "description": "Label for size in the sprite-info",
-    "defaultMessage": "Size"
+    "id": "gui.SpriteInfo.direction",
+    "description": "Sprite info direction label",
+    "defaultMessage": "Direction"
   }
 ]

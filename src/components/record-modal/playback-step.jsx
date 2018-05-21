@@ -4,35 +4,40 @@ import Box from '../box/box.jsx';
 import Waveform from '../waveform/waveform.jsx';
 import Meter from '../meter/meter.jsx';
 import AudioTrimmer from '../../containers/audio-trimmer.jsx';
+import {defineMessages, injectIntl, intlShape} from 'react-intl';
 
 import styles from './record-modal.css';
 import backIcon from './icon--back.svg';
 import stopIcon from './icon--stop-playback.svg';
 import playIcon from './icon--play.svg';
-import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
 const messages = defineMessages({
-    loading: {
-        id: "gui.playbackStep.loading",
-        description: "Button to loading in the playback-step",
-        defaultMessage: "Loading"
+    stopMsg: {
+        defaultMessage: 'Stop',
+        description: 'Stop/Play button in recording playback',
+        id: 'gui.playbackStep.stopMsg'
     },
-    save: {
-        id: "gui.playbackStep.save",
-        description: "Button to save in the playback-step",
-        defaultMessage: "Save"
+    playMsg: {
+        defaultMessage: 'Play',
+        description: 'Stop/Play button in recording playback',
+        id: 'gui.playbackStep.playMsg'
     },
-    play: {
-        id: "gui.playbackStep.play",
-        description: "Button to play in the playback-step",
-        defaultMessage: "Play"
+    loadingMsg: {
+        defaultMessage: 'Loading...',
+        description: 'Loading/Save button in recording playback',
+        id: 'gui.playbackStep.loadingMsg'
     },
-    stop: {
-        id: "gui.playbackStep.stop",
-        description: "Button to stop in the playback-step",
-        defaultMessage: "Stop"
+    saveMsg: {
+        defaultMessage: 'Save',
+        description: 'Loading/Save button in recording playback',
+        id: 'gui.playbackStep.saveMsg'
     },
-})
+    reRecordMsg: {
+        defaultMessage: 'Re-record',
+        description: 'Button to re-record sound in recording playback',
+        id: 'gui.playbackStep.reRecordMsg'
+    }
+});
 
 const PlaybackStep = props => (
     <Box>
@@ -72,7 +77,10 @@ const PlaybackStep = props => (
                 />
                 <div className={styles.helpText}>
                     <span className={styles.playingText}>
-                        {props.playing ? this.props.intl.formatMessage(messages.stop) : this.props.intl.formatMessage(messages.play)}
+                        {props.playing ?
+                            props.intl.formatMessage(messages.stopMsg) :
+                            props.intl.formatMessage(messages.playMsg)
+                        }
                     </span>
                 </div>
             </button>
@@ -85,14 +93,18 @@ const PlaybackStep = props => (
                 <img
                     draggable={false}
                     src={backIcon}
-                /> Re-record
+                />
+                {props.intl.formatMessage(messages.reRecordMsg)}
             </button>
             <button
                 className={styles.okButton}
                 disabled={props.encoding}
                 onClick={props.onSubmit}
             >
-                {props.encoding ? this.props.intl.formatMessage(messages.loading) : this.props.intl.formatMessage(messages.save)}
+                {props.encoding ?
+                    props.intl.formatMessage(messages.loadingMsg) :
+                    props.intl.formatMessage(messages.saveMsg)
+                }
             </button>
         </Box>
     </Box>
@@ -100,6 +112,7 @@ const PlaybackStep = props => (
 
 PlaybackStep.propTypes = {
     encoding: PropTypes.bool.isRequired,
+    intl: intlShape.isRequired,
     levels: PropTypes.arrayOf(PropTypes.number).isRequired,
     onBack: PropTypes.func.isRequired,
     onPlay: PropTypes.func.isRequired,
@@ -110,9 +123,7 @@ PlaybackStep.propTypes = {
     playhead: PropTypes.number,
     playing: PropTypes.bool.isRequired,
     trimEnd: PropTypes.number.isRequired,
-    trimStart: PropTypes.number.isRequired,
-    intl: intlShape,
+    trimStart: PropTypes.number.isRequired
 };
 
-// export default PlaybackStep;
 export default injectIntl(PlaybackStep);

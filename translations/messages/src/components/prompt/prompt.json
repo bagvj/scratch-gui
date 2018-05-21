@@ -6,12 +6,12 @@
   },
   {
     "id": "gui.prompt.cancel",
-    "description": "",
+    "description": "Button in prompt for cancelling the dialog",
     "defaultMessage": "Cancel"
   },
   {
     "id": "gui.prompt.ok",
-    "description": "",
+    "description": "Button in prompt for confirming the dialog",
     "defaultMessage": "OK"
   }
 ]

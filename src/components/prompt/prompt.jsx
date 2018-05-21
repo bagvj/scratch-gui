@@ -61,7 +61,7 @@ const PromptComponent = props => (
                 >
                     <FormattedMessage
                         defaultMessage="Cancel"
-                        description=""
+                        description="Button in prompt for cancelling the dialog"
                         id="gui.prompt.cancel"
                     />
                 </button>
@@ -71,7 +71,7 @@ const PromptComponent = props => (
                 >
                     <FormattedMessage
                         defaultMessage="OK"
-                        description=""
+                        description="Button in prompt for confirming the dialog"
                         id="gui.prompt.ok"
                     />
                 </button>

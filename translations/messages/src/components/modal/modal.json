@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.modal.back",
+    "description": "Back button in modal",
+    "defaultMessage": "Back"
+  }
+]

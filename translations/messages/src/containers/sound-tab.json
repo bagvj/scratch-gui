@@ -2,7 +2,7 @@
   {
     "id": "gui.soundTab.fileUploadSound",
     "description": "Button to upload sound from file in the editor tab",
-    "defaultMessage": "Coming Soon"
+    "defaultMessage": "Upload Sound"
   },
   {
     "id": "gui.soundTab.surpriseSound",
@@ -17,6 +17,6 @@
   {
     "id": "gui.soundTab.addSoundFromLibrary",
     "description": "Button to add a sound in the editor tab",
-    "defaultMessage": "Sound Library"
+    "defaultMessage": "Choose a Sound"
   }
 ]

@@ -1,10 +1,16 @@
+/* eslint-disable react/jsx-no-literals */
+/*
+    @todo Rule is disabled because this component is rendered outside the
+    intl provider right now so cannot be translated.
+*/
+
 import PropTypes from 'prop-types';
 import React from 'react';
 import Box from '../box/box.jsx';
 
 import styles from './crash-message.css';
 import reloadIcon from './reload.svg';
-import {defineMessages} from 'react-intl';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
 const messages = defineMessages({
     reload: {
@@ -44,7 +50,9 @@ const CrashMessage = props => (
 );
 
 CrashMessage.propTypes = {
-    onReload: PropTypes.func.isRequired
+    onReload: PropTypes.func.isRequired,
+    intl: intlShape,
 };
 
-export default CrashMessage;
+// export default CrashMessage;
+export default injectIntl(CrashMessage);

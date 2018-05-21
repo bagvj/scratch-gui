@@ -7,6 +7,7 @@ import Box from '../box/box.jsx';
 import Label from '../forms/label.jsx';
 import Input from '../forms/input.jsx';
 import BufferedInputHOC from '../forms/buffered-input-hoc.jsx';
+import {injectIntl, intlShape, defineMessages, FormattedMessage} from 'react-intl';
 
 import layout from '../../lib/layout-constants.js';
 import styles from './sprite-info.css';
@@ -16,37 +17,15 @@ import yIcon from './icon--y.svg';
 import showIcon from './icon--show.svg';
 import hideIcon from './icon--hide.svg';
 
-import {FormattedMessage, defineMessages, intlShape, injectIntl} from 'react-intl';
+const BufferedInput = BufferedInputHOC(Input);
 
 const messages = defineMessages({
-    name: {
-        id: "gui.spriteInfo.name",
-        description: "Placeholder for sprite name in the sprite-info",
-        defaultMessage: "Name"
-    },
-    sprite: {
-        id: "gui.spriteInfo.sprite",
-        description: "Label for sprite in the sprite-info",
-        defaultMessage: "Sprite"
-    },
-    show: {
-        id: "gui.spriteInfo.show",
-        description: "Label for show in the sprite-info",
-        defaultMessage: "Show"
-    },
-    direction: {
-        id: "gui.spriteInfo.direction",
-        description: "Label for direction in the sprite-info",
-        defaultMessage: "Direction"
-    },
-    size: {
-        id: "gui.spriteInfo.size",
-        description: "Label for size in the sprite-info",
-        defaultMessage: "Size"
+    spritePlaceholder: {
+        id: 'gui.SpriteInfo.spritePlaceholder',
+        defaultMessage: 'Name',
+        description: 'Placeholder text for sprite name'
     }
-})
-
-const BufferedInput = BufferedInputHOC(Input);
+});
 
 class SpriteInfo extends React.Component {
     shouldComponentUpdate (nextProps) {
@@ -61,17 +40,45 @@ class SpriteInfo extends React.Component {
         );
     }
     render () {
+        const sprite = (
+            <FormattedMessage
+                defaultMessage="Sprite"
+                description="Sprite info label"
+                id="gui.SpriteInfo.sprite"
+            />
+        );
+        const showLabel = (
+            <FormattedMessage
+                defaultMessage="Show"
+                description="Sprite info show label"
+                id="gui.SpriteInfo.show"
+            />
+        );
+        const sizeLabel = (
+            <FormattedMessage
+                defaultMessage="Size"
+                description="Sprite info size label"
+                id="gui.SpriteInfo.size"
+            />
+        );
+        const directionLabel = (
+            <FormattedMessage
+                defaultMessage="Direction"
+                description="Sprite info direction label"
+                id="gui.SpriteInfo.direction"
+            />
+        );
         return (
             <Box
                 className={styles.spriteInfo}
             >
                 <div className={classNames(styles.row, styles.rowPrimary)}>
-                    <div className={classNames(styles.group, styles.spriteName)}>
-                        <Label text={this.props.intl.formatMessage(messages.sprite)}>
+                    <div className={styles.group}>
+                        <Label text={sprite}>
                             <BufferedInput
                                 className={styles.spriteInput}
                                 disabled={this.props.disabled}
-                                placeholder={this.props.intl.formatMessage(messages.name)}
+                                placeholder={this.props.intl.formatMessage(messages.spritePlaceholder)}
                                 tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.name}
@@ -132,7 +139,7 @@ class SpriteInfo extends React.Component {
                         <MediaQuery minWidth={layout.fullSizeMinWidth}>
                             <Label
                                 secondary
-                                text={this.props.intl.formatMessage(messages.show)}
+                                text={showLabel}
                             />
                         </MediaQuery>
                         <div>
@@ -179,12 +186,12 @@ class SpriteInfo extends React.Component {
                     <div className={classNames(styles.group, styles.largerInput)}>
                         <Label
                             secondary
-                            text={this.props.intl.formatMessage(messages.size)}
+                            text={sizeLabel}
                         >
                             <BufferedInput
                                 small
                                 disabled={this.props.disabled}
-                                label={this.props.intl.formatMessage(messages.size)}
+                                label={sizeLabel}
                                 tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.size}
@@ -195,12 +202,12 @@ class SpriteInfo extends React.Component {
                     <div className={classNames(styles.group, styles.largerInput)}>
                         <Label
                             secondary
-                            text={this.props.intl.formatMessage(messages.direction)}
+                            text={directionLabel}
                         >
                             <BufferedInput
                                 small
                                 disabled={this.props.disabled}
-                                label={this.props.intl.formatMessage(messages.direction)}
+                                label={directionLabel}
                                 tabIndex="0"
                                 type="text"
                                 value={this.props.disabled ? '' : this.props.direction}
@@ -220,6 +227,7 @@ SpriteInfo.propTypes = {
         PropTypes.number
     ]),
     disabled: PropTypes.bool,
+    intl: intlShape,
     name: PropTypes.string,
     onChangeDirection: PropTypes.func,
     onChangeName: PropTypes.func,
@@ -242,9 +250,7 @@ SpriteInfo.propTypes = {
     y: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number
-    ]),
-    intl: intlShape,
+    ])
 };
 
-// export default SpriteInfo;
 export default injectIntl(SpriteInfo);

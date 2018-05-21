@@ -1,21 +1,22 @@
 import bindAll from 'lodash.bindall';
 import PropTypes from 'prop-types';
 import React from 'react';
+import {injectIntl, intlShape, defineMessages} from 'react-intl';
 import VM from 'scratch-vm';
 
 //import analytics from '../lib/analytics';
 import spriteLibraryContent from '../lib/libraries/sprites.json';
+import spriteTags from '../lib/libraries/sprite-tags';
 
 import LibraryComponent from '../components/library/library.jsx';
-import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
 const messages = defineMessages({
-    spriteLibrary: {
-        id: "gui.spriteLibrary.spriteLibrary",
-        description: "Title for sprite library in the sprite-library",
-        defaultMessage: "Sprite Library"
+    libraryTitle: {
+        defaultMessage: 'Choose a Sprite',
+        description: 'Heading for the sprite library',
+        id: 'gui.spriteLibrary.chooseASprite'
     }
-})
+});
 
 class SpriteLibrary extends React.PureComponent {
     constructor (props) {
@@ -38,7 +39,7 @@ class SpriteLibrary extends React.PureComponent {
         clearInterval(this.intervalId);
     }
     handleItemSelect (item) {
-        this.props.vm.addSprite2(JSON.stringify(item.json));
+        this.props.vm.addSprite(JSON.stringify(item.json));
         //analytics.event({
         //    category: 'library',
         //    action: 'Select Sprite',
@@ -80,8 +81,9 @@ class SpriteLibrary extends React.PureComponent {
         return (
             <LibraryComponent
                 data={this.state.sprites}
-                // title="Sprite Library"
-                title={this.props.intl.formatMessage(messages.spriteLibrary)}
+                id="spriteLibrary"
+                tags={spriteTags}
+                title={this.props.intl.formatMessage(messages.libraryTitle)}
                 onItemMouseEnter={this.handleMouseEnter}
                 onItemMouseLeave={this.handleMouseLeave}
                 onItemSelected={this.handleItemSelect}
@@ -92,10 +94,9 @@ class SpriteLibrary extends React.PureComponent {
 }
 
 SpriteLibrary.propTypes = {
+    intl: intlShape.isRequired,
     onRequestClose: PropTypes.func,
-    vm: PropTypes.instanceOf(VM).isRequired,
-    intl: intlShape,
+    vm: PropTypes.instanceOf(VM).isRequired
 };
 
-// export default SpriteLibrary;
 export default injectIntl(SpriteLibrary);

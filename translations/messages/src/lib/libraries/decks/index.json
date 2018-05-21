@@ -1,0 +1,142 @@
+[
+  {
+    "id": "gui.howtos.spin-around.name",
+    "description": "Name for the 'Spin around' how-to",
+    "defaultMessage": "Spin around"
+  },
+  {
+    "id": "gui.howtos.spin.step_dragTurn",
+    "description": "Step name for 'Drag out a “turn” block' step",
+    "defaultMessage": "Drag out a “turn” block"
+  },
+  {
+    "id": "gui.howtos.spin.step_clickTurn",
+    "description": "Step name for 'Click the block to run it' step",
+    "defaultMessage": "Click the block to run it"
+  },
+  {
+    "id": "gui.howtos.spin.step_clickControl",
+    "description": "Step name for 'Click the “Control” category' step",
+    "defaultMessage": "Click the “Control” category"
+  },
+  {
+    "id": "gui.howtos.spin.step_dragForever",
+    "description": "Step name for 'Drag out a “forever” block' step",
+    "defaultMessage": "Drag out a “forever” block"
+  },
+  {
+    "id": "gui.howtos.spin.step_clickForever",
+    "description": "Step name for 'Click the stack to run it' step",
+    "defaultMessage": "Click the stack to run it"
+  },
+  {
+    "id": "gui.howtos.spin.step_changeColor",
+    "description": "Step name for 'Add a “change color effect” block' step",
+    "defaultMessage": "Add a “change color effect” block"
+  },
+  {
+    "id": "gui.howtos.say-hello.name",
+    "description": "Name for the 'Say hello' how-to",
+    "defaultMessage": "Say hello"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_addSprite",
+    "description": "Step name for 'Add a new sprite' step",
+    "defaultMessage": "Add a new sprite"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_clickLooks",
+    "description": "Step name for 'Click the “Looks” category' step",
+    "defaultMessage": "Click the “Looks” category"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_dragSay",
+    "description": "Step name for 'Drag out a “say” block' step",
+    "defaultMessage": "Drag out a “say” block"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_clickSay",
+    "description": "Step name for 'Click the block to run it' step",
+    "defaultMessage": "Click the block to run it"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_anotherSay",
+    "description": "Step name for 'Drag out another “say” block' step",
+    "defaultMessage": "Drag out another “say” block"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_editSay",
+    "description": "Step name for 'Say something else' step",
+    "defaultMessage": "Say something else"
+  },
+  {
+    "id": "gui.howtos.say-hello.step_clickStack",
+    "description": "Step name for 'Click the stack to run it' step",
+    "defaultMessage": "Click the stack to run it"
+  },
+  {
+    "id": "gui.howtos.run-away.name",
+    "description": "Name for the 'Run away' how-to",
+    "defaultMessage": "Run away"
+  },
+  {
+    "id": "gui.howtos.run-away.step_dragGoTo",
+    "description": "Step name for 'Drag out a “go to random position” block' step",
+    "defaultMessage": "Drag out a “go to random position” block"
+  },
+  {
+    "id": "gui.howtos.run-away.step_clickGoTo",
+    "description": "Step name for 'Click the block to run it' step",
+    "defaultMessage": "Click the block to run it"
+  },
+  {
+    "id": "gui.howtos.run-away.step3",
+    "description": "Step 3 title",
+    "defaultMessage": "Click the “Events” category"
+  },
+  {
+    "id": "gui.howtos.run-away.step_addWhenClicked",
+    "description": "Step name for 'Add a “when this sprite clicked” block' step",
+    "defaultMessage": "Add a “when this sprite clicked” block"
+  },
+  {
+    "id": "gui.howtos.run-away.step_clickSprite",
+    "description": "Step name for 'Click the sprite to run it' step",
+    "defaultMessage": "Click the sprite to run it"
+  },
+  {
+    "id": "gui.howtos.run-away.step_addSound",
+    "description": "Step name for 'Add a “start sound” block' step",
+    "defaultMessage": "Add a “start sound” block"
+  },
+  {
+    "id": "gui.howtos.glide-around.name",
+    "description": "Name for the 'Glide around' how-to",
+    "defaultMessage": "Glide around"
+  },
+  {
+    "id": "gui.howtos.change-size.name",
+    "description": "Name for the 'Change size' how-to",
+    "defaultMessage": "Change size"
+  },
+  {
+    "id": "gui.howtos.switch-costume.name",
+    "description": "Name for the 'Switch costume' how-to",
+    "defaultMessage": "Switch costume"
+  },
+  {
+    "id": "gui.howtos.hide-and-show.name",
+    "description": "Name for the 'Hide & Show' how-to",
+    "defaultMessage": "Hide & Show"
+  },
+  {
+    "id": "gui.howtos.add-a-backdrop.name",
+    "description": "Name for the 'Add a backdrop' how-to",
+    "defaultMessage": "Add a backdrop"
+  },
+  {
+    "id": "gui.howtos.add-effects.name",
+    "description": "Name for the 'Add effects' how-to",
+    "defaultMessage": "Add effects"
+  }
+]

@@ -2,7 +2,7 @@
   {
     "id": "gui.spriteSelector.addSpriteFromLibrary",
     "description": "Button to add a sprite in the target pane from library",
-    "defaultMessage": "Sprite Library"
+    "defaultMessage": "Choose a Sprite"
   },
   {
     "id": "gui.spriteSelector.addSpriteFromPaint",
@@ -17,11 +17,6 @@
   {
     "id": "gui.spriteSelector.addSpriteFromFile",
     "description": "Button to add a sprite in the target pane from file",
-    "defaultMessage": "Coming Soon"
-  },
-  {
-    "id": "gui.spriteSelector.addSpriteFromCamera",
-    "description": "Button to add a sprite in the target pane from camera",
-    "defaultMessage": "Coming Soon"
+    "defaultMessage": "Upload"
   }
 ]

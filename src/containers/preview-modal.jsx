@@ -2,10 +2,10 @@ import bindAll from 'lodash.bindall';
 import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
-import platform from 'platform';
 
 import PreviewModalComponent from '../components/preview-modal/preview-modal.jsx';
 import BrowserModalComponent from '../components/browser-modal/browser-modal.jsx';
+import supportedBrowser from '../lib/supported-browser';
 
 import {
     closePreviewInfo,
@@ -35,14 +35,8 @@ class PreviewModal extends React.Component {
     handleViewProject () {
         this.props.onViewProject();
     }
-    supportedBrowser () {
-        if (platform.name === 'IE') {
-            return false;
-        }
-        return true;
-    }
     render () {
-        return (this.supportedBrowser() ?
+        return (supportedBrowser() ?
             <PreviewModalComponent
                 previewing={this.state.previewing}
                 onCancel={this.handleCancel}

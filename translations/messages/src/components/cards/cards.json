@@ -1,0 +1,22 @@
+[
+  {
+    "id": "gui.cards.all-how-tos",
+    "description": "Title for button to return to how-to library",
+    "defaultMessage": "All How-Tos"
+  },
+  {
+    "id": "gui.cards.remove",
+    "description": "Title for button to close how-to card",
+    "defaultMessage": "Remove"
+  },
+  {
+    "id": "gui.cards.more-things-to-try",
+    "description": "Title card with more things to try",
+    "defaultMessage": "More things to try!"
+  },
+  {
+    "id": "gui.cards.see-more",
+    "description": "Title for button to see more in how-to library",
+    "defaultMessage": "See more"
+  }
+]
