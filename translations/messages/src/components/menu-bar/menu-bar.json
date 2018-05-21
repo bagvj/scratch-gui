@@ -1,5 +1,65 @@
 [
   {
+    "id": "gui.menuBar.file",
+    "description": "Text for file dropdown menu",
+    "defaultMessage": "File"
+  },
+  {
+    "id": "gui.menuBar.new",
+    "description": "Menu bar item for creating a new project",
+    "defaultMessage": "New"
+  },
+  {
+    "id": "gui.menuBar.saveNow",
+    "description": "Menu bar item for saving now",
+    "defaultMessage": "Save now"
+  },
+  {
+    "id": "gui.menuBar.saveAsCopy",
+    "description": "Menu bar item for saving as a copy",
+    "defaultMessage": "Save as a copy"
+  },
+  {
+    "id": "gui.menuBar.uploadFromComputer",
+    "description": "Menu bar item for uploading a project from your computer",
+    "defaultMessage": "Upload from your computer"
+  },
+  {
+    "id": "gui.menuBar.downloadToComputer",
+    "description": "Menu bar item for downloading a project",
+    "defaultMessage": "Download to your computer"
+  },
+  {
+    "id": "gui.menuBar.edit",
+    "description": "Text for edit dropdown menu",
+    "defaultMessage": "Edit"
+  },
+  {
+    "id": "gui.menuBar.undo",
+    "description": "Menu bar item for undoing",
+    "defaultMessage": "Undo"
+  },
+  {
+    "id": "gui.menuBar.redo",
+    "description": "Menu bar item for redoing",
+    "defaultMessage": "Redo"
+  },
+  {
+    "id": "gui.menuBar.turboMode",
+    "description": "Menu bar item for toggling turbo mode",
+    "defaultMessage": "Turbo mode"
+  },
+  {
+    "id": "gui.menuBar.share",
+    "description": "Label for project share button",
+    "defaultMessage": "Share"
+  },
+  {
+    "id": "gui.menuBar.seeCommunity",
+    "description": "Label for see community button",
+    "defaultMessage": "See Community"
+  },
+  {
     "id": "gui.menuBar.giveFeedback",
     "description": "Label for feedback form modal button",
     "defaultMessage": "Give Feedback"

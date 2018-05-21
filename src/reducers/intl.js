@@ -2,7 +2,7 @@ import {intlReducer} from 'react-intl-redux';
 
 const intlInitialState = {
     intl: {
-        defaultLocale: 'en',
+        defaultLocale: 'zh',
         locale: 'zh',
         messages: {}
     }

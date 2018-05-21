@@ -19,7 +19,7 @@ const base = {
         disableHostCheck: true,
         contentBase: path.resolve(__dirname, 'build'),
         host: '0.0.0.0',
-        port: process.env.PORT || 8500
+        port: process.env.PORT || 8502
     },
     output: {
         library: 'GUI',
