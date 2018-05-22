@@ -78,11 +78,12 @@ module.exports = [
     // to run editor examples
     defaultsDeep({}, base, {
         entry: {
+            'index': './src/index.js',
             'lib.min': ['react', 'react-dom'],
             'gui': './src/playground/index.jsx',
-            'blocksonly': './src/playground/blocks-only.jsx',
-            'compatibilitytesting': './src/playground/compatibility-testing.jsx',
-            'player': './src/playground/player.jsx'
+            // 'blocksonly': './src/playground/blocks-only.jsx',
+            // 'compatibilitytesting': './src/playground/compatibility-testing.jsx',
+            // 'player': './src/playground/player.jsx'
         },
         output: {
             path: path.resolve(__dirname, 'build'),
@@ -119,29 +120,29 @@ module.exports = [
                 'process.env.GA_ID': '"' + (process.env.GA_ID || 'UA-000000-01') + '"'
             }),
             new HtmlWebpackPlugin({
-                chunks: ['lib.min', 'gui'],
+                chunks: ['lib.min', 'gui', 'index'],
                 template: 'src/playground/index.ejs',
-                title: 'Scratch 3.0 GUI',
-                sentryConfig: process.env.SENTRY_CONFIG ? '"' + process.env.SENTRY_CONFIG + '"' : null
+                title: '啃萝卜平台 - Make it easy!',
+                // sentryConfig: process.env.SENTRY_CONFIG ? '"' + process.env.SENTRY_CONFIG + '"' : null
             }),
-            new HtmlWebpackPlugin({
-                chunks: ['lib.min', 'blocksonly'],
-                template: 'src/playground/index.ejs',
-                filename: 'blocks-only.html',
-                title: 'Scratch 3.0 GUI: Blocks Only Example'
-            }),
-            new HtmlWebpackPlugin({
-                chunks: ['lib.min', 'compatibilitytesting'],
-                template: 'src/playground/index.ejs',
-                filename: 'compatibility-testing.html',
-                title: 'Scratch 3.0 GUI: Compatibility Testing'
-            }),
-            new HtmlWebpackPlugin({
-                chunks: ['lib.min', 'player'],
-                template: 'src/playground/index.ejs',
-                filename: 'player.html',
-                title: 'Scratch 3.0 GUI: Player Example'
-            }),
+            // new HtmlWebpackPlugin({
+            //     chunks: ['lib.min', 'blocksonly'],
+            //     template: 'src/playground/index.ejs',
+            //     filename: 'blocks-only.html',
+            //     title: 'Scratch 3.0 GUI: Blocks Only Example'
+            // }),
+            // new HtmlWebpackPlugin({
+            //     chunks: ['lib.min', 'compatibilitytesting'],
+            //     template: 'src/playground/index.ejs',
+            //     filename: 'compatibility-testing.html',
+            //     title: 'Scratch 3.0 GUI: Compatibility Testing'
+            // }),
+            // new HtmlWebpackPlugin({
+            //     chunks: ['lib.min', 'player'],
+            //     template: 'src/playground/index.ejs',
+            //     filename: 'player.html',
+            //     title: 'Scratch 3.0 GUI: Player Example'
+            // }),
             new CopyWebpackPlugin([{
                 from: 'static',
                 to: 'static'
@@ -167,10 +168,12 @@ module.exports = [
         defaultsDeep({}, base, {
             target: 'web',
             entry: {
-                'scratch-gui': './src/containers/gui.jsx'
+                'index': './src/index.js',
+                'lib.min': ['react', 'react-dom'],
+                'gui': './src/containers/gui.jsx'
             },
             output: {
-                libraryTarget: 'umd',
+                // libraryTarget: 'umd',
                 path: path.resolve('dist')
             },
             externals: {
@@ -191,6 +194,15 @@ module.exports = [
                 ])
             },
             plugins: base.plugins.concat([
+                new HtmlWebpackPlugin({
+                    chunks: ['lib.min', 'gui', 'index'],
+                    template: 'src/playground/index.ejs',
+                    title: '啃萝卜平台 - Make it easy!',
+                }),
+                new CopyWebpackPlugin([{
+                    from: 'static',
+                    to: 'static'
+                }]),
                 new CopyWebpackPlugin([{
                     from: 'node_modules/scratch-blocks/media',
                     to: 'static/blocks-media'

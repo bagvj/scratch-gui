@@ -9,15 +9,63 @@
   },
   "gui.unsupportedBrowser.back": {
     "message": "返回",
-    "description": "Label for button go back when browser is unsupported"
+    "description": "Button to go back in unsupported browser modal"
   },
   "gui.unsupportedBrowser.previewfaq": {
     "message": "想了解更多，请访问{previewFaqLink}.",
-    "description": "Scratch 3.0 FAQ description"
+    "description": "Invitation to try 3.0 preview"
   },
   "gui.unsupportedBrowser.previewfaqlink": {
     "message": "FAQ",
-    "description": "link to Scratch 3.0 FAQ page"
+    "description": "link to Scratch 3.0 preview FAQ page"
+  },
+  "gui.cameraModal.cameraModalTitle": {
+    "message": "拍张照片",
+    "description": "Title for prompt to take a picture (to add as a new costume)."
+  },
+  "gui.cameraModal.loadingCameraMessage": {
+    "message": "加载摄像头",
+    "description": "Notification to the user that the camera is loading"
+  },
+  "gui.cameraModal.permissionRequest": {
+    "message": "需要授权才能使用摄像头",
+    "description": "Notification to the user that the app needs camera access"
+  },
+  "gui.cameraModal.retakePhoto": {
+    "message": "重拍",
+    "description": "A button that allows the user to take the picture again, replacing the old one"
+  },
+  "gui.cameraModal.save": {
+    "message": "保存",
+    "description": "A button that allows the user to save the photo they took as a costume"
+  },
+  "gui.cameraModal.takePhoto": {
+    "message": "拍照",
+    "description": "A button to take a photo"
+  },
+  "gui.cameraModal.loadingCaption": {
+    "message": "加载",
+    "description": "A caption for a disabled button while the video from the camera is still loading"
+  },
+  "gui.cameraModal.enableCameraCaption": {
+    "message": "启用摄像头",
+    "description": "A caption for a disabled button prompting the user to enable camera access"
+  },
+  "gui.cards.all-how-tos": {
+    "message": "所有How-Tos",
+    "description": "Title for button to return to how-to library"
+  },
+  "gui.cards.remove": {
+    "message": "删除",
+    "description": "Title for button to close how-to card"
+  },
+  "gui.cards.more-things-to-try": {
+    "message": "尝试更多！",
+    "description": "Title card with more things to try"
+  },
+  "gui.cards.see-more": {
+    "message": "浏览更多",
+    "description": "Title for button to see more in how-to library"
   },
   "gui.comingSoon.message1": {
     "message": "敬请期待{emoji}",
@@ -30,6 +78,14 @@
   "gui.comingSoon.message3": {
     "message": "敬请期待{emoji}",
     "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+  },
+  "gui.controls.go": {
+    "message": "开始",
+    "description": "Green flag button title"
+  },
+  "gui.controls.stop": {
+    "message": "停止",
+    "description": "Stop button title"
   },
   "gui.crashMessage.reload": {
     "message": "重新加载",
@@ -87,17 +143,21 @@
     "message": "扩展",
     "description": "Button to add an extension in the target pane"
   },
-  "gui.gui.blocks": {
-    "message": "脚本",
-    "description": "Tab label in the gui tabs"
+  "gui.gui.codeTab": {
+    "message": "代码",
+    "description": "Button to get to the code panel"
   },
-  "gui.gui.costumes": {
+  "gui.gui.backdropsTab": {
+    "message": "背景",
+    "description": "Button to get to the backdrops panel"
+  },
+  "gui.gui.costumesTab": {
     "message": "造型",
-    "description": "Tab label in the gui tabs"
+    "description": "Button to get to the costumes panel"
   },
-  "gui.gui.sounds": {
+  "gui.gui.soundsTab": {
     "message": "声音",
-    "description": "Tab label in the gui tabs"
+    "description": "Button to get to the sounds panel"
   },
   "gui.importInfo.title": {
     "message": "浏览Scratch 2.0项目",
@@ -130,6 +190,10 @@
   "gui.extensionLibrary.comingSoon": {
     "message": "敬请期待",
     "description": "Label for extensions that are not yet implemented"
+  },
+  "gui.library.filterPlaceholder": {
+    "message": "搜索",
+    "description": "Placeholder text for library search field"
   },
   "gui.loadButton.load": {
     "message": "打开",
@@ -179,9 +243,73 @@
     "message": "保存",
     "description": "Label for the save button in the header"
   },
+  "gui.menuBar.file": {
+    "message": "文件",
+    "description": "Text for file dropdown menu"
+  },
+  "gui.menuBar.new": {
+    "message": "新建",
+    "description": "Menu bar item for creating a new project"
+  },
+  "gui.menuBar.saveNow": {
+    "message": "保存",
+    "description": "Menu bar item for saving now"
+  },
+  "gui.menuBar.saveAsCopy": {
+    "message": "保存副本",
+    "description": "Menu bar item for saving as a copy"
+  },
+  "gui.menuBar.uploadFromComputer": {
+    "message": "从电脑上传",
+    "description": "Menu bar item for uploading a project from your computer"
+  },
+  "gui.menuBar.downloadToComputer": {
+    "message": "下载到电脑",
+    "description": "Menu bar item for downloading a project"
+  },
+  "gui.menuBar.edit": {
+    "message": "编辑",
+    "description": "Text for edit dropdown menu"
+  },
+  "gui.menuBar.undo": {
+    "message": "撤销",
+    "description": "Menu bar item for undoing"
+  },
+  "gui.menuBar.redo": {
+    "message": "重做",
+    "description": "Menu bar item for redoing"
+  },
+  "gui.menuBar.turboMode": {
+    "message": "加速模式",
+    "description": "Menu bar item for toggling turbo mode"
+  },
+  "gui.menuBar.share": {
+    "message": "分享",
+    "description": "Label for project share button"
+  },
+  "gui.menuBar.seeCommunity": {
+    "message": "浏览社区",
+    "description": "Label for see community button"
+  },
   "gui.menuBar.giveFeedback": {
     "message": "反馈我们",
     "description": "Label for feedback form modal button"
+  },
+  "gui.modal.back": {
+    "message": "返回",
+    "description": "Back button in modal"
+  },
+  "gui.monitor.contextMenu.default": {
+    "message": "正常读出",
+    "description": "Menu item to switch to the default monitor"
+  },
+  "gui.monitor.contextMenu.large": {
+    "message": "更大读出",
+    "description": "Menu item to switch to the large monitor"
+  },
+  "gui.monitor.contextMenu.slider": {
+    "message": "滑块",
+    "description": "Menu item to switch to the slider monitor"
   },
   "gui.previewInfo.label": {
     "message": "尝试 Scratch 3.0",
@@ -221,27 +349,35 @@
   },
   "gui.prompt.cancel": {
     "message": "取消",
-    "description": ""
+    "description": "Button in prompt for cancelling the dialog"
   },
   "gui.prompt.ok": {
     "message": "确定",
-    "description": ""
+    "description": "Button in prompt for confirming the dialog"
   },
-  "gui.playbackStep.loading": {
-    "message": "载入中",
-    "description": "Button to loading in the playback-step"
-  },
-  "gui.playbackStep.save": {
-    "message": "保存",
-    "description": "Button to save in the playback-step"
-  },
-  "gui.playbackStep.play": {
-    "message": "播放",
-    "description": "Button to play in the playback-step"
-  },
-  "gui.playbackStep.stop": {
+  "gui.playbackStep.stopMsg": {
     "message": "停止",
-    "description": "Button to stop in the playback-step"
+    "description": "Stop/Play button in recording playback"
+  },
+  "gui.playbackStep.playMsg": {
+    "message": "播放",
+    "description": "Stop/Play button in recording playback"
+  },
+  "gui.playbackStep.loadingMsg": {
+    "message": "加载中...",
+    "description": "Loading/Save button in recording playback"
+  },
+  "gui.playbackStep.saveMsg": {
+    "message": "保存",
+    "description": "Loading/Save button in recording playback"
+  },
+  "gui.playbackStep.reRecordMsg": {
+    "message": "重新录制",
+    "description": "Button to re-record sound in recording playback"
+  },
+  "gui.recordModal.title": {
+    "message": "录制声音",
+    "description": "Recording modal title"
   },
   "gui.recordingStep.clickButton": {
     "message": "点击下面的按钮开始录制",
@@ -315,25 +451,25 @@
     "message": "反转",
     "description": "Title of the button to apply the reverse effect"
   },
-  "gui.spriteInfo.name": {
+  "gui.SpriteInfo.spritePlaceholder": {
     "message": "名字",
-    "description": "Placeholder for sprite name in the sprite-info"
+    "description": "Placeholder text for sprite name"
   },
-  "gui.spriteInfo.sprite": {
+  "gui.SpriteInfo.sprite": {
     "message": "角色",
-    "description": "Label for sprite in the sprite-info"
+    "description": "Sprite info label"
   },
-  "gui.spriteInfo.show": {
+  "gui.SpriteInfo.show": {
     "message": "显示",
-    "description": "Label for show in the sprite-info"
+    "description": "Sprite info show label"
   },
-  "gui.spriteInfo.direction": {
-    "message": "方向",
-    "description": "Label for direction in the sprite-info"
-  },
-  "gui.spriteInfo.size": {
+  "gui.SpriteInfo.size": {
     "message": "大小",
-    "description": "Label for size in the sprite-info"
+    "description": "Sprite info size label"
+  },
+  "gui.SpriteInfo.direction": {
+    "message": "方向",
+    "description": "Sprite info direction label"
   },
   "gui.spriteSelectorItem.contextMenuDuplicate": {
     "message": "复制",
@@ -344,11 +480,11 @@
     "description": "Menu item to delete in the right click menu"
   },
   "gui.spriteSelector.addSpriteFromLibrary": {
-    "message": "精灵库",
+    "message": "角色库",
     "description": "Button to add a sprite in the target pane from library"
   },
   "gui.spriteSelector.addSpriteFromPaint": {
-    "message": "画画",
+    "message": "绘制角色",
     "description": "Button to add a sprite in the target pane from paint"
   },
   "gui.spriteSelector.addSpriteFromSurprise": {
@@ -356,48 +492,44 @@
     "description": "Button to add a random sprite in the target pane"
   },
   "gui.spriteSelector.addSpriteFromFile": {
-    "message": "敬请期待",
+    "message": "上传角色",
     "description": "Button to add a sprite in the target pane from file"
   },
-  "gui.spriteSelector.addSpriteFromCamera": {
-    "message": "敬请期待",
-    "description": "Button to add a sprite in the target pane from camera"
-  },
-  "gui.gui.stageSizeLarge": {
+  "gui.stageHeader.stageSizeLarge": {
     "message": "舞台大小切换 - 大",
     "description": "Button to change stage size to large"
   },
-  "gui.gui.stageSizeSmall": {
+  "gui.stageHeader.stageSizeSmall": {
     "message": "舞台大小切换 - 小",
     "description": "Button to change stage size to small"
   },
-  "gui.gui.stageSizeFull": {
-    "message": "舞台大小切换 - 全屏",
+  "gui.stageHeader.stageSizeFull": {
+    "message": "进入全屏模式",
     "description": "Button to change stage size to full screen"
   },
-  "gui.gui.stageSizeUnFull": {
-    "message": "舞台大小切换 - 非全屏",
+  "gui.stageHeader.stageSizeUnFull": {
+    "message": "退出全屏模式",
     "description": "Button to get out of full screen mode"
+  },
+  "gui.stageHeader.fullscreenControl": {
+    "message": "全屏控制",
+    "description": "Button to enter/exit full screen mode"
   },
   "gui.spriteSelector.addBackdropFromLibrary": {
     "message": "背景库",
     "description": "Button to add a stage in the target pane from library"
   },
   "gui.stageSelector.addBackdropFromPaint": {
-    "message": "Paint",
-    "description": "画画 to add a stage in the target pane from paint"
+    "message": "绘制背景",
+    "description": "Button to add a stage in the target pane from paint"
   },
   "gui.stageSelector.addBackdropFromSurprise": {
     "message": "惊喜",
     "description": "Button to add a random stage in the target pane"
   },
   "gui.stageSelector.addBackdropFromFile": {
-    "message": "敬请期待",
+    "message": "上传背景",
     "description": "Button to add a stage in the target pane from file"
-  },
-  "gui.stageSelector.addBackdropFromCamera": {
-    "message": "敬请期待",
-    "description": "Button to add a stage in the target pane from camera"
   },
   "gui.stageSelector.stage": {
     "message": "舞台",
@@ -439,24 +571,24 @@
     "message": "FAQ",
     "description": "link to Scratch 3.0 FAQ page"
   },
-  "gui.backdropLibrary.backdropLibrary": {
-    "message": "背景库",
-    "description": "Title for backdrops library in the backdrop-library"
+  "gui.costumeLibrary.chooseABackdrop": {
+    "message": "选择背景",
+    "description": "Heading for the backdrop library"
   },
   "gui.blocks.createVariable": {
     "message": "创建变量",
     "description": "Title for create variable in the blocks"
   },
-  "gui.costumeLibrary.costumeLibrary": {
-    "message": "造型库",
-    "description": "Title for costume library in the costume-library"
+  "gui.costumeLibrary.chooseACostume": {
+    "message": "选择造型",
+    "description": "Heading for the costume library"
   },
   "gui.costumeTab.addBackdropFromLibrary": {
-    "message": "添加背景",
+    "message": "选择背景",
     "description": "Button to add a backdrop in the editor tab"
   },
   "gui.costumeTab.addCostumeFromLibrary": {
-    "message": "造型库",
+    "message": "选择造型",
     "description": "Button to add a costume in the editor tab"
   },
   "gui.costumeTab.addBlankCostume": {
@@ -467,24 +599,36 @@
     "message": "惊喜",
     "description": "Button to add a surprise costume in the editor tab"
   },
+  "gui.costumeTab.addFileBackdrop": {
+    "message": "上传背景",
+    "description": "Button to add a backdrop by uploading a file in the editor tab"
+  },
   "gui.costumeTab.addFileCostume": {
-    "message": "敬请期待",
-    "description": "Button to add a file upload costume in the editor tab"
+    "message": "上传造型",
+    "description": "Button to add a costume by uploading a file in the editor tab"
   },
   "gui.costumeTab.addCameraCostume": {
-    "message": "敬请期待",
+    "message": "摄像头",
     "description": "Button to use the camera to create a costume costume in the editor tab"
   },
-  "gui.extensionLibrary.extensionLibrary": {
-    "message": "扩展库",
-    "description": "Title for extension library in the extension-library"
+  "gui.extensionLibrary.chooseAnExtension": {
+    "message": "选择扩展",
+    "description": "Heading for the extension library"
   },
-  "gui.soundLibrary.soundLibrary": {
-    "message": "声音库",
-    "description": "Title for sound library in the sound-library"
+  "gui.extensionLibrary.extensionUrl": {
+    "message": "输入扩展URL",
+    "description": "Prompt for unoffical extension url"
+  },
+  "gui.recordingStep.alertMsg": {
+    "message": "无法启动录制",
+    "description": "Alert for recording error"
+  },
+  "gui.soundLibrary.chooseASound": {
+    "message": "选择声音",
+    "description": "Heading for the sound library"
   },
   "gui.soundTab.fileUploadSound": {
-    "message": "敬请期待",
+    "message": "上传声音",
     "description": "Button to upload sound from file in the editor tab"
   },
   "gui.soundTab.surpriseSound": {
@@ -496,11 +640,123 @@
     "description": "Button to record a sound in the editor tab"
   },
   "gui.soundTab.addSoundFromLibrary": {
-    "message": "声音库",
+    "message": "选择声音",
     "description": "Button to add a sound in the editor tab"
   },
-  "gui.spriteLibrary.spriteLibrary": {
-    "message": "角色库",
-    "description": "Title for sprite library in the sprite-library"
+  "gui.spriteLibrary.chooseASprite": {
+    "message": "选择角色",
+    "description": "Heading for the sprite library"
+  },
+  "gui.howtos.spin-around.name": {
+    "message": "转圈子",
+    "description": "Name for the 'Spin around' how-to"
+  },
+  "gui.howtos.spin.step_dragTurn": {
+    "message": "拖出一个“翻转”块",
+    "description": "Step name for 'Drag out a “turn” block' step"
+  },
+  "gui.howtos.spin.step_clickTurn": {
+    "message": "点击顶部块来运行它",
+    "description": "Step name for 'Click the block to run it' step"
+  },
+  "gui.howtos.spin.step_clickControl": {
+    "message": "点击“控制”目录",
+    "description": "Step name for 'Click the “Control” category' step"
+  },
+  "gui.howtos.spin.step_dragForever": {
+    "message": "拖出一个“永远循环”的块",
+    "description": "Step name for 'Drag out a “forever” block' step"
+  },
+  "gui.howtos.spin.step_clickForever": {
+    "message": "点击顶部块来运行它",
+    "description": "Step name for 'Click the stack to run it' step"
+  },
+  "gui.howtos.spin.step_changeColor": {
+    "message": "添加一个“改变颜色”的块",
+    "description": "Step name for 'Add a “change color effect” block' step"
+  },
+  "gui.howtos.say-hello.name": {
+    "message": "说hello",
+    "description": "Name for the 'Say hello' how-to"
+  },
+  "gui.howtos.say-hello.step_addSprite": {
+    "message": "添加一个新角色",
+    "description": "Step name for 'Add a new sprite' step"
+  },
+  "gui.howtos.say-hello.step_clickLooks": {
+    "message": "点击“外观”目录",
+    "description": "Step name for 'Click the “Looks” category' step"
+  },
+  "gui.howtos.say-hello.step_dragSay": {
+    "message": "拖出一个“说”的块",
+    "description": "Step name for 'Drag out a “say” block' step"
+  },
+  "gui.howtos.say-hello.step_clickSay": {
+    "message": "点击块来运行它",
+    "description": "Step name for 'Click the block to run it' step"
+  },
+  "gui.howtos.say-hello.step_anotherSay": {
+    "message": "拖出一个“说”的块",
+    "description": "Step name for 'Drag out another “say” block' step"
+  },
+  "gui.howtos.say-hello.step_editSay": {
+    "message": "说些其它的",
+    "description": "Step name for 'Say something else' step"
+  },
+  "gui.howtos.say-hello.step_clickStack": {
+    "message": "点击顶部块来运行它",
+    "description": "Step name for 'Click the stack to run it' step"
+  },
+  "gui.howtos.run-away.name": {
+    "message": "跑开",
+    "description": "Name for the 'Run away' how-to"
+  },
+  "gui.howtos.run-away.step_dragGoTo": {
+    "message": "拖出一个“移动到随机位置”的块",
+    "description": "Step name for 'Drag out a “go to random position” block' step"
+  },
+  "gui.howtos.run-away.step_clickGoTo": {
+    "message": "点击块来运行它",
+    "description": "Step name for 'Click the block to run it' step"
+  },
+  "gui.howtos.run-away.step3": {
+    "message": "点击“事件”目录",
+    "description": "Step 3 title"
+  },
+  "gui.howtos.run-away.step_addWhenClicked": {
+    "message": "添加一个“当角色被点击时”的块",
+    "description": "Step name for 'Add a “when this sprite clicked” block' step"
+  },
+  "gui.howtos.run-away.step_clickSprite": {
+    "message": "点击角色来运行它",
+    "description": "Step name for 'Click the sprite to run it' step"
+  },
+  "gui.howtos.run-away.step_addSound": {
+    "message": "添加一个“开始播放声音”的块",
+    "description": "Step name for 'Add a “start sound” block' step"
+  },
+  "gui.howtos.glide-around.name": {
+    "message": "Glide around",
+    "description": "Name for the 'Glide around' how-to"
+  },
+  "gui.howtos.change-size.name": {
+    "message": "选择大小",
+    "description": "Name for the 'Change size' how-to"
+  },
+  "gui.howtos.switch-costume.name": {
+    "message": "切换造型",
+    "description": "Name for the 'Switch costume' how-to"
+  },
+  "gui.howtos.hide-and-show.name": {
+    "message": "隐藏/显示",
+    "description": "Name for the 'Hide & Show' how-to"
+  },
+  "gui.howtos.add-a-backdrop.name": {
+    "message": "添加背景",
+    "description": "Name for the 'Add a backdrop' how-to"
+  },
+  "gui.howtos.add-effects.name": {
+    "message": "添加音效",
+    "description": "Name for the 'Add effects' how-to"
   }
 }

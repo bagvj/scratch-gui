@@ -1,6 +1,11 @@
-webpackJsonp([1],{
+var GUI =
+(window["webpackJsonpGUI"] = window["webpackJsonpGUI"] || []).push([["index"],{
 
-/***/ 130:
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -186,4 +191,5 @@ webpackJsonp([1],{
 
 /***/ })
 
-},[130]);
+},[["./src/index.js","lib.min"]]]);
+//# sourceMappingURL=index.js.map

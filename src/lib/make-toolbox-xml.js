@@ -4,7 +4,7 @@ const blockSeparator = '<sep gap="36"/>'; // At default scale, about 28px
 
 const motion = function (isStage, targetId) {
     return `
-    <category name="动作" colour="#4C97FF" secondaryColour="#3373CC">
+    <category name="动作" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
         ${isStage ? `
         <label text="选中的舞台：没有动作块"></label>
         ` : `
