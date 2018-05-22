@@ -661,29 +661,38 @@ const myBlocks = function () {
     </category>
     `;
 };
+
 const ai = function () {
     return `
-    <category name="AI" colour="#ff0000" secondaryColour="#cc0000">
-        <block type="ai_recognitionspeech"/>
-        
-        ${blockSeparator}
-
-        <block type="ai_listentome"/>
-
-        ${blockSeparator}
-
-        <block type="ai_playAudio"/>
-
-        ${blockSeparator}
-
-        <block id="of" type="ai_of">
-            <value name="OBJECT">
-                <shadow id="ai_of_object_menu" type="ai_of_object_menu"/>
+    <category name="AI" id="ai" colour="#FF0000" secondaryColour="#CC0000">
+        <block type="ai_playAudio">
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">test</field>
+                </shadow>
             </value>
         </block>
+        ${blockSeparator}
+        <block type="ai_speechRecognition">
+            <value name="SPEECH">
+                <shadow type="text">
+                </shadow>
+            </value>
+        </block>
+        <block type="ai_speechResult"/>
+        ${blockSeparator}
+        <block type="ai_picRecognition">
+            <value name="TAG">
+                <shadow type="text">
+                </shadow>
+            </value>
+        </block>
+        <block type="ai_picResult"/>
+        ${categorySeparator}
     </category>
     `;
 };
+
 const xmlOpen = '<xml style="display: none">';
 const xmlClose = '</xml>';
 

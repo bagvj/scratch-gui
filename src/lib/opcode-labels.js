@@ -13,6 +13,16 @@ const opcodeMap = {
         label: 'y位置'
     },
 
+    // Ai
+    ai_speechResult: {
+        category: 'ai',
+        label: '语音识别结果'
+    },
+    ai_picResult: {
+        category: 'ai',
+        label: '图像识别结果'
+    },
+
     // Looks
     looks_size: {
         category: 'looks',
